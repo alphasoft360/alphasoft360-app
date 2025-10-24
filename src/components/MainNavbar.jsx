@@ -16,10 +16,10 @@ import {
   FaPhone,
   FaFacebookF,
   FaTwitter,
-  FaInstagram,
   FaLinkedinIn,
   FaTimes,
 } from "react-icons/fa";
+    import { FaXTwitter } from 'react-icons/fa6';
 import logo from "../assets/img/AlphaSoft_logo.png";
 
 const MainNavbar = () => {
@@ -50,7 +50,7 @@ const MainNavbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </a>
                
                 <a
