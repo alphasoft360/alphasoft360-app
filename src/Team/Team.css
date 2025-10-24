@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ==========================================TeamSection==================================================== */
+.team-section {
+  padding: 80px 0;
+}
+
+.team-card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 1.5rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card-link:hover .team-card {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+}
+
+.team-card-link:hover .team-name,
+.team-card-link:hover .team-role {
+  color: white !important;
+}
+
+.team-card-link:hover .social-link {
+  background: white !important;
+  color: #03228f !important;
+  transform: translateY(-3px);
+}
+
+.team-img-wrapper {
+  position: relative;
+  width: 260px;   /* bigger wrapper */
+  height: 260px;  /* bigger wrapper */
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("ngbng.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.team-img {
+  width: 220px;   /* bigger image */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.team-name {
+  font-size: 1.75rem;  /* larger text */
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.4rem;
+}
+
+.team-role {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.social-link {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+
+  color: white;
+
+  font-size: 1.2rem;
+
+  transition: all 0.3s ease;
+
+}
+
+.social-link:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+  transform: translateY(-4px) scale(1.05);
+}
+
+
+.team-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-card-link:hover {
+  text-decoration: none;
+}
+
+/* Team Member Detail Icons */
+.contact-details svg {
+  color: #061b6b ;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.social-icons a svg {
+  color: #061b6b ;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  transform: scale(1.1);
+  color: #4e95ed;
+}
+.team-member-detail .btn {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: white;
+  border: none;
+  transition: background 0.3s ease;
+}
+.team-member-detail .btn:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+}
+
+.contact-details a:hover {
+  font-weight: bolder;
+}

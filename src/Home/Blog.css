@@ -1,0 +1,135 @@
+/* Blog Styles */
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.card-image {
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-meta {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+}
+
+.meta-item i {
+  color: #6c757d;
+}
+
+/* Blog Detail Styles */
+.blog-detail {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.blog-back-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.blog-back-btn:hover {
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+}
+
+.blog-header-section {
+  margin-top: 20px;
+}
+
+.blog-meta {
+  margin-bottom: 20px;
+}
+
+.blog-meta .meta-item {
+  margin-bottom: 10px;
+}
+
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.blog-tags {
+  margin-top: 30px;
+}
+
+.blog-tags .badge {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-header-section .row {
+    text-align: center;
+  }
+
+  .blog-meta {
+    justify-content: center !important;
+    flex-direction: column;
+    gap: 10px !important;
+  }
+
+  .sidebar {
+    position: static;
+    margin-top: 30px;
+  }
+}

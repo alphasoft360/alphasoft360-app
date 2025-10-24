@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%) !important;
+}
+
+.offcanvas-navbar {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 50%) !important;
+}
+
+/* Offcanvas nav links hover */
+.offcanvas-navbar .nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.offcanvas-navbar .nav-link:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white !important;
+  font-weight: 600;
+  border-radius: 5px;
+  transform: translateY(-2px);
+}
+
+/* Offcanvas close button hover */
+.offcanvas-navbar .btn-outline-light:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+  border-color: transparent;
+}
+
+/* Navbar links hover */
+.navbar .nav-link {
+  color: #ffffff; /* default white */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white !important;
+  font-weight: 600;
+  border-radius: 5px;
+  transform: translateY(-2px); /* small lift effect */
+}
+
+/* Social icons hover */
+.navbar .d-flex svg {
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .d-flex svg:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  transform: scale(1.2); /* slightly bigger */
+}
+.navbar-social {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.navbar-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 50%) !important;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar-social a:hover {
+background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.navbar-social svg {
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  .navbar-social {
+    margin: 15px 0;
+    justify-content: center;
+  }
+}
+
+/* footer=-============================ */
+.footer-widget a {
+  color: #000; /* Default text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-widget a:hover {
+  color: #007bff; /* Change to your desired hover color */
+}
+
+/* Footer Styles */
+
+.rs-footer {
+  background: #fff;
+  color: #007bff;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.rs-footer .footer-top {
+  padding: 60px 0;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social li a {
+  font-size: 18px;
+  color: #061b6b;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.3s;
+}
+
+.footer-social li a:hover {
+  color: #fff;
+}
+
+.address-widget li svg {
+  color: #061b6b;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.site-map,
+.address-widget,
+.copy-right-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-map li,
+.address-widget li {
+  margin-bottom: 10px;
+}
+
+.site-map a,
+.copy-right-menu a,
+.address-widget a {
+  color: #061b6b;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.site-map a:hover,
+.copy-right-menu a:hover,
+.address-widget a:hover {
+  font-weight: bolder;
+}
+
+.footer-bottom {
+  background: #091336;
+  padding: 20px 0;
+  font-size: 14px;
+  border-top: 1px solid #1a2a6c;
+}
+
+.copy-right-menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.copy-right-menu a {
+  color: #ccc !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.copy-right-menu a:hover {
+ background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.copyright {
+  color: #ccc !important;
+}
+.contact-details a{
+  color: #061b6b !important;
+  text-decoration: none;
+}
+.contact-details a:hover {
+  font-weight: bolder;
+}
+
+/* Phone icon hover effects */
+.phone-link:hover .fa-phone,
+.phone-button:hover .fa-phone,
+.phone-button-mobile:hover .fa-phone {
+  transform: scale(1.1);
+  color: #007bff !important;
+}
+
+.phone-link:hover,
+.phone-button:hover,
+.phone-button-mobile:hover {
+  font-weight: bold;
+}
+
+/* Call button hover effects */
+.call-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%) !important;
+  border-color: transparent;
+}
+
+/* Hover effects for MainNavbar */
+
+/* Social media icons hover */
+.navbar-social a {
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: #6c757d; /* Default color */
+}
+
+.navbar-social a:hover {
+  color: #007bff; /* Blue on hover */
+  transform: scale(1.1);
+}
+
+/* Top bar links hover (address, email, phone) */
+.top-link {
+  transition: color 0.3s ease;
+}
+
+.top-link:hover {
+  color: #007bff !important; /* Yellow on hover */
+}
+
+/* Desktop navbar links hover */
+.navbar-link {
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff !important; /* Yellow on hover */
+}
+
+/* Offcanvas menu links hover */
+.offcanvas-link {
+  transition: color 0.3s ease;
+}
+
+.offcanvas-link:hover {
+  color: #007bff !important;
+}
+
