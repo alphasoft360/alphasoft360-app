@@ -180,7 +180,7 @@
 }
 
 .feature-card:hover .ring-icon {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.699);
 }
 
 /* 📱 Responsive Fix: Center content on small screens */
