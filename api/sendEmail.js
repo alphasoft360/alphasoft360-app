@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   try {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'arham.ali1323@gmail.com',
+      to: 'alphasoft360@gmail.com',
       subject: subject || 'New Form Submission from AlphaSoft Website',
       html: `
         <h2>New Form Submission</h2>
