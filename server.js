@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-const resend = new Resend('re_hcJWKDCN_5ZrxEGjPDH6MLEwhszQUEPrR');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.post('/api/sendEmail', async (req, res) => {
   const { name, email, phone, website, message, subject } = req.body;
@@ -16,7 +16,7 @@ app.post('/api/sendEmail', async (req, res) => {
   try {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'arham.ali1323@gmail.com',
+      to: 'alphasoft360@gmail.com',
       subject: subject || 'New Form Submission from AlphaSoft Website',
       html: `
         <h2>New Form Submission</h2>

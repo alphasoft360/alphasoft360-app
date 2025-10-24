@@ -52,13 +52,7 @@ const MainNavbar = () => {
                 >
                   <FaTwitter />
                 </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram />
-                </a>
+               
                 <a
                   href="https://linkedin.com"
                   target="_blank"

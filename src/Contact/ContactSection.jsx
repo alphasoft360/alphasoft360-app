@@ -98,7 +98,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <strong>Phone:</strong>
-                  <p className="mb-0">(+123) 456-9989</p>
+                  <p className="mb-0">+92 3704857471</p>
                 </div>
               </div>
 
