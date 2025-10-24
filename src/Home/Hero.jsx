@@ -144,7 +144,7 @@ const Hero = () => {
                         </Form.Group>
                         <Form.Group className="mb-3">
                           <Form.Control
-                            type="text"
+                            type="number"
                             placeholder="Phone Number"
                             name="from_phone"
                             value={formData.from_phone}

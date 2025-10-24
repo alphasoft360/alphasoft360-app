@@ -49,7 +49,7 @@
 .navbar .nav-link:hover {
   background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
   color: white !important;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 5px;
   transform: translateY(-2px); /* small lift effect */
 }
@@ -64,7 +64,7 @@
 .navbar .d-flex svg:hover {
   background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 5px;
   transform: scale(1.2); /* slightly bigger */
 }
@@ -82,7 +82,7 @@
   height: 35px;
   border-radius: 50%;
   background: linear-gradient(180deg, #061b6b 0%, #000a33 50%) !important;
-  color: white;
+  color: white !important;
   transition: all 0.3s ease;
 }
 
