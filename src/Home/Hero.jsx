@@ -90,7 +90,7 @@ const Hero = () => {
         {heroImages.map((image, index) => (
           <Carousel.Item key={index}>
             <div
-              className="hero d-flex align-items-center"
+              className="hero d-flex align-items-center py-5 py-md-0"
               style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
