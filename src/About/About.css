@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.about-us-section {
+  position: relative;
+  overflow: hidden;
+  background: #f8f9fa; /* Light background color */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.image-container img {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Background patterns */
+.bg-pattern-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(141, 178, 255, 0.3) 10%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.bg-pattern-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(141, 178, 255, 0.2) 10%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Text styles */
+.about-us-tag {
+  color: #007bff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+
+  background: linear-gradient(
+    to right,
+    #03228f 0%,
+    #03228f 0%,
+    #03228f 26%,
+    #4e95ed 100%,
+    #2989d8 100%,
+    #207cca 100%,
+    #0b70e1 100%
+  );
+
+  padding: 12px 30px;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 15px rgba(6, 27, 107, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    to right,
+    #03228f 0%,
+    #03228f 0%,
+    #03228f 26%,
+    #4e95ed 100%,
+    #2989d8 100%,
+    #207cca 100%,
+    #0b70e1 100%
+  );
+  background: linear-gradient(
+    to right,
+    #03228f 0%,
+    #03228f 0%,
+    #03228f 26%,
+    #4e95ed 100%,
+    #2989d8 100%,
+    #207cca 100%,
+    #0b70e1 100%
+  );
+}
+
+@media (max-width: 991.98px) {
+  .image-container {
+    margin-bottom: 3rem;
+  }
+}
+
+.about_team-slider-section {
+  background: url("../assets/img/servicesbg.jpg") center/cover no-repeat;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.about_team-member-card {
+  background: url("../assets/img/ngbng.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.about_team-member-card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(
+    to right,
+    #03228f 0%,
+    #03228f 0%,
+    #03228f 26%,
+    #4e95ed 100%,
+    #2989d8 100%,
+    #207cca 100%,
+    #0b70e1 100%
+  ) !important;
+  color: white;
+}
+
+.about_team-image-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.about_team-image {
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_team-image:hover {
+  transform: scale(1.05);
+}
+
+/* Text */
+.member-name {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.member-role {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Social Icons */
+.social-links .social-icon {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links .social-icon:hover {
+  background: linear-gradient(
+    to right,
+    #03228f 0%,
+    #03228f 0%,
+    #03228f 26%,
+    #4e95ed 100%,
+    #2989d8 100%,
+    #207cca 100%,
+    #0b70e1 100%
+  );
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Responsive Fixes */
+@media (max-width: 992px) {
+  .section-heading {
+    font-size: 2rem;
+  }
+  .about_team-member-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+  .about_team-member-card {
+    padding: 1rem;
+  }
+  .about_team-image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* About_team Work Section*/
+.working-process-section {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%) !important;
+  color: #fff !important;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.process-tag {
+  color: #007bff;
+  background-color: #e0f0ff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.process-step-card {
+  padding: 1rem;
+}
+
+.process-image-wrapper {
+  position: relative;
+  width: 180px; /* Adjust size as needed */
+  height: 180px; /* Adjust size as needed */
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+.process-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+.process-image:hover {
+  transform: scale(1.1);
+}
+
+.dashed-circle {
+  position: absolute;
+  width: calc(100% + 20px); /* Slightly larger than image */
+  height: calc(100% + 20px); /* Slightly larger than image */
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.blue-circle {
+  position: absolute;
+  background-color: #007bff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.blue-circle.circle-1 {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%); /* Half outside */
+}
+
+.blue-circle.circle-2 {
+  width: 30px;
+  height: 30px;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%); /* Half outside */
+}
+
+.step-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.submit-btn {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(
+    to right,
+    #03228f 0%,
+    #03228f 0%,
+    #03228f 26%,
+    #4e95ed 100%,
+    #2989d8 100%,
+    #207cca 100%,
+    #0b70e1 100%
+  );
+  color: white;
+}
+
+/* Optional: Background line connecting the steps (more complex with pure CSS, might need SVG or JS) */
+.working-process-section::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust to align with the circles */
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, #ccc 33%, transparent 0%);
+  background-size: 20px 2px; /* Adjust dash size */
+  z-index: 0;
+  transform: translateY(-50%);
+  display: none; /* Hide for now, as it's tricky with responsiveness */
+}
+
+@media (min-width: 768px) {
+    .process-step-card {
+    position: relative;
+    z-index: 1; /* Ensure cards are above the line */
+  }
+}

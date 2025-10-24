@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Livvic", sans-serif;
+}
+body {
+  background: #f5f5f5;
+}
+/* Flip container */
+.feature-card {
+  perspective: 1200px;
+  height: 300px;
+  position: relative;
+}
+
+/* Inner wrapper */
+.feature-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.feature-card:hover .feature-card-inner {
+  transform: rotateX(180deg);
+}
+
+/* Front & Back common styles */
+.feature-card-front,
+.feature-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Back */
+.feature-card-back {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: #fff;
+  transform: rotateX(180deg);
+}
+
+/* Back button */
+.feature-card-back .btn {
+  margin-top: 15px;
+  font-weight: bold;
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.feature-card-back .btn:hover {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: white;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .feature-card {
+    height: 260px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------- Services Section ---------- */
+.Services-section {
+   background:  #061b6b !important;
+  padding: 60px 20px;
+}
+.Services-section .form-box input,
+.Services-section .form-box textarea {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+}
+
+.Services-section .form-box input::placeholder,
+.Services-section .form-box textarea::placeholder {
+  color: #555;
+}
+
+.Services-section .submit-btn {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.Services-section .submit-btn:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+}
+.Services-section .no-gap {
+  margin: 0;
+  padding: 0;
+}
+
+/* Play button */
+.Services-section .play-btn {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Services-section .play-btn:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+}
+
+.form-box {
+  background: linear-gradient(135deg, #0d1a49, #3b5998);
+}
+.form-box input,
+.form-box textarea {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+}
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+  color: #555;
+}
+.submit-btn {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%) !important;
+  color: white !important;
+  border: none;
+}
+.submit-btn:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%) !important;
+  color: white !important;
+}
+.play-btn {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.play-btn:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+}
+.Services-process2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%) !important;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  color: #fff !important; /* default text readable */
+}
+
+/* Left panel */
+.process2-left-panel {
+  flex: 0 0 350px; /* Fixed width for the left panel */
+  background: linear-gradient(135deg, #0d1a49, #3b5998);
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  overflow: hidden; /* Hide background image overflow */
+}
+
+.process2-left-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2); /* subtle overlay */
+  z-index: 0;
+}
+
+.process2-left-panel > * {
+  position: relative; /* Keep text and button above overlay */
+  z-index: 1;
+}
+
+.Services-process2-tag {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.process2-left-panel h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+/* Contact button */
+.contact-us-button {
+  background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us-button:hover {
+  background: linear-gradient(to right, #03228f 0%, #03228f 0%, #03228f 26%, #4e95ed 100%, #2989d8 100%, #207cca 100%, #0b70e1 100%);
+  color: white;
+}
+
+.contact-us-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Right steps section */
+.process2-right-steps {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 40px;
+  padding-left: 60px;
+  align-content: center;
+}
+
+.process2-step {
+  text-align: left;
+}
+
+.process2-step h3 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.process2-step h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.process2-step p {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* Universal white text for readability */
+.Services-process2,
+.Services-process2 h3,
+.Services-process2 h4,
+.Services-process2 p {
+  color: #fff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .Services-process2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process2-left-panel {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .process2-left-panel h2 {
+    font-size: 1.8em;
+  }
+
+  .process2-right-steps {
+    padding-left: 0;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .process2-step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process2-step h3 {
+    font-size: 2em;
+  }
+
+  .process2-step h4 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .process2-left-panel {
+    padding: 25px;
+  }
+
+  .process2-left-panel h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-us-button {
+    padding: 12px 25px;
+  }
+
+  .process2-right-steps {
+    padding: 0 10px;
+  }
+
+  .process2-step {
+    text-align: center;
+    align-items: center;
+  }
+
+  .process2-step h3 {
+    font-size: 1.8em;
+  }
+
+  .process2-step h4 {
+    font-size: 1.1em;
+  }
+}
+
+.service-back-btn:hover {
+  background-color: #0056b3 !important;
+  border-color: #0056b3 !important;
+}
