@@ -71,6 +71,8 @@ const Hero = () => {
       if (!response.ok) {
         throw new Error('Failed to send email');
         console.log("Response not ok:", response);
+        const errorData = await response.json();
+        console.error("Error data:", errorData);
       }
 
       console.log("SUCCESS!");
