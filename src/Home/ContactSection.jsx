@@ -3,6 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import personImage from "../assets/img/contact-us.jpg";
+import contactData from "../data/contactData";
 
 
 // Stat Card with CountUp
@@ -61,14 +62,14 @@ const ContactSection = () => {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.open("https://wa.me/923704857471", "_blank");
+                  window.open(`https://wa.me/${contactData.whatsappNumber}`, "_blank");
                 }}
               >
                 <FaPhone className="throbbing-heartbeat" />
               </a>
             </div>
             <p className="call-us-text">CHAT WITH US 24/7</p>
-            <p className="phone-number">+92 3704857471</p>
+            <p className="phone-number">{contactData.phone}</p>
             <p className="contact-description">
               Have any idea or project in your mind? Chat with us on WhatsApp or schedule an
               appointment. Our representative will reply to you shortly.
@@ -78,13 +79,13 @@ const ContactSection = () => {
             <div className="additional-contact-methods">
               <div
                 className="contact-method"
-                onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=alphasoft360@gmail.com", "_blank")}
+                onClick={() => window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${contactData.email}`, "_blank")}
                 style={{ cursor: "pointer" }}
               >
                 <FaEnvelope size={30} className="me-2" />
                 <div>
                   <p className="contact-method-title">Email Us</p>
-                  <p className="contact-method-detail">alphasoft360@gmail.com</p>
+                  <p className="contact-method-detail">{contactData.email}</p>
                 </div>
               </div>
               <div
@@ -107,7 +108,7 @@ const ContactSection = () => {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                window.open("https://wa.me/923704857471", "_blank");
+                  window.open(`https://wa.me/${contactData.whatsappNumber}`, "_blank");
               }}
             >
               Let's Chat

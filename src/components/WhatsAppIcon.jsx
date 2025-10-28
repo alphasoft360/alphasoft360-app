@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import contactData from '../data/contactData';
 
 const WhatsAppIcon = () => {
   const handleClick = () => {
-    const phoneNumber = '+923704857471'; // Replace with your actual WhatsApp number
+    const phoneNumber = contactData.whatsappNumber; // Replace with your actual WhatsApp number
     const message = 'Hello! I would like to get in touch with AlphaSoft360.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

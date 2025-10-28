@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { Resend } from 'resend';
+import contactData from './src/data/contactData.js';
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -16,7 +17,7 @@ app.post('/api/sendEmail', async (req, res) => {
   try {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'alphasoft360@gmail.com',
+      to: contactData.email,
       subject: subject || 'New Form Submission from AlphaSoft Website',
       html: `
         <h2>New Form Submission</h2>

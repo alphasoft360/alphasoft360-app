@@ -1,6 +1,7 @@
 import React from "react";
 import { MdLocationOn, MdCall, MdEmail, MdAccessTime } from "react-icons/md";
 import Logo from "../assets/img/AlphaSoft_logo1.png"; // Adjust the path as needed
+import contactData from "../data/contactData";
 
 const Footer = () => {
   return (
@@ -59,11 +60,11 @@ const Footer = () => {
                 <li>
                   <MdLocationOn />{" "}
                   <span
-                    onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Main%20Pakavenue%20Road%2C%20Sahiwal%2C%2057000%2C%20Pakistan", "_blank")}
+                    onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contactData.address)}`, "_blank")}
                     style={{ cursor: "pointer" }}
                     className="footer-link"
                   >
-                    Main Pakavenue Rd, Sahiwal, 57000, Pakistan
+                    {contactData.address}
                   </span>
                 </li>
                 <li>
@@ -72,10 +73,10 @@ const Footer = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      window.open("https://wa.me/923704857471", "_blank");
+                      window.open(`https://wa.me/${contactData.whatsappNumber}`, "_blank");
                     }}
                   >
-                    +92 3704857471
+                    {contactData.phone}
                   </a>
                 </li>
                 <li>
@@ -84,15 +85,15 @@ const Footer = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      window.open("https://mail.google.com/mail/?view=cm&fs=1&to=alphasoft360@gmail.com", "_blank");
+                      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${contactData.email}`, "_blank");
                     }}
                     className="footer-link"
                   >
-                    alphasoft360@gmail.com
+                    {contactData.email}
                   </a>
                 </li>
                 <li>
-                  <MdAccessTime /> <span>Opening Hours: 10:00 - 18:00</span>
+                  <MdAccessTime /> <span>{contactData.openingHours}</span>
                 </li>
               </ul>
             </div>

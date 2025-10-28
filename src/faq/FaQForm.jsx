@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { toast } from 'react-toastify';
 import { Resend } from 'resend';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const FaQForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const FaQForm = () => {
     website: "",
     message: ""
   });
+  const [captchaToken, setCaptchaToken] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
@@ -26,9 +28,10 @@ const FaQForm = () => {
       !formData.name ||
       !formData.email ||
       !formData.phone ||
-      !formData.message
+      !formData.message ||
+      !captchaToken
     ) {
-      toast.error("Please fill in all fields before submitting.");
+      toast.error("Please fill in all fields and complete the CAPTCHA before submitting.");
       return;
     }
 
@@ -149,6 +152,12 @@ const FaQForm = () => {
                   className="form-control-lg rounded-3"
                   value={formData.message}
                   onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group className="mb-3">
+                <ReCAPTCHA
+                  sitekey="your-recaptcha-site-key"
+                  onChange={(token) => setCaptchaToken(token)}
                 />
               </Form.Group>
 

@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import contactData from '../src/data/contactData.js';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -12,7 +13,7 @@ export default async function handler(req, res) {
   try {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'alphasoft360@gmail.com',
+      to: contactData.email,
       subject: subject || 'New Form Submission from AlphaSoft Website',
       html: `
         <h2>New Form Submission</h2>

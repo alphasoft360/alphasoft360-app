@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button, Carousel } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Resend } from 'resend';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 // High-quality software company themed images from Unsplash
 const allHeroImages = [
@@ -23,6 +24,7 @@ const Hero = () => {
     from_phone: "",
     message: "",
   });
+  const [captchaToken, setCaptchaToken] = useState(null);
 
   useEffect(() => {
     setRefreshSeed(Math.random());
@@ -45,9 +47,10 @@ const Hero = () => {
       !formData.from_name ||
       !formData.from_email ||
       !formData.from_phone ||
-      !formData.message
+      !formData.message ||
+      !captchaToken
     ) {
-      toast.error("Please fill in all fields before submitting.");
+      toast.error("Please fill in all fields and complete the CAPTCHA before submitting.");
       return;
     }
 
@@ -159,6 +162,12 @@ const Hero = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
+                          />
+                        </Form.Group>
+                        <Form.Group className="mb-3">
+                          <ReCAPTCHA
+                            sitekey="your-recaptcha-site-key"
+                            onChange={(token) => setCaptchaToken(token)}
                           />
                         </Form.Group>
                         <Button type="submit" className="w-100 hero-submit-btn">

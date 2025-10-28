@@ -21,13 +21,14 @@ import {
 } from "react-icons/fa";
     import { FaXTwitter } from 'react-icons/fa6';
 import logo from "../assets/img/AlphaSoft_logo.png";
+import contactData from "../data/contactData";
 
 const MainNavbar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [showContactOffcanvas, setShowContactOffcanvas] = useState(false);
 
   const handleCallClick = () => {
-    window.open("https://wa.me/923704857471", "_blank");
+    window.open(`https://wa.me/${contactData.whatsappNumber}`, "_blank");
   };
 
   return (
@@ -72,35 +73,35 @@ const MainNavbar = () => {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.open("https://www.google.com/maps/search/?api=1&query=Main%20Pakavenue%20Road%2C%20Sahiwal%2C%2057000%2C%20Pakistan", "_blank");
+                  window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contactData.address)}`, "_blank");
                 }}
                 className="text-decoration-none text-primary small d-flex align-items-center me-2 top-link d-none d-lg-flex"
                 style={{ cursor: "pointer" }}
               >
                 <FaMapMarkerAlt size={20} className=" me-2" />
-                Main Pakavenue Road, Sahiwal, 57000, Pakistan
+                {contactData.address}
               </a>
               <a
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.open("https://mail.google.com/mail/?view=cm&fs=1&to=alphasoft360@gmail.com", "_blank");
+                  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${contactData.email}`, "_blank");
                 }}
                 className="text-decoration-none text-primary small d-flex align-items-center top-link"
               >
                 <FaEnvelope size={20} className=" me-2" />
-               alphasoft360@gmail.com
+               {contactData.email}
               </a>
               <a
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.open("https://wa.me/923704857471", "_blank");
+                  window.open(`https://wa.me/${contactData.whatsappNumber}`, "_blank");
                 }}
                 className="text-decoration-none text-primary small d-flex align-items-center phone-link"
               >
                 <FaPhone className="text-primary me-2" />
-                +92 3704857471
+                {contactData.phone}
               </a>
             </Col>
           </Row>
