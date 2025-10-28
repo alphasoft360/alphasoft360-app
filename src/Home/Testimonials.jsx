@@ -8,7 +8,11 @@ import { FaQuoteRight } from "react-icons/fa";
 // Avatar images
 import avatar1 from "../assets/img/client1.png";
 import avatar2 from "../assets/img/client2.png";
+import faizan_ali from "../assets/img/faizan_ali.jpg";
+import maroof_sultan from "../assets/img/maroof_sultan.jpg";
+import muhammad_shahbaz from "../assets/img/muhammad_shahbaz.jpg";
 import avatar3 from "../assets/img/client3.png";
+import ahmed_hassan from "../assets/img/ahmed_hassan.jpg";
 
 const Testimonials = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -35,38 +39,50 @@ const Testimonials = () => {
       text: "AlphaSoft delivered our e-commerce platform on time and exceeded expectations. Their expertise in modern web technologies transformed our business operations.",
       name: "Ahmed Rahman",
       role: "CTO, TechStart Solutions",
-      img: avatar1,
+      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "Working with AlphaSoft was a game-changer for our mobile app development. Their attention to detail and commitment to quality resulted in a seamless user experience.",
-      name: "Sara Ali",
+      name: "Ali Raza",
       role: "Product Manager, InnovateCorp",
-      img: avatar2,
+      img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "The custom software solution AlphaSoft built for us significantly improved workflow efficiency. Their support team is always responsive and helpful.",
-      name: "Michael Chen",
+      name: "Fatima Khan",
       role: "Operations Director, DataFlow Inc",
-      img: avatar3,
+      img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "AlphaSoft's expertise in cloud migration helped us scale seamlessly. Their strategic approach saved us time and resources.",
-      name: "Fatima Hassan",
+      name: "Aisha Ahmed",
       role: "IT Manager, GlobalTech",
-      img: avatar1,
-    },
-    {
-      text: "From concept to deployment, AlphaSoft handled our software project with professionalism. The final product was robust, scalable, and met all requirements.",
-      name: "David Kumar",
-      role: "CEO, StartupHub",
-      img: avatar2,
+      img: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "AlphaSoft's team provided exceptional UI/UX design and development services. Our client satisfaction increased dramatically since launching the new platform.",
-      name: "Lisa Wong",
+      name: "Zara Malik",
       role: "Marketing Director, BrandBoost",
-      img: avatar3,
-     },
+      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+    },
+    {
+      text: "AlphaSoft's innovative approach to digital transformation helped us modernize our legacy systems. Their technical expertise is unmatched.",
+      name: "Hassan Javed",
+      role: "CIO, Enterprise Solutions",
+      img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face",
+    },
+    {
+      text: "The cybersecurity solutions provided by AlphaSoft gave us peace of mind. Their proactive approach prevented potential threats.",
+      name: "Omar Farooq",
+      role: "Security Analyst, SecureTech",
+      img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
+    },
+    {
+      text: "AlphaSoft's data analytics platform revolutionized our decision-making process. We now have real-time insights that drive our business forward.",
+      name: "Latif Khan",
+      role: "Data Scientist, InsightCorp",
+      img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop&crop=face",
+    },
   ];
 
   const settings = {

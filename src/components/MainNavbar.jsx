@@ -16,10 +16,10 @@ import {
   FaPhone,
   FaFacebookF,
   FaTwitter,
-  FaInstagram,
   FaLinkedinIn,
   FaTimes,
 } from "react-icons/fa";
+    import { FaXTwitter } from 'react-icons/fa6';
 import logo from "../assets/img/AlphaSoft_logo.png";
 
 const MainNavbar = () => {
@@ -36,7 +36,7 @@ const MainNavbar = () => {
       <div className="bg-light py-2 border-bottom">
         <Container>
           <Row className="align-items-center text-center text-lg-start gy-2">
-            <Col lg={4} md={12}>
+            <Col lg={4} md={12} className="d-none d-lg-block">
               <div className="d-flex gap-3 justify-content-center justify-content-lg-start navbar-social">
                 <a
                   href="https://facebook.com"
@@ -50,7 +50,7 @@ const MainNavbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </a>
                
                 <a
@@ -74,7 +74,7 @@ const MainNavbar = () => {
                   e.preventDefault();
                   window.open("https://www.google.com/maps/search/?api=1&query=Main%20Pakavenue%20Road%2C%20Sahiwal%2C%2057000%2C%20Pakistan", "_blank");
                 }}
-                className="text-decoration-none text-primary small d-flex align-items-center me-2 top-link"
+                className="text-decoration-none text-primary small d-flex align-items-center me-2 top-link d-none d-lg-flex"
                 style={{ cursor: "pointer" }}
               >
                 <FaMapMarkerAlt size={20} className=" me-2" />

@@ -90,7 +90,7 @@ const Hero = () => {
         {heroImages.map((image, index) => (
           <Carousel.Item key={index}>
             <div
-              className="hero d-flex align-items-center"
+              className="hero d-flex align-items-center py-5 py-md-0"
               style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
@@ -144,7 +144,7 @@ const Hero = () => {
                         </Form.Group>
                         <Form.Group className="mb-3">
                           <Form.Control
-                            type="text"
+                            type="number"
                             placeholder="Phone Number"
                             name="from_phone"
                             value={formData.from_phone}

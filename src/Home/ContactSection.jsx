@@ -57,6 +57,7 @@ const ContactSection = () => {
           <div className="contact-info">
             <div className="phone-icon-circle">
               <a
+              className="bg-light rounded-5"
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
