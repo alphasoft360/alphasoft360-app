@@ -194,7 +194,7 @@ const ServicesForm = () => {
                   </Form.Group>
                   <Form.Group className="mb-3">
                     <ReCAPTCHA
-                      sitekey="your-recaptcha-site-key"
+                      sitekey="6LfPQfsrAAAAAH82IS4qAxpbZlO07oSDA54idfD-"
                       onChange={(token) => setCaptchaToken(token)}
                     />
                   </Form.Group>
