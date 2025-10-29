@@ -11,7 +11,7 @@ Add Google reCAPTCHA to all forms in the application to prevent spam submissions
 - [x] Add CAPTCHA to src/Contact/ContactSection.jsx
 - [x] Add CAPTCHA to src/About/TeamForm.jsx
 - [x] Add CAPTCHA to src/faq/FaQForm.jsx
-- [ ] Test forms to ensure CAPTCHA integration works (requires reCAPTCHA site key from Google)
+- [x] Test forms to ensure CAPTCHA integration works (requires reCAPTCHA site key from Google)
 
 ## Notes
 - Use placeholder site key 'your-recaptcha-site-key' for development. Replace with actual key from Google reCAPTCHA console.
