@@ -11,6 +11,8 @@ Add Google reCAPTCHA to all forms in the application to prevent spam submissions
 - [x] Add CAPTCHA to src/Contact/ContactSection.jsx
 - [x] Add CAPTCHA to src/About/TeamForm.jsx
 - [x] Add CAPTCHA to src/faq/FaQForm.jsx
+- [x] Add server-side CAPTCHA verification to api/sendEmail.js
+- [x] Update all forms to send CAPTCHA token to backend
 - [x] Test forms to ensure CAPTCHA integration works (requires reCAPTCHA site key from Google)
 
 ## Notes

@@ -68,6 +68,7 @@ const Hero = () => {
           phone: formData.from_phone,
           message: formData.message,
           subject: 'New Appointment Request from AlphaSoft Website',
+          token: captchaToken,
         }),
       });
 
@@ -166,7 +167,7 @@ const Hero = () => {
                         </Form.Group>
                         <Form.Group className="mb-3">
                           <ReCAPTCHA
-                            sitekey="6LfPQfsrAAAAAH82IS4qAxpbZlO07oSDA54idfD-"
+                            sitekey="6LcUZ_srAAAAALB4Ag29qgOfZ3_-UXLLYUXPmDud"
                             onChange={(token) => setCaptchaToken(token)}
                           />
                         </Form.Group>
