@@ -1,5 +1,6 @@
 import { Resend } from 'resend';
 import contactData from '../src/data/contactData.js';
+import fetch from 'node-fetch';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -8,7 +9,18 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, phone, website, message, subject } = req.body;
+  const { name, email, phone, website, message, subject, token } = req.body;
+
+  // Skip CAPTCHA verification for newsletter subscriptions (no token provided)
+  if (token) {
+    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`;
+    const verifyResponse = await fetch(verifyUrl, { method: 'POST' });
+    const verifyData = await verifyResponse.json();
+
+    if (!verifyData.success) {
+      return res.status(400).json({ error: 'CAPTCHA verification failed' });
+    }
+  }
 
   try {
     const { data, error } = await resend.emails.send({

@@ -54,6 +54,7 @@ const ServicesSection = () => {
           website: formData.website,
           message: formData.message,
           subject: 'New Team Inquiry from AlphaSoft Website',
+          token: captchaToken,
         }),
       });
 
@@ -166,7 +167,7 @@ const ServicesSection = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <ReCAPTCHA
-                    sitekey="6LfPQfsrAAAAAH82IS4qAxpbZlO07oSDA54idfD-"
+                    sitekey="6LcUZ_srAAAAALB4Ag29qgOfZ3_-UXLLYUXPmDud"
                     onChange={(token) => setCaptchaToken(token)}
                   />
                 </Form.Group>
