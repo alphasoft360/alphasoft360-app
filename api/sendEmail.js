@@ -11,17 +11,15 @@ export default async function handler(req, res) {
 
   const { name, email, phone, website, message, subject, token } = req.body;
 
-  // Verify reCAPTCHA token
-  if (!token) {
-    return res.status(400).json({ error: 'CAPTCHA token is required' });
-  }
+  // Skip CAPTCHA verification for newsletter subscriptions (no token provided)
+  if (token) {
+    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`;
+    const verifyResponse = await fetch(verifyUrl, { method: 'POST' });
+    const verifyData = await verifyResponse.json();
 
-  const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`;
-  const verifyResponse = await fetch(verifyUrl, { method: 'POST' });
-  const verifyData = await verifyResponse.json();
-
-  if (!verifyData.success) {
-    return res.status(400).json({ error: 'CAPTCHA verification failed' });
+    if (!verifyData.success) {
+      return res.status(400).json({ error: 'CAPTCHA verification failed' });
+    }
   }
 
   try {

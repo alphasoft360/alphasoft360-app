@@ -1,9 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdLocationOn, MdCall, MdEmail, MdAccessTime } from "react-icons/md";
+import { FaPaperPlane } from "react-icons/fa";
+import { toast } from 'react-toastify';
 import Logo from "../assets/img/AlphaSoft_logo1.png"; // Adjust the path as needed
 import contactData from "../data/contactData";
 
 const Footer = () => {
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+
+  const handleNewsletterSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!newsletterEmail) {
+      toast.error("Please enter your email address.");
+      return;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(newsletterEmail)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    toast.info('Subscribing to newsletter...');
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: newsletterEmail,
+          subject: 'Newsletter Subscription from AlphaSoft Website',
+          message: `New newsletter subscription request from: ${newsletterEmail}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to subscribe');
+      }
+
+      toast.success('✅ Successfully subscribed to newsletter!');
+      setNewsletterEmail('');
+    } catch (error) {
+      console.error('Newsletter subscription failed:', error);
+      toast.error('❌ Failed to subscribe. Please try again.');
+    }
+  };
+
   return (
     <footer id="rs-footer" className="rs-footer">
       <div
@@ -105,6 +149,24 @@ const Footer = () => {
                 Subscribe to our newsletter and stay updated with the latest
                 news & offers.
               </p>
+              <div className="newsletter-section">
+                <form onSubmit={handleNewsletterSubmit} className="email-form">
+                  <div className="email-container">
+                    <input
+                      type="email"
+                      placeholder="Enter your email to subscribe"
+                      className="email-input"
+                      value={newsletterEmail}
+                      onChange={(e) => setNewsletterEmail(e.target.value)}
+                      required
+                    />
+                    <button type="submit" className="send-btn">
+                      <FaPaperPlane />
+                    </button>
+                  </div>
+
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -145,6 +207,69 @@ const Footer = () => {
       <style>{`
         .footer-link:hover {
           font-weight: bold;
+        }
+        .newsletter-section {
+          margin-top: 15px;
+        }
+        .email-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        .email-container {
+          display: flex;
+          align-items: center;
+          background: #fff;
+          border-radius: 50px;
+          padding: 5px;
+          width: 320px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .email-input {
+          flex: 1;
+          border: none;
+          outline: none;
+          padding: 10px 15px;
+          font-size: 14px;
+          border-radius: 50px;
+          background: transparent;
+          color: #333;
+        }
+        .email-input::placeholder {
+          color: #666;
+          opacity: 1;
+        }
+        .send-btn {
+          background: linear-gradient(135deg, #005bea 0%, #00c6fb 100%);
+          border: none;
+          color: #fff;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s ease;
+        }
+        .send-btn:hover {
+          transform: scale(1.1);
+          box-shadow: 0 4px 10px rgba(0, 91, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+          .email-container {
+            width: 280px;
+          }
+          .email-input {
+            font-size: 13px;
+            padding: 8px 12px;
+          }
+          .send-btn {
+            width: 35px;
+            height: 35px;
+          }
         }
       `}</style>
     </footer>
