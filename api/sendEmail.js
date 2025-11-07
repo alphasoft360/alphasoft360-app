@@ -11,7 +11,8 @@ export default async function handler(req, res) {
 
   const { name, email, phone, website, message, subject, token } = req.body;
 
-  // Skip CAPTCHA verification for newsletter subscriptions (no token provided)
+  // CAPTCHA verification commented out
+  /*
   if (token) {
     const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`;
     const verifyResponse = await fetch(verifyUrl, { method: 'POST' });
@@ -21,6 +22,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'CAPTCHA verification failed' });
     }
   }
+  */
 
   try {
     const { data, error } = await resend.emails.send({

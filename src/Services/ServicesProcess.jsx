@@ -1,6 +1,7 @@
 // src/components/Servicesprocess2Section.js
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 // Step Card Component
 const Process2Step = ({ number, title, description }) => {
@@ -24,7 +25,7 @@ const Servicesprocess2 = () => {
             <h2>
               Our Services Delivery Process - How AlphaSoft Delivers Excellence
             </h2>
-            <button className="contact-us-button">Contact Us</button>
+            <Link  to="/contact"  className="contact-us-button text-decoration-none">Contact Us</Link>
           </div>
         </Col>
 

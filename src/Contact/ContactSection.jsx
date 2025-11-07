@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { toast } from "react-toastify";
-import ReCAPTCHA from 'react-google-recaptcha';
+// import ReCAPTCHA from 'react-google-recaptcha';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +14,7 @@ const ContactSection = () => {
   });
 
   const [validated, setValidated] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState(null);
+  // const [captchaToken, setCaptchaToken] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
@@ -40,10 +40,10 @@ const ContactSection = () => {
       !formData.name ||
       !formData.email ||
       !formData.phone ||
-      !formData.message ||
-      !captchaToken
+      !formData.message
+      // !captchaToken
     ) {
-      toast.error("Please fill in all fields and complete the CAPTCHA before submitting.");
+      toast.error("Please fill in all fields before submitting.");
       return;
     }
 
@@ -62,7 +62,7 @@ const ContactSection = () => {
           website: formData.website,
           message: formData.message,
           subject: 'New Contact Request from AlphaSoft Website',
-          token: captchaToken,
+          // token: captchaToken,
         }),
       });
 
@@ -203,12 +203,12 @@ const ContactSection = () => {
                   Please provide your message.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Form.Group className="mb-3">
+              {/* <Form.Group className="mb-3">
                 <ReCAPTCHA
                   sitekey="6LcUZ_srAAAAALB4Ag29qgOfZ3_-UXLLYUXPmDud"
                   onChange={(token) => setCaptchaToken(token)}
                 />
-              </Form.Group>
+              </Form.Group> */}
 
               <Button type="submit" className="submit-btn px-4 py-2">
                 Submit Now

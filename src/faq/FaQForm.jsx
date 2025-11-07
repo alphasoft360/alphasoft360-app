@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
-import { toast } from 'react-toastify';
-import { Resend } from 'resend';
-import ReCAPTCHA from 'react-google-recaptcha';
+import { toast } from "react-toastify";
+import { Resend } from "resend";
+// import ReCAPTCHA from 'react-google-recaptcha';
 
 const FaQForm = () => {
   const [formData, setFormData] = useState({
@@ -10,14 +10,14 @@ const FaQForm = () => {
     email: "",
     phone: "",
     website: "",
-    message: ""
+    message: "",
   });
-  const [captchaToken, setCaptchaToken] = useState(null);
+  // const [captchaToken, setCaptchaToken] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -28,22 +28,22 @@ const FaQForm = () => {
       !formData.name ||
       !formData.email ||
       !formData.phone ||
-      !formData.message ||
-      !captchaToken
+      !formData.message
+      // !captchaToken
     ) {
-      toast.error("Please fill in all fields and complete the CAPTCHA before submitting.");
+      toast.error("Please fill in all fields before submitting.");
       return;
     }
 
     console.log("Form data before sending:", formData);
 
-    toast.info('Submitting your request...');
+    toast.info("Submitting your request...");
 
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: formData.name,
@@ -51,28 +51,28 @@ const FaQForm = () => {
           phone: formData.phone,
           website: formData.website,
           message: formData.message,
-          subject: 'New Free Consultation Request from AlphaSoft Website',
-          token: captchaToken,
+          subject: "New Free Consultation Request from AlphaSoft Website",
+          // token: captchaToken,
         }),
       });
 
       if (!response.ok) {
-        throw new Error('Failed to send email');
+        throw new Error("Failed to send email");
         console.log("Response not ok:", response);
       }
 
       console.log("SUCCESS!");
-      toast.success('Email sent successfully!');
+      toast.success("Email sent successfully!");
       setFormData({
         name: "",
         email: "",
         phone: "",
         website: "",
-        message: ""
+        message: "",
       });
     } catch (error) {
       console.error("FAILED...", error);
-      toast.error('Failed to send email. Please try again later.');
+      toast.error("Failed to send email. Please try again later.");
     }
   };
 
@@ -82,12 +82,12 @@ const FaQForm = () => {
         <Row className=" Faq-Form justify-content-center">
           <Col lg={10} md={12}>
             <div className="text-center mb-4">
-            <h6
-  className="text-primary text-center text-uppercase fw-semibold mx-auto mb-3 p-2"
-  style={{ width: "fit-content", }}
->
-  Contact
-</h6>
+              <h6
+                className="text-primary text-center text-uppercase fw-semibold mx-auto mb-3"
+                style={{ width: "fit-content" }}
+              >
+                Contact
+              </h6>
 
               <h2 className="fw-bold">Request A Free Consultation</h2>
             </div>
@@ -155,12 +155,12 @@ const FaQForm = () => {
                   onChange={handleChange}
                 />
               </Form.Group>
-              <Form.Group className="mb-3">
+              {/* <Form.Group className="mb-3">
                 <ReCAPTCHA
                   sitekey="6LcUZ_srAAAAALB4Ag29qgOfZ3_-UXLLYUXPmDud"
                   onChange={(token) => setCaptchaToken(token)}
                 />
-              </Form.Group>
+              </Form.Group> */}
 
               <div className="text-center">
                 <Button

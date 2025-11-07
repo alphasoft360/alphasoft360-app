@@ -1,6 +1,6 @@
 // src/components/WorkingProcessSection.js
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const ProcessStep = ({ number, title, description }) => {
   return (
     <div className="process-step">
@@ -20,7 +20,7 @@ const WorkingProcessSection = () => {
         <h2>
           Our Software Development Process - How AlphaSoft Delivers Excellence
         </h2>
-        <button className="learn-more-btn">Contact Us</button>
+        <Link  to="/contact"  className="learn-more-btn text-decoration-none">Contact Us</Link>
       </div>
 
       {/* Right Section: Numbered Steps */}
