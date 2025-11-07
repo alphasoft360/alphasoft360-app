@@ -149,25 +149,7 @@ const Footer = () => {
                 Subscribe to our newsletter and stay updated with the latest
                 news & offers.
               </p>
-              <div className="newsletter-section">
-                <form onSubmit={handleNewsletterSubmit} className="email-form">
-                  <div className="email-container">
-                    <input
-                      type="email"
-                      placeholder="Enter your email to subscribe"
-                      className="email-input"
-                      value={newsletterEmail}
-                      onChange={(e) => setNewsletterEmail(e.target.value)}
-                      required
-                    />
-                    <button type="submit" className="send-btn">
-                      <FaPaperPlane />
-                    </button>
-                  </div>
-
-                </form>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col, ProgressBar, Button } from "react-bootstrap";
-
+import { Container, Row, Col, ProgressBar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import person1 from "../assets/img/person1.jpg";
 import person2 from "../assets/img/person2.jpg";
 import person3 from "../assets/img/person3.jpg";
@@ -77,9 +77,9 @@ const AboutSection = () => {
               </div>
               <ProgressBar now={95} />
             </div>
-            <Button className="px-4 py-2 rounded-pill learn-more-btn">
+            <Link to="/services" className="px-4 py-2 text-decoration-none rounded-pill learn-more-btn">
               Learn More
-            </Button>
+            </Link>
           </Col>
         </Row>
       </Container>

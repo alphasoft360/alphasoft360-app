@@ -20,21 +20,14 @@ const AboutSection = () => {
           <div className="col-lg-6">
             <span className="about-us-tag">ABOUT US</span>
             <h2 className="section-title mt-2">
-              We Are Increasing Business Success With Technology
+              Empowering Business Growth Through Innovative Technology
             </h2>
             <p className="lead mt-4">
-              Over 25 years working in IT services developing software
-              applications and mobile apps for clients all over the world.
+             With over 7 years of proven expertise in software development, our team excels in delivering high-performance web applications, IoT solutions, and seamless API integrations for clients across the globe. At our core, we prioritize innovation, scalability, and user-focused design — ensuring every digital product we create drives measurable results and long-term success for our partners.
             </p>
             <p className="mt-3">
-              We denounce with righteous indignation and dislike men who are so
-              beguiled and demoralized by the charms of pleasure of the moment,
-              so blinded by desire, that they cannot foresee the pain and
-              trouble that are bound to ensue; and equal blame belongs to those
-              who fail in their duty through weakness of will, which is the same
-              as saying.
+             We stand firmly against complacency and compromise, driven by the belief that true progress emerges from clarity, integrity, and purpose. In a world often distracted by short-term gains, we remain focused on creating lasting impact through dedication, innovation, and thoughtful execution. Our vision isn’t built on convenience — it’s built on commitment: a commitment to excellence, continuous growth, and doing what’s right, even when it’s not easy.
             </p>
-            <button className="btn btn-primary mt-4">Learn More</button>
           </div>
         </div>
       </div>

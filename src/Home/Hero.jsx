@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button, Carousel } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Resend } from 'resend';
-import ReCAPTCHA from 'react-google-recaptcha';
+// import ReCAPTCHA from 'react-google-recaptcha';
 
 // High-quality software company themed images from Unsplash
 const allHeroImages = [
@@ -24,7 +24,7 @@ const Hero = () => {
     from_phone: "",
     message: "",
   });
-  const [captchaToken, setCaptchaToken] = useState(null);
+  // const [captchaToken, setCaptchaToken] = useState(null);
 
   useEffect(() => {
     setRefreshSeed(Math.random());
@@ -47,10 +47,10 @@ const Hero = () => {
       !formData.from_name ||
       !formData.from_email ||
       !formData.from_phone ||
-      !formData.message ||
-      !captchaToken
+      !formData.message
+      // !captchaToken
     ) {
-      toast.error("Please fill in all fields and complete the CAPTCHA before submitting.");
+      toast.error("Please fill in all fields before submitting.");
       return;
     }
 
@@ -68,13 +68,13 @@ const Hero = () => {
           phone: formData.from_phone,
           message: formData.message,
           subject: 'New Appointment Request from AlphaSoft Website',
-          token: captchaToken,
+          // token: captchaToken,
         }),
       });
 
       if (!response.ok) {
         throw new Error('Failed to send email');
-        console.log("Response not ok:", response);
+        console.log("@:", response);
         const errorData = await response.json();
         console.error("Error data:", errorData);
       }
@@ -165,12 +165,12 @@ const Hero = () => {
                             onChange={handleChange}
                           />
                         </Form.Group>
-                        <Form.Group className="mb-3">
+                        {/* <Form.Group className="mb-3">
                           <ReCAPTCHA
                             sitekey="6LcUZ_srAAAAALB4Ag29qgOfZ3_-UXLLYUXPmDud"
                             onChange={(token) => setCaptchaToken(token)}
                           />
-                        </Form.Group>
+                        </Form.Group> */}
                         <Button type="submit" className="w-100 hero-submit-btn">
                           Submit Now
                         </Button>
