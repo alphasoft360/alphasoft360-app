@@ -64,7 +64,7 @@ const teamMembers = [
     role: "Full Stack Laravel Developer",
     bio: "Expert in agile methodologies with a track record of delivering enterprise projects on time and within scope.",
     contact: {
-      email: "alphasoft@gmail.com",
+      email: "maroofsultan.dev@gmail.com",
       phone: "+92 310 6510421",
     },
     biography: [
@@ -102,7 +102,7 @@ const teamMembers = [
     role: "Full Stack Developer",
     bio: "Skilled in modern web technologies with a proven ability to deliver robust, scalable, and efficient software solutions.",
     contact: {
-      email: "maroofsultan.dev@gmail.com",
+      email: "shahbaz.dev012@gmail.com",
       phone: "+92 310 6510421",
     },
     biography: [
@@ -213,9 +213,6 @@ const teamMembers = [
     contact: {
       email: "faizandevx@gmail.com",
       phone: "+92 347 3057550",
-      github: "https://github.com/faizandevx",
-      linkedin: "https://www.linkedin.com/in/faizan-ali-5aa430380/",
-      facebook: "https://www.facebook.com/faizan.rajput.716970",
     },
     biography: [
       "Faizan Ali is a dedicated Front-End Developer with expertise in creating responsive, high-performance, and visually appealing web interfaces using modern technologies like HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5.",
@@ -254,7 +251,7 @@ const teamMembers = [
     role: "Frontend Developer",
     bio: "Turning data and insights into meaningful business strategies that drive performance.",
     contact: {
-      email: "alphasoft@gmail.com",
+      email: "ahassandevx@gmail.com",
       phone: "+92 327 1888082",
     },
     biography: [
