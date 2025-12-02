@@ -135,6 +135,9 @@ const MainNavbar = () => {
             <Nav.Link as={Link} to="/services" className="text-white">
               Services
             </Nav.Link>
+            <Nav.Link as={Link} to="/projects" className="text-white">
+              Projects
+            </Nav.Link>
             <Nav.Link as={Link} to="/team" className="text-white">
               Team
             </Nav.Link>
@@ -194,6 +197,13 @@ const MainNavbar = () => {
               onClick={() => setShowOffcanvas(false)}
             >
               Services
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/projects"
+              onClick={() => setShowOffcanvas(false)}
+            >
+              Projects
             </Nav.Link>
             <Nav.Link
               as={Link}

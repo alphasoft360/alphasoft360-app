@@ -22,21 +22,21 @@ const teamMembers = [
       phone: "+92 370 6510421",
     },
     biography: [
-     " I am a highly experienced Full Stack Developer with over 7 years of expertise in web application development, IoT applications, and API integrations. Throughout my career, I have utilized cutting-edge technologies to build scalable, high-performance applications, delivering impactful solutions across various domains. Here’s a summary of my key skills and experience",         
+      " I am a highly experienced Full Stack Developer with over 7 years of expertise in web application development, IoT applications, and API integrations. Throughout my career, I have utilized cutting-edge technologies to build scalable, high-performance applications, delivering impactful solutions across various domains. Here’s a summary of my key skills and experience",
 
-"PHP & Laravel: I have a strong command over PHP and extensive experience developing web applications using PHP frameworks, with OpenCart and Laravel being areas of specialization for e-commerce and custom solutions.",
-"Node.js & Nest.js: I am proficient in Node.js and Nest.js, utilizing these frameworks to build efficient, scalable server-side applications. My expertise in real-time data processing and backend development enables me to deliver high-performance solutions.",
-"Frontend Technologies (Vue.js, Angular, React.js): I am adept at using modern front-end frameworks such as Vue.js, Angular, and React.js to build dynamic, responsive, and user-friendly web applications with a focus on superior user experiences and seamless interactions.",
+      "PHP & Laravel: I have a strong command over PHP and extensive experience developing web applications using PHP frameworks, with OpenCart and Laravel being areas of specialization for e-commerce and custom solutions.",
+      "Node.js & Nest.js: I am proficient in Node.js and Nest.js, utilizing these frameworks to build efficient, scalable server-side applications. My expertise in real-time data processing and backend development enables me to deliver high-performance solutions.",
+      "Frontend Technologies (Vue.js, Angular, React.js): I am adept at using modern front-end frameworks such as Vue.js, Angular, and React.js to build dynamic, responsive, and user-friendly web applications with a focus on superior user experiences and seamless interactions.",
 
-"Database Management (MySQL, MongoDB): I have extensive experience working with both relational (MySQL, Sequelize ORM) and NoSQL (MongoDB, Mongoose) databases, ensuring robust, efficient, and scalable data storage solutions for a variety of applications.",
+      "Database Management (MySQL, MongoDB): I have extensive experience working with both relational (MySQL, Sequelize ORM) and NoSQL (MongoDB, Mongoose) databases, ensuring robust, efficient, and scalable data storage solutions for a variety of applications.",
 
-"API Development & Integrations: I am skilled in designing and developing RESTful APIs, ensuring seamless communication and integration across different systems and applications, including third-party services and IoT platforms.",
+      "API Development & Integrations: I am skilled in designing and developing RESTful APIs, ensuring seamless communication and integration across different systems and applications, including third-party services and IoT platforms.",
 
-"E-commerce Solutions & Custom Dashboards: With a strong background in e-commerce, I specialize in creating custom e-commerce solutions, dashboards, and admin panels that enhance operational efficiency and user engagement.",
+      "E-commerce Solutions & Custom Dashboards: With a strong background in e-commerce, I specialize in creating custom e-commerce solutions, dashboards, and admin panels that enhance operational efficiency and user engagement.",
 
-"Throughout my career, I have demonstrated my ability to collaborate effectively with cross-functional teams, deliver high-quality products, and meet project deadlines while maintaining a focus on code reusability, performance optimization, and continuous improvement. I am passionate about tackling complex challenges, learning new technologies, and driving innovation in every project I work on.",
+      "Throughout my career, I have demonstrated my ability to collaborate effectively with cross-functional teams, deliver high-quality products, and meet project deadlines while maintaining a focus on code reusability, performance optimization, and continuous improvement. I am passionate about tackling complex challenges, learning new technologies, and driving innovation in every project I work on.",
 
-" #PHP #Laravel #NodeJS #NestJS #VueJS #Angular #ReactJS #MySQL #MongoDB #Sequelize #Mongoose #OpenCart #RESTfulAPI #Ecommerce #IoT #FullStack #RealTimeProcessing",
+      " #PHP #Laravel #NodeJS #NestJS #VueJS #Angular #ReactJS #MySQL #MongoDB #Sequelize #Mongoose #OpenCart #RESTfulAPI #Ecommerce #IoT #FullStack #RealTimeProcessing",
     ],
     skills: [
       { name: "Laravel Development", percentage: 95 },
@@ -64,7 +64,7 @@ const teamMembers = [
     role: "Full Stack Laravel Developer",
     bio: "Expert in agile methodologies with a track record of delivering enterprise projects on time and within scope.",
     contact: {
-      email: "alphasoft@gmail.com",
+      email: "maroofsultan.dev@gmail.com",
       phone: "+92 310 6510421",
     },
     biography: [
@@ -76,7 +76,7 @@ const teamMembers = [
     skills: [
       { name: "Laravel Development", percentage: 95 },
       { name: "Next.js", percentage: 80 },
-       { name: "Vue.js", percentage: 85 },
+      { name: "Vue.js", percentage: 85 },
       { name: "TypeScript", percentage: 90 },
       { name: "Symfony", percentage: 80 },
       { name: "OpenCart", percentage: 93 },
@@ -102,8 +102,8 @@ const teamMembers = [
     role: "Full Stack Developer",
     bio: "Skilled in modern web technologies with a proven ability to deliver robust, scalable, and efficient software solutions.",
     contact: {
-      email: "maroofsultan.dev@gmail.com",
-      phone: "+92 310 6510421",
+      email: "shahbaz.dev012@gmail.com",
+      phone: "+92 323 2155122",
     },
     biography: [
       "Muhammad Shahbaz is a Full Stack Developer experienced in Laravel, Next.js, Symfony, and OpenCart. He focuses on building responsive, high-performance web applications with clean and scalable architectures.",
@@ -167,42 +167,73 @@ const teamMembers = [
     },
   },
   // Arham Ali
-  {
-    id: "arham-ali",
-    image: arham_ali,
-    name: "Arham Ali",
-    role: "Frontend developer and Designer",
-    bio: "Expert in agile methodologies with a track record of delivering enterprise projects on time and within scope.",
-    contact: {
-      email: "arham.ali1323@gmail.com",
-      phone: "+92 321 10651323",
-    },
-    biography: [
-      "Arham Ali is a Front-End Developer skilled in React.js, JavaScript, Bootstrap, and Tailwind CSS. He specializes in designing responsive, high-performance web interfaces with clean, user-friendly layouts.",
-      "He combines his background in Economics with strong analytical and problem-solving skills, bringing data-driven thinking into his development approach.",
-      "Arham has worked on multiple projects including a portfolio website, a real estate UI, and a car rental app — focusing on optimization, modern design, and seamless user experience.",
-      "He’s passionate about continuous learning, collaboration, and building innovative solutions that merge creativity with functionality.",
-    ],
-    skills: [
-      { name: "React.js Development", percentage: 95 },
-      { name: "JavaScript (ES6+)", percentage: 92 },
-      { name: "HTML5 & CSS3", percentage: 96 },
-      { name: "Bootstrap & Tailwind CSS", percentage: 94 },
-      { name: "Responsive Web Design", percentage: 93 },
-      { name: "UI/UX Implementation", percentage: 90 },
-      { name: "Web Performance Optimization", percentage: 88 },
-      { name: "Git & GitHub", percentage: 85 },
-    ],
-    socials: {
-      stackoverflow: "https://stackoverflow.com/users/31519431/arham-ali",
-      linkedin: "https://www.linkedin.com/in/arham-ali1323/",
-      github: "https://github.com/arham-ali1323",
-    },
-    education: {
-      degree: "Bachelor’s in Economics",
-      institution: "University of Sahiwal, Sahiwal",
-    },
+ {
+  id: "arham-ali",
+  image: arham_ali,
+  name: "Arham Ali",
+  role: "Frontend Developer (React • Next.js • Tailwind)",
+  bio: "Frontend Developer at AlphaSoft360 specializing in clean, responsive, and modern web interfaces.",
+  contact: {
+    email: "arham.ali1323@gmail.com",
+    phone: "+92 321 1051323",
   },
+  biography: [
+    "Arham Ali is a Front-End Developer specializing in React, Next.js, JavaScript, and Tailwind CSS. He builds fast, scalable, and pixel-perfect user interfaces with a strong focus on modern UI/UX standards.",
+    "Currently working at AlphaSoft360, Arham contributes to the company's official portfolio website by implementing responsive layouts, reusable components, and smooth user experiences.",
+    "His experience includes transforming Figma/PSD designs into clean, production-ready interfaces, API integration, component-based architecture, and performance optimization.",
+    "Arham is passionate about continuous learning, collaboration, and building innovative frontend solutions that merge functionality with creativity."
+  ],
+  skills: [
+    { name: "Component-Based Architecture", percentage: 95 },
+    { name: "Responsive UI Frameworks", percentage: 93 },
+    { name: "API Integration", percentage: 90 },
+    { name: "React.js & Next.js", percentage: 92 },
+    { name: "TypeScript", percentage: 85 },
+    { name: "Tailwind CSS & Bootstrap", percentage: 94 },
+    { name: "HTML5 & CSS3", percentage: 96 },
+    { name: "JavaScript (ES6+)", percentage: 91 },
+    { name: "Performance Optimization", percentage: 88 },
+       { name: "Responsive Design", percentage: 94 },
+      { name: "Cross-Browser Compatibility", percentage: 89 },
+      { name: "UI/UX Principles", percentage: 87 },
+
+  ],
+  socials: {
+    stackoverflow: "https://stackoverflow.com/users/31519431/arham-ali",
+    linkedin: "https://www.linkedin.com/in/arham-ali-973359289/",
+    github: "https://github.com/arham-ali1323",
+    portfolio: "https://personal-portfoilio-five.vercel.app/",
+  },
+  education: {
+    degree: "Bachelor of Science in Economics",
+    institution: "University of Sahiwal, Sahiwal (2020 - 2024)",
+  },
+  experience: [
+    {
+      company: "AlphaSoft360",
+      role: "Frontend Developer",
+      duration: "March 2025 – Present",
+      details: [
+        "Developed and maintained the company’s official portfolio website using React.js and Tailwind CSS.",
+        "Built responsive layouts and reusable UI components.",
+        "Improved workflow through cleaner state management and structured component architecture.",
+        "Collaborated with backend teams for API integration and seamless user experiences."
+      ]
+    },
+    {
+      company: "Optimization Oasis",
+      role: "Frontend Developer",
+      duration: "March 2021 – October 2022",
+      details: [
+        "Built responsive websites using HTML, CSS, JavaScript, Bootstrap, Tailwind, and React.js.",
+        "Converted Figma/PSD designs into pixel-perfect modern interfaces.",
+        "Optimized page performance and ensured full cross-browser compatibility.",
+        "Worked directly with clients to gather requirements and deliver updates.",
+        "Improved front-end loading speed and wrote clean, maintainable code."
+      ]
+    }
+  ]
+},
   // fazain
   {
     id: "faizan-ali",
@@ -213,9 +244,6 @@ const teamMembers = [
     contact: {
       email: "faizandevx@gmail.com",
       phone: "+92 347 3057550",
-      github: "https://github.com/faizandevx",
-      linkedin: "https://www.linkedin.com/in/faizan-ali-5aa430380/",
-      facebook: "https://www.facebook.com/faizan.rajput.716970",
     },
     biography: [
       "Faizan Ali is a dedicated Front-End Developer with expertise in creating responsive, high-performance, and visually appealing web interfaces using modern technologies like HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5.",
@@ -254,7 +282,7 @@ const teamMembers = [
     role: "Frontend Developer",
     bio: "Turning data and insights into meaningful business strategies that drive performance.",
     contact: {
-      email: "alphasoft@gmail.com",
+      email: "ahassandevx@gmail.com",
       phone: "+92 327 1888082",
     },
     biography: [
@@ -278,8 +306,8 @@ const teamMembers = [
       github: "https://github.com/ahassandev",
     },
     education: {
-      degree: "BS Artificial Intelligence",
-      status: "1st Semester",
+      degree: "BS Information Technology",
+      status: "7th Semester",
     },
   },
   // sameer
@@ -291,9 +319,8 @@ const teamMembers = [
     bio: "A results-driven and creative Front-End Developer with a keen eye for design and a passion for crafting seamless, responsive, and engaging user experiences. Proficient in transforming ideas and UI concepts into high-performing, visually compelling websites using modern web technologies. Committed to clean, maintainable code and continuous learning to stay ahead in the ever-evolving world of web development.",
     contact: {
       email: "sameerxdev@gmail.com",
-      github: "https://github.com/Sameer-Builds",
-      linkedin: "https://www.linkedin.com/in/sameer-akhtar-601349381",
-    },
+      phone: "+92 321 6903462"
+     },
     biography: [
       "Sameer Akhtar is a dedicated Front-End Developer skilled in HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. He specializes in building clean, responsive, and modern interfaces that balance functionality with aesthetic appeal.",
       "He has a strong understanding of responsive web design, cross-browser compatibility, and UI/UX principles, ensuring that every project delivers an excellent user experience across all devices.",
@@ -303,6 +330,8 @@ const teamMembers = [
     skills: [
       { name: "HTML5", percentage: 90 },
       { name: "CSS3", percentage: 92 },
+      { name: "Tailwind CSS", percentage: 92 },
+      { name: "React.js", percentage: 72 },
       { name: "JavaScript (ES6+)", percentage: 80 },
       { name: "Bootstrap 5", percentage: 88 },
       { name: "Responsive Design", percentage: 93 },
@@ -328,19 +357,20 @@ const teamMembers = [
     bio: "A passionate and detail-oriented Front-End Developer with a strong focus on creating responsive, user-friendly, and visually appealing web interfaces. Skilled in transforming ideas into functional designs and ensuring seamless user experiences through clean, efficient, and accessible code. Always eager to learn new technologies and improve development workflows.",
     contact: {
       email: "ubaidullah.web.dev@gmail.com",
-      github: "https://github.com/Ubaidullah-Web-Dev",
-      linkedin: "https://www.linkedin.com/in/ubaidullah-sajid-21792a383",
-    },
+      phone: "+92 328 7231804",
+     },
     biography: [
       "Ubaidullah is a passionate Front-End Web Developer dedicated to crafting elegant, responsive, and accessible web experiences using modern technologies such as HTML5, CSS,  JavaScript (ES6+), and Bootstrap.",
       "He excels at transforming design concepts into functional, pixel-perfect interfaces that deliver exceptional user experiences across all devices and browsers.",
       "Currently pursuing Intermediate at Aspire Group of Colleges (2025), Ubaidullah continues to learn and grow as a developer, exploring new frameworks and tools to enhance his front-end expertise.",
     ],
     skills: [
-      { name: "HTML5", percentage: 95 },
+           { name: "HTML5", percentage: 90 },
       { name: "CSS3", percentage: 92 },
-      { name: "JavaScript (ES6+)", percentage: 90 },
-      { name: "Bootstrap", percentage: 88 },
+      { name: "Tailwind CSS", percentage: 92 },
+      { name: "React.js", percentage: 72 },
+      { name: "JavaScript (ES6+)", percentage: 80 },
+      { name: "Bootstrap 5", percentage: 88 },
       { name: "Responsive Design", percentage: 93 },
       { name: "Git & GitHub", percentage: 88 },
       { name: "Figma (UI Collaboration)", percentage: 82 },
@@ -364,10 +394,8 @@ const teamMembers = [
     bio: "A motivated and detail-oriented Front-End Developer currently pursuing a BS in Artificial Intelligence. Passionate about building modern, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and Bootstrap. Actively learning and improving skills to create clean, efficient code and deliver professional-quality digital experiences.",
     contact: {
       email: "ali.xdev77@gmail.com",
-      github: "https://github.com/Ali-xdev",
-      linkedin:
-        "https://www.linkedin.com/in/ali-hasssan-857929383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    },
+      phone: "+92 327 4686432",
+      },
     biography: [
       "Ali Hassan is an aspiring Front-End Web Developer currently pursuing a BS in Artificial Intelligence. He enjoys creating visually appealing, responsive, and functional web interfaces using HTML, CSS, JavaScript (ES6+), and Bootstrap 5.",
       "His focus lies in building modern web designs that are user-friendly, optimized, and accessible across all devices. Ali is dedicated to writing clean and efficient code that ensures smooth performance and great user experiences.",
@@ -375,13 +403,14 @@ const teamMembers = [
       "With a growing interest in AI and front-end technologies, Ali aims to merge creativity with technical expertise to craft innovative digital solutions.",
     ],
     skills: [
-      { name: "HTML5", percentage: 95 },
+           { name: "HTML5", percentage: 90 },
       { name: "CSS3", percentage: 92 },
-      { name: "JavaScript (ES6+)", percentage: 90 },
+      { name: "Tailwind CSS", percentage: 92 },
+      { name: "JavaScript (ES6+)", percentage: 80 },
       { name: "Bootstrap 5", percentage: 88 },
       { name: "Responsive Design", percentage: 93 },
       { name: "Git & GitHub", percentage: 88 },
-      { name: "Figma", percentage: 82 },
+      { name: "Figma (UI Collaboration)", percentage: 82 },
     ],
     socials: {
       linkedin:

@@ -21,6 +21,7 @@ import {
   SiSymfony,
   SiNextdotjs,
   SiAngular,
+  SiVuedotjs,
 } from "react-icons/si";
 
 const partners = [
@@ -38,6 +39,8 @@ const partners = [
   { id: 12, Icon: SiSymfony, name: "Symfony", link: "https://symfony.com/", hoverColor: "#000000" },
   { id: 13, Icon: SiNextdotjs, name: "Next.js", link: "https://nextjs.org/", hoverColor: "#000000" },
   { id: 14, Icon: SiAngular, name: "Angular", link: "https://angular.io/", hoverColor: "#DD0031" },
+  { id: 15, Icon: SiVuedotjs, name: "Vue.js", link: "https://vuejs.org/", hoverColor: "#4FC08D" },
+
 ];
 
 const PartnerSlider = () => {
