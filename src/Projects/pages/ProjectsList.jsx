@@ -1,5 +1,13 @@
+// src/Projects/pages/ProjectsList.jsx
 import React, { useState, useMemo } from 'react';
-import { Container, Row, Col, Form, Button, Badge } from 'react-bootstrap';
+import { 
+  Container, 
+  Row, 
+  Col, 
+  Form, 
+  Button, 
+  Badge 
+} from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
 import projectsData from '../data/projectsData';
 import '../styles/projects.css';
@@ -19,8 +27,8 @@ const ProjectsList = () => {
     return projectsData.filter(project => {
       const matchesCategory = selectedCategory === 'All' || project.category === selectedCategory;
       const matchesSearch = project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           project.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           project.techStack.some(tech => tech.toLowerCase().includes(searchTerm.toLowerCase()));
+                         project.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         project.techStack.some(tech => tech.toLowerCase().includes(searchTerm.toLowerCase()));
       return matchesCategory && matchesSearch;
     });
   }, [selectedCategory, searchTerm]);

@@ -1,13 +1,20 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { Container, Row, Col, Badge, Button, Card } from 'react-bootstrap';
-import { FaArrowLeft, FaExternalLinkAlt, FaGithub, FaCalendar, FaUser, FaClock } from 'react-icons/fa';
-import projectsData from '../data/projectsData';
-import '../styles/projects.css';
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+import { Container, Row, Col, Badge, Button, Card } from "react-bootstrap";
+import {
+  FaArrowLeft,
+  FaExternalLinkAlt,
+  FaGithub,
+  FaCalendar,
+  FaUser,
+  FaClock,
+} from "react-icons/fa";
+import projectsData from "../data/projectsData";
+import "../styles/projects.css";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
-  const project = projectsData.find(p => p.slug === slug);
+  const project = projectsData.find((p) => p.slug === slug);
 
   if (!project) {
     return (
@@ -15,8 +22,15 @@ const ProjectDetail = () => {
         <Container className="py-5">
           <div className="not-found text-center">
             <h2 className="mb-4">Project Not Found</h2>
-            <p className="text-muted mb-4">The project you're looking for doesn't exist.</p>
-            <Button as={Link} to="/projects" variant="primary" className="back-btn">
+            <p className="text-muted mb-4">
+              The project you're looking for doesn't exist.
+            </p>
+            <Button
+              as={Link}
+              to="/projects"
+              variant="primary"
+              className="back-btn"
+            >
               <FaArrowLeft className="me-2" /> Back to Projects
             </Button>
           </div>
@@ -34,15 +48,19 @@ const ProjectDetail = () => {
         </div>
         <Container>
           <div className="hero-content">
-            <Link to="/projects" className="back-link text-white text-decoration-none mb-4 d-inline-flex align-items-center">
+            <Link
+              to="/projects"
+              className="back-link text-white text-decoration-none mb-4 d-inline-flex align-items-center"
+            >
               <FaArrowLeft className="me-2" /> Back to Projects
             </Link>
             <div className="hero-info">
-              <Badge className="project-category bg-white text-dark mb-3">
-                {project.category}
-              </Badge>
-              <h1 className="display-3 fw-bold text-white mb-4">{project.title}</h1>
-              <p className="project-description lead text-white mb-4">{project.description}</p>
+              <h1 className="display-3 fw-bold text-white mb-4">
+                {project.title}
+              </h1>
+              <p className="project-description lead text-white mb-4">
+                {project.description}
+              </p>
               <div className="project-meta d-flex flex-wrap gap-3">
                 {project.client && (
                   <span className="meta-item text-white d-flex align-items-center">
@@ -56,7 +74,8 @@ const ProjectDetail = () => {
                 )}
                 {project.completionDate && (
                   <span className="meta-item text-white d-flex align-items-center">
-                    <FaCalendar className="me-2" /> {new Date(project.completionDate).toLocaleDateString()}
+                    <FaCalendar className="me-2" />{" "}
+                    {new Date(project.completionDate).toLocaleDateString()}
                   </span>
                 )}
               </div>
@@ -75,8 +94,10 @@ const ProjectDetail = () => {
                 <section className="content-section">
                   <h2 className="h2 fw-bold mb-4">Project Overview</h2>
                   <div className="overview-content">
-                    {project.overview.map((paragraph, index) => (
-                      <p key={index} className="text-muted">{paragraph}</p>
+                    {project.overview.map((paragraph) => (
+                      <p className="text-muted">
+                        {paragraph}
+                      </p>
                     ))}
                   </div>
                 </section>
@@ -108,7 +129,10 @@ const ProjectDetail = () => {
                           <h3 className="h5 fw-bold mb-3">🔍 Challenges</h3>
                           <ul className="list-unstyled">
                             {project.challenges.map((challenge, index) => (
-                              <li key={index} className="mb-2 ps-3 border-start border-danger border-2">
+                              <li
+                                key={index}
+                                className="mb-2 ps-3 border-start border-danger border-2"
+                              >
                                 {challenge}
                               </li>
                             ))}
@@ -122,7 +146,10 @@ const ProjectDetail = () => {
                           <h3 className="h5 fw-bold mb-3">✅ Solutions</h3>
                           <ul className="list-unstyled">
                             {project.solutions.map((solution, index) => (
-                              <li key={index} className="mb-2 ps-3 border-start border-success border-2">
+                              <li
+                                key={index}
+                                className="mb-2 ps-3 border-start border-success border-2"
+                              >
                                 {solution}
                               </li>
                             ))}
@@ -162,9 +189,9 @@ const ProjectDetail = () => {
                     <h3 className="h5 fw-bold mb-3">Project Links</h3>
                     <div className="project-links d-flex flex-column gap-2">
                       {project.liveDemo && (
-                        <Button 
-                          href={project.liveDemo} 
-                          target="_blank" 
+                        <Button
+                          href={project.liveDemo}
+                          target="_blank"
                           rel="noopener noreferrer"
                           variant="success"
                           className="link-btn live-demo"
@@ -173,9 +200,9 @@ const ProjectDetail = () => {
                         </Button>
                       )}
                       {project.github && (
-                        <Button 
-                          href={project.github} 
-                          target="_blank" 
+                        <Button
+                          href={project.github}
+                          target="_blank"
                           rel="noopener noreferrer"
                           variant="dark"
                           className="link-btn github"
@@ -194,20 +221,32 @@ const ProjectDetail = () => {
                     <Row className="stats-grid g-3">
                       <Col xs={4}>
                         <div className="stat-item text-center p-2 bg-light rounded">
-                          <div className="stat-number fw-bold text-primary">{project.features.length}</div>
-                          <div className="stat-label small text-muted text-uppercase">Features</div>
+                          <div className="stat-number fw-bold text-primary">
+                            {project.features.length}
+                          </div>
+                          <div className="stat-label small text-muted text-uppercase">
+                            Features
+                          </div>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="stat-item text-center p-2 bg-light rounded">
-                          <div className="stat-number fw-bold text-primary">{project.techStack.length}</div>
-                          <div className="stat-label small text-muted text-uppercase">Technologies</div>
+                          <div className="stat-number fw-bold text-primary">
+                            {project.techStack.length}
+                          </div>
+                          <div className="stat-label small text-muted text-uppercase">
+                            Technologies
+                          </div>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="stat-item text-center p-2 bg-light rounded">
-                          <div className="stat-number fw-bold text-primary">{project.challenges.length}</div>
-                          <div className="stat-label small text-muted text-uppercase">Challenges</div>
+                          <div className="stat-number fw-bold text-primary">
+                            {project.challenges.length}
+                          </div>
+                          <div className="stat-label small text-muted text-uppercase">
+                            Challenges
+                          </div>
                         </div>
                       </Col>
                     </Row>
