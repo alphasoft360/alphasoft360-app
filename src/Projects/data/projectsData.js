@@ -1,11 +1,20 @@
+// Import project images
+import auracart from '../../assets/img/projects/AuraCart.png';
+import pop from '../../assets/img/projects/POP.png';
+import findhere from '../../assets/img/projects/findhere.png';
+import isStartup from '../../assets/img/projects/isStartup.png';
+import paint from '../../assets/img/projects/paint.png';
+import skillorbit from '../../assets/img/projects/skillorbit.png';
+import thobban from '../../assets/img/projects/ذهويّن.png';
+import Shoeto from "../../assets/img/projects/Shoeto.png"
+
 const projectsData = [
   {
     id: "ecommerce-platform",
     slug: "ecommerce-platform",
-    title: "E-Commerce Platform",
-    category: "Web Development",
+    title: "Aura Cart Store",
     description: "A full-featured online shopping platform with payment integration and inventory management.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    image: auracart,
     techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "TailwindCSS"],
     features: [
       "User authentication and authorization",
@@ -43,10 +52,9 @@ const projectsData = [
   {
     id: "task-management-app",
     slug: "task-management-app",
-    title: "Task Management App",
-    category: "Productivity Tools",
+    title: "Shop 'N Hop App",
     description: "Collaborative task management application with real-time updates and team collaboration features.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    image: pop,
     techStack: ["Vue.js", "Express", "PostgreSQL", "Socket.io", "JWT", "Vuex"],
     features: [
       "Real-time collaboration",
@@ -84,10 +92,9 @@ const projectsData = [
   {
     id: "social-media-dashboard",
     slug: "social-media-dashboard",
-    title: "Social Media Dashboard",
-    category: "Analytics",
+    title: "Find-Here App",
     description: "Analytics dashboard for managing multiple social media accounts with comprehensive reporting.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    image: findhere,
     techStack: ["React", "D3.js", "Node.js", "MySQL", "Chart.js", "Material-UI"],
     features: [
       "Multi-platform integration",
@@ -125,10 +132,9 @@ const projectsData = [
   {
     id: "learning-management-system",
     slug: "learning-management-system",
-    title: "Learning Management System",
-    category: "Education",
+    title: "Skill Orbit",
     description: "Online learning platform with video streaming, quizzes, and progress tracking for educational institutions.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    image: skillorbit,
     techStack: ["Angular", "Spring Boot", "AWS", "MySQL", "WebRTC", "Bootstrap"],
     features: [
       "Video streaming platform",
@@ -166,10 +172,9 @@ const projectsData = [
   {
     id: "fitness-tracker-app",
     slug: "fitness-tracker-app",
-    title: "Fitness Tracker App",
-    category: "Health & Fitness",
+    title: "Is Startup",
     description: "Mobile fitness application with workout planning, nutrition tracking, and progress analytics.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    image: isStartup,
     techStack: ["React Native", "Firebase", "Node.js", "MongoDB", "Redux", "Expo"],
     features: [
       "Workout planning",
@@ -207,10 +212,9 @@ const projectsData = [
   {
     id: "real-estate-platform",
     slug: "real-estate-platform",
-    title: "Real Estate Platform",
-    category: "Real Estate",
+    title: "Kidezz",
     description: "Property listing platform with virtual tours, mortgage calculator, and agent matching system.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    image: paint,
     techStack: ["Next.js", "Prisma", "PostgreSQL", "Mapbox", "Stripe", "TypeScript"],
     features: [
       "Property listings with advanced search",
@@ -248,10 +252,9 @@ const projectsData = [
   {
     id: "food-delivery-system",
     slug: "food-delivery-system",
-    title: "Food Delivery System",
-    category: "Food & Beverage",
+    title: "ذهويّن",
     description: "Multi-restaurant food delivery platform with real-time order tracking and driver management.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    image: thobban,
     techStack: ["React", "Node.js", "MongoDB", "Socket.io", "Google Maps", "Stripe"],
     features: [
       "Multi-restaurant support",
@@ -286,129 +289,46 @@ const projectsData = [
     client: "QuickEats Delivery",
     duration: "5 months"
   },
-  {
-    id: "booking-management-system",
-    slug: "booking-management-system",
-    title: "Booking Management System",
-    category: "Hospitality",
-    description: "Hotel and accommodation booking platform with channel management and revenue optimization.",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    techStack: ["Vue.js", "Laravel", "MySQL", "Redis", "Stripe", "TailwindCSS"],
+   {
+    id: "real-estate-platform",
+    slug: "real-estate-platform",
+    title: "Shoeto",
+    description: "Property listing platform with virtual tours, mortgage calculator, and agent matching system.",
+    image: Shoeto,
+    techStack: ["Next.js", "Prisma", "PostgreSQL", "Mapbox", "Stripe", "TypeScript"],
     features: [
-      "Room availability management",
-      "Channel management",
-      "Dynamic pricing",
-      "Guest communication",
-      "Housekeeping scheduling",
-      "Revenue analytics",
-      "Multi-language support",
-      "Mobile check-in"
-    ],
-    overview: [
-      "A comprehensive booking management system designed for hotels and accommodation providers to streamline operations and maximize revenue.",
-      "The platform includes channel management to sync availability across multiple booking sites and dynamic pricing algorithms for revenue optimization.",
-      "With features like automated guest communication and housekeeping management, the system helps improve operational efficiency."
-    ],
-    challenges: [
-      "Syncing with multiple booking channels",
-      "Implementing dynamic pricing algorithms",
-      "Handling high concurrency during peak seasons",
-      "Ensuring data consistency across systems"
-    ],
-    solutions: [
-      "Built robust channel management API",
-      "Implemented machine learning pricing models",
-      "Used Redis for caching and queue management",
-      "Created distributed transaction system"
-    ],
-    github: "https://github.com/example/booking-system",
-    liveDemo: "https://example-booking.com",
-    completionDate: "2023-08-10",
-    client: "HospitalityPro",
-    duration: "6 months"
-  },
-  {
-    id: "inventory-management",
-    slug: "inventory-management",
-    title: "Inventory Management System",
-    category: "Business Solutions",
-    description: "Warehouse and inventory management solution with barcode scanning and supply chain optimization.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    techStack: ["Angular", "Django", "PostgreSQL", "Docker", "TensorFlow", "Material Design"],
-    features: [
-      "Barcode scanning",
-      "Real-time inventory tracking",
-      "Supply chain optimization",
-      "Automated reordering",
-      "Warehouse analytics",
-      "Multi-location support",
-      "Mobile app",
-      "API integrations"
-    ],
-    overview: [
-      "A sophisticated inventory management system that helps businesses optimize their supply chain and warehouse operations.",
-      "The platform includes AI-powered demand forecasting, automated reordering, and real-time tracking across multiple locations.",
-      "With barcode scanning and mobile support, warehouse operations become more efficient and error-free."
-    ],
-    challenges: [
-      "Implementing accurate demand forecasting",
-      "Integrating barcode scanning hardware",
-      "Handling large inventory datasets",
-      "Ensuring real-time data synchronization"
-    ],
-    solutions: [
-      "Used TensorFlow for forecasting models",
-      "Built universal barcode scanning API",
-      "Implemented efficient database indexing",
-      "Created real-time sync with WebSocket"
-    ],
-    github: "https://github.com/example/inventory-system",
-    liveDemo: "https://example-inventory.com",
-    completionDate: "2023-07-20",
-    client: "Logistics Solutions Ltd.",
-    duration: "8 months"
-  },
-  {
-    id: "healthcare-portal",
-    slug: "healthcare-portal",
-    title: "Healthcare Portal",
-    category: "Healthcare",
-    description: "Patient management system with telemedicine capabilities and electronic health records.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    techStack: ["React", "Python", "Django", "PostgreSQL", "WebRTC", "HIPAA Compliant"],
-    features: [
-      "Electronic health records",
-      "Telemedicine consultations",
+      "Property listings with advanced search",
+      "Virtual property tours",
+      "Mortgage calculator",
+      "Agent matching system",
+      "Document management",
       "Appointment scheduling",
-      "Prescription management",
-      "Billing system",
-      "Patient portal",
-      "Doctor dashboard",
-      "Lab results integration"
+      "Neighborhood insights",
+      "Market analytics"
     ],
     overview: [
-      "A comprehensive healthcare portal that facilitates patient care through telemedicine, electronic health records, and practice management.",
-      "The system ensures HIPAA compliance while providing easy access to health information for both patients and healthcare providers.",
-      "With features like video consultations and automated appointment reminders, the platform improves healthcare accessibility."
+      "A comprehensive real estate platform that connects buyers, sellers, and agents through an intuitive and feature-rich interface.",
+      "The platform includes innovative features like virtual tours, AI-powered property recommendations, and detailed market analytics.",
+      "Built with modern web technologies, the system provides fast performance and excellent user experience across all devices."
     ],
     challenges: [
-      "Ensuring HIPAA compliance",
-      "Implementing secure video consultations",
-      "Integrating with existing medical systems",
-      "Handling sensitive patient data"
+      "Implementing high-quality virtual tours",
+      "Creating accurate property valuation models",
+      "Handling large image and video files",
+      "Integrating with multiple listing services"
     ],
     solutions: [
-      "Implemented end-to-end encryption",
-      "Used secure WebRTC connections",
-      "Built HL7 integration interfaces",
-      "Created comprehensive audit trails"
+      "Used 3D virtual tour technology",
+      "Implemented machine learning models",
+      "Optimized media delivery with CDN",
+      "Built custom MLS integration APIs"
     ],
-    github: "https://github.com/example/healthcare-portal",
-    liveDemo: "https://example-healthcare.com",
-    completionDate: "2023-06-15",
-    client: "MediCare Plus",
-    duration: "9 months"
-  }
+    github: "https://github.com/example/real-estate",
+    liveDemo: "https://example-realestate.com",
+    completionDate: "2023-10-20",
+    client: "PropertyHub Inc.",
+    duration: "7 months"
+  },
 ];
 
 export default projectsData;

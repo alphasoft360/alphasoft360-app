@@ -7,6 +7,12 @@ import icon3 from "../assets/img/3.png";
 import icon4 from "../assets/img/4.png";
 import icon5 from "../assets/img/5.png";
 import icon6 from "../assets/img/6.png";
+import icon7 from "../assets/img/7.png";
+import icon8 from "../assets/img/8.png";
+import icon9 from "../assets/img/9.png";
+import icon10 from "../assets/img/10.png";
+import icon11 from "../assets/img/11.png";
+import icon12 from "../assets/img/12.png";
 
 // Data for services
 const services = [
@@ -25,9 +31,9 @@ const services = [
       "Custom web application development using modern frameworks and technologies to create responsive, user-friendly websites and web platforms.",
   },
   {
-    id: "analytic-solutions",
+    id: "ecommerce-solutions",
     img: icon3,
-    title: "Analytic Solutions",
+    title: "E-Commerce Solutions",
     description:
       "Advanced data analytics and business intelligence solutions to transform raw data into actionable insights for informed decision-making.",
   },
@@ -39,19 +45,61 @@ const services = [
       "Comprehensive cloud migration, infrastructure automation, and DevOps practices to accelerate development cycles and improve deployment reliability.",
   },
   {
-    id: "product-design",
+    id: "real-estate-management-solutions",
     img: icon5,
+    title: "Real Estate Management Solutions",
+    description:
+      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+  },
+   {
+id: "lms-education-solutions",
+img: icon6,
+title: "LMS & Education Solutions",
+description:
+"User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+   },
+   {
+    id: "healthcare-management-systems",
+    img: icon7,
+    title: "Healthcare Management Systems",
+    description:
+      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+   },
+   {
+    id: "ai-powered-automation",
+    img: icon8,
+    title: "AI-Powered Automation",
+    description:
+      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+   },
+   {
+    id: "iot-apps",
+    img: icon9,
+    title: "IOT Apps",
+    description:
+      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+   },
+  {
+    id: "product-design",
+    img: icon10,
     title: "Product & Design",
     description:
       "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
   },
   {
     id: "data-center",
-    img: icon6,
+    img: icon11,
      title: "Software Development",
     description:
       "Full-cycle software development services including custom applications, enterprise solutions, and system integrations tailored to your business needs.",
   },
+  {
+    id: "erp-crm-solutions",
+    img: icon12,
+    title: "ERP & CRM Solutions",
+    description:
+      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+  }
 ];
 
 const Services = () => {

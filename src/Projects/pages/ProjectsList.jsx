@@ -61,32 +61,13 @@ const ProjectsList = () => {
                 </div>
               </Form>
             </div>
-            
-            <div className="category-filters d-flex flex-wrap justify-content-center gap-2">
-              {categories.map(category => (
-                <Button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  variant={selectedCategory === category ? 'primary' : 'outline-light'}
-                  className="category-btn"
-                >
-                  {category}
-                </Button>
-              ))}
-            </div>
           </div>
         </Container>
       </div>
 
       {/* Projects Grid */}
       <div className="projects-section py-5">
-        <Container>
-          <div className="projects-stats text-center mb-4">
-            <Badge bg="secondary" className="results-count">
-              Showing {filteredProjects.length} of {projectsData.length} projects
-            </Badge>
-          </div>
-          
+        <Container>          
           {filteredProjects.length > 0 ? (
             <Row className="projects-grid g-4">
               {filteredProjects.map(project => (
