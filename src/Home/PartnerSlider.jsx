@@ -22,7 +22,11 @@ import {
   SiNextdotjs,
   SiAngular,
   SiVuedotjs,
+  SiDocker,
+  SiMongodb,
+  SiExpress,
 } from "react-icons/si";
+
 
 const partners = [
   { id: 1, Icon: DiHtml5, name: "HTML5", link: "https://developer.mozilla.org/en-US/docs/Web/HTML", hoverColor: "#E34F26" },
@@ -40,9 +44,10 @@ const partners = [
   { id: 13, Icon: SiNextdotjs, name: "Next.js", link: "https://nextjs.org/", hoverColor: "#000000" },
   { id: 14, Icon: SiAngular, name: "Angular", link: "https://angular.io/", hoverColor: "#DD0031" },
   { id: 15, Icon: SiVuedotjs, name: "Vue.js", link: "https://vuejs.org/", hoverColor: "#4FC08D" },
-
+  { id: 16, Icon: SiDocker, name: "Docker", link: "https://www.docker.com/", hoverColor: "#2496ED" },
+  { id: 17, Icon: SiMongodb, name: "MongoDB", link: "https://www.mongodb.com/", hoverColor: "#47A248" },
+  { id: 18, Icon: SiExpress, name: "Express.js", link: "https://expressjs.com/", hoverColor: "#000000" },
 ];
-
 const PartnerSlider = () => {
   const [slidesToShow, setSlidesToShow] = useState(5);
 
