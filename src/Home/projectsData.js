@@ -3,9 +3,9 @@ import auracart from '../assets/img/projects/AuraCart.png';
 import pop from '../assets/img/projects/POP.png';
 import findhere from '../assets/img/projects/findhere.png';
 import isStartup from '../assets/img/projects/isStartup.png';
-import paint from '../assets/img/projects/paint.png';
+import Kidezz from '../assets/img/projects/Kidezz.png';
 import skillorbit from '../assets/img/projects/skillorbit.png';
-import thobban from '../assets/img/projects/ذهويّن.png';
+import ذهويّن from '../assets/img/projects/ذهويّن.png';
 import shoeto from "../assets/img/projects/Shoeto.png";
 
 const projectsData = [
@@ -123,7 +123,7 @@ const projectsData = [
     slug: "digital-art-platform",
     title: "Digital Canvas",
     description: "An online platform for digital artists to create, share, and sell their artwork.",
-    img: paint,
+    img: Kidezz,
     techStack: ["React", "Node.js", "MongoDB", "Stripe", "WebSockets"],
     features: [
       "Digital art creation tools",
@@ -169,7 +169,7 @@ const projectsData = [
     slug: "arabic-platform",
     title: "Thobban",
     description: "A platform for Arabic language learning and cultural exchange.",
-    img: thobban,
+    img: ذهويّن,
     techStack: ["React Native", "Node.js", "MongoDB", "Google Cloud", "Docker"],
     features: [
       "Interactive Arabic lessons",
