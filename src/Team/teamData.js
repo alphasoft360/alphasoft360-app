@@ -61,7 +61,7 @@ const teamMembers = [
     id: "maroof-sultan",
     image: maroof_sultan,
     name: "Maroof Sultan",
-    role: "Full Stack Laravel Developer",
+    role: "Software Engineer",
     bio: "Expert in agile methodologies with a track record of delivering enterprise projects on time and within scope.",
     contact: {
       email: "maroofsultan.dev@gmail.com",

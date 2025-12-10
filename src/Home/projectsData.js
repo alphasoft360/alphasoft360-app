@@ -1,149 +1,215 @@
+// Import project images
+import auracart from '../assets/img/projects/AuraCart.png';
+import pop from '../assets/img/projects/POP.png';
+import findhere from '../assets/img/projects/findhere.png';
+import isStartup from '../assets/img/projects/isStartup.png';
+import Kidezz from '../assets/img/projects/Kidezz.png';
+import skillorbit from '../assets/img/projects/skillorbit.png';
+import ذهويّن from '../assets/img/projects/ذهويّن.png';
+import shoeto from "../assets/img/projects/Shoeto.png";
+
 const projectsData = [
   {
-    id: "web-development",
-    img: "https://img.freepik.com/free-photo/programmer-working-web-development-code-engineer-programming-with-c-coding-website-design-database-management_90220-248.jpg?w=1380",
-    title: "Web Development",
-    category: "Full Stack Solutions",
-    description:
-      "Modern web applications built with React, Node.js, and scalable cloud infrastructure.",
-    overview: [
-      "Our Web Development project showcases cutting-edge full-stack solutions that combine modern frontend technologies with robust backend systems. This project demonstrates our expertise in creating scalable, performant web applications that deliver exceptional user experiences.",
-      "The application features responsive design, real-time data synchronization, and advanced security measures. We implemented modern development practices including automated testing, continuous integration, and deployment pipelines.",
-      "Key technologies used include React for the frontend, Node.js with Express for the backend, MongoDB for data storage, and AWS for cloud infrastructure. The project includes comprehensive documentation and follows industry best practices.",
-    ],
-    technologies: [
-      { name: "React", percentage: 95 },
-      { name: "Node.js", percentage: 90 },
-      { name: "MongoDB", percentage: 85 },
-      { name: "AWS", percentage: 80 },
-      { name: "Docker", percentage: 75 },
-      { name: "CI/CD", percentage: 85 },
-    ],
+    id: "ecommerce-platform",
+    slug: "ecommerce-platform",
+    title: "Aura Cart Store",
+    description: "A full-featured online shopping platform with payment integration and inventory management.",
+    img: auracart,
+    techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "TailwindCSS"],
     features: [
-      "Responsive Design",
-      "Real-time Data Sync",
-      "User Authentication",
-      "API Integration",
-      "Performance Optimization",
-      "Security Implementation",
+      "User authentication and authorization",
+      "Product catalog with search and filters",
+      "Shopping cart and wishlist",
+      "Secure payment processing",
+      "Order tracking and management",
+      "Admin dashboard",
+      "Real-time inventory updates",
+      "Email notifications"
     ],
+    overview: [
+      "A comprehensive e-commerce solution built with modern web technologies, providing a seamless shopping experience for customers and robust management tools for administrators.",
+      "The platform features a responsive design that works across all devices, with optimized performance and security measures to protect user data and transactions.",
+      "Built with scalability in mind, the system can handle thousands of concurrent users and process orders efficiently with real-time inventory management."
+    ],
+    challenges: [
+      "Implementing real-time inventory synchronization across multiple devices",
+      "Optimizing database queries for fast product searches",
+      "Ensuring PCI compliance for payment processing",
+      "Creating a responsive UI that works on all screen sizes"
+    ],
+    solutions: [
+      "Used WebSocket connections for real-time updates",
+      "Implemented database indexing and caching strategies",
+      "Integrated Stripe as a PCI-compliant payment processor",
+      "Adopted mobile-first design principles with TailwindCSS"
+    ],
+    github: "https://github.com/example/ecommerce-platform",
+    liveDemo: "https://example-ecommerce.com",
+    completionDate: "2024-03-15",
+    client: "TechMart Solutions",
+    duration: "4 months"
   },
   {
-    id: "mobile-app-development",
-    img: "https://img.freepik.com/free-photo/mobile-banking-concept-banking-technology-banner-mobile-application-interface-3d-illustration_73903-480.jpg?w=1380",
-    title: "Mobile App Development",
-    category: "Cross-Platform Apps",
-    description:
-      "Native and hybrid mobile apps for iOS and Android with sleek UI/UX design.",
-    overview: [
-      "This mobile application project demonstrates our expertise in cross-platform development, delivering native-like experiences on both iOS and Android platforms. The app features intuitive UI/UX design and seamless performance across all devices.",
-      "We utilized React Native for cross-platform compatibility, ensuring consistent functionality and appearance on both platforms. The project includes offline capabilities, push notifications, and integration with various APIs.",
-      "The development process followed agile methodologies with regular client feedback and iterative improvements. We implemented comprehensive testing strategies including unit tests, integration tests, and user acceptance testing.",
-    ],
-    technologies: [
-      { name: "React Native", percentage: 95 },
-      { name: "Redux", percentage: 90 },
-      { name: "Firebase", percentage: 85 },
-      { name: "REST APIs", percentage: 88 },
-      { name: "SQLite", percentage: 80 },
-      { name: "Jest", percentage: 85 },
-    ],
+    id: "mobile-app",
+    slug: "mobile-app",
+    title: "POP - Point of Purchase",
+    description: "A mobile application for managing point of purchase operations and inventory.",
+    img: pop,
+    techStack: ["React Native", "Firebase", "Redux", "Node.js", "MongoDB"],
     features: [
-      "Cross-Platform Compatibility",
-      "Offline Mode",
-      "Push Notifications",
-      "In-App Purchases",
-      "Social Integration",
-      "Analytics Integration",
+      "Barcode/QR code scanning",
+      "Real-time inventory updates",
+      "Offline functionality",
+      "Sales reporting and analytics",
+      "User role management"
     ],
+    overview: [
+      "POP revolutionizes retail operations by providing a comprehensive mobile solution for point of purchase management.",
+      "The app enables businesses to process transactions, manage inventory, and generate reports from any mobile device.",
+      "With offline capabilities, businesses can continue operations even without internet connectivity, with automatic sync when back online."
+    ],
+    completionDate: "2024-02-20",
+    client: "Retail Solutions Inc.",
+    duration: "5 months"
   },
   {
-    id: "cloud-solutions",
-    img: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    title: "Cloud Solutions",
-    category: "DevOps & Infrastructure",
-    description:
-      "Secure and scalable cloud infrastructure powered by modern DevOps tools.",
-    overview: [
-      "Our Cloud Solutions project represents a comprehensive cloud migration and infrastructure modernization initiative. We successfully migrated legacy systems to a scalable, secure cloud environment while maintaining 99.9% uptime.",
-      "The project involved containerization of applications, implementation of microservices architecture, and establishment of robust DevOps pipelines. We utilized Infrastructure as Code (IaC) principles for automated deployments and scaling.",
-      "Security was paramount, implementing multi-layer protection including encryption, access controls, and continuous monitoring. The solution provides auto-scaling capabilities and disaster recovery mechanisms.",
-    ],
-    technologies: [
-      { name: "AWS", percentage: 95 },
-      { name: "Docker", percentage: 90 },
-      { name: "Kubernetes", percentage: 85 },
-      { name: "Terraform", percentage: 88 },
-      { name: "Jenkins", percentage: 80 },
-      { name: "Monitoring Tools", percentage: 85 },
-    ],
+    id: "find-here",
+    slug: "find-here",
+    title: "FindHere",
+    description: "A location-based service for finding nearby points of interest and businesses.",
+    img: findhere,
+    techStack: ["React", "Google Maps API", "Node.js", "MongoDB", "Express"],
     features: [
-      "Auto-Scaling",
-      "Load Balancing",
-      "Disaster Recovery",
-      "Security Monitoring",
-      "Cost Optimization",
-      "Performance Monitoring",
+      "Real-time location tracking",
+      "Business search and filtering",
+      "User reviews and ratings",
+      "Route planning",
+      "Offline maps"
     ],
+    overview: [
+      "FindHere helps users discover and navigate to nearby businesses and points of interest with ease.",
+      "The platform provides detailed business information, user reviews, and real-time directions.",
+      "Business owners can manage their listings and engage with customers through the integrated review system."
+    ],
+    completionDate: "2024-01-10",
+    client: "Urban Explorer Ltd.",
+    duration: "6 months"
   },
   {
-    id: "ai-machine-learning",
-    img: "https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?w=1380",
-    title: "AI & Machine Learning",
-    category: "Smart Solutions",
-    description:
-      "Empowering automation and analytics using advanced machine learning algorithms.",
-    overview: [
-      "This AI/ML project demonstrates our capabilities in developing intelligent systems that automate complex processes and provide predictive analytics. The solution uses machine learning algorithms to analyze large datasets and generate actionable insights.",
-      "We implemented natural language processing for text analysis, computer vision for image recognition, and predictive modeling for forecasting. The system includes real-time processing capabilities and integrates with existing business workflows.",
-      "The project follows MLOps best practices with automated model training, deployment, and monitoring. We ensured ethical AI implementation with bias detection and explainable AI features.",
-    ],
-    technologies: [
-      { name: "Python", percentage: 95 },
-      { name: "TensorFlow", percentage: 90 },
-      { name: "PyTorch", percentage: 85 },
-      { name: "Scikit-learn", percentage: 88 },
-      { name: "NLP Libraries", percentage: 80 },
-      { name: "Computer Vision", percentage: 85 },
-    ],
+    id: "startup-platform",
+    slug: "startup-platform",
+    title: "iStartup",
+    description: "A platform connecting startups with investors and mentors.",
+    img: isStartup,
+    techStack: ["Vue.js", "Django", "PostgreSQL", "AWS", "Docker"],
     features: [
-      "Predictive Analytics",
-      "Natural Language Processing",
-      "Computer Vision",
-      "Real-time Processing",
-      "Automated Decision Making",
-      "Model Explainability",
+      "Startup profiles and pitching",
+      "Investor matching",
+      "Mentorship programs",
+      "Funding rounds management",
+      "Analytics dashboard"
     ],
+    overview: [
+      "iStartup bridges the gap between innovative startups and potential investors in a streamlined platform.",
+      "The platform facilitates connections, funding opportunities, and mentorship programs to help startups grow.",
+      "With advanced matching algorithms, startups can find the right investors and mentors based on their industry and needs."
+    ],
+    completionDate: "2023-12-05",
+    client: "Venture Connect",
+    duration: "7 months"
   },
   {
-    id: "cybersecurity",
-    img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    title: "Cybersecurity",
-    category: "Security Solutions",
-    description:
-      "Enterprise-level protection with robust data encryption and security monitoring.",
-    overview: [
-      "Our Cybersecurity project involved implementing comprehensive security solutions for enterprise environments. We developed a multi-layered security framework that protects against various cyber threats while ensuring compliance with industry standards.",
-      "The solution includes advanced threat detection, real-time monitoring, and automated response mechanisms. We implemented encryption protocols, access control systems, and secure communication channels.",
-      "The project features continuous vulnerability assessment, penetration testing, and security awareness training. We established incident response procedures and disaster recovery plans.",
-    ],
-    technologies: [
-      { name: "SIEM Systems", percentage: 95 },
-      { name: "Encryption Tools", percentage: 90 },
-      { name: "Firewall Systems", percentage: 85 },
-      { name: "IDS/IPS", percentage: 88 },
-      { name: "Compliance Tools", percentage: 80 },
-      { name: "Monitoring Systems", percentage: 85 },
-    ],
+    id: "digital-art-platform",
+    slug: "digital-art-platform",
+    title: "Digital Canvas",
+    description: "An online platform for digital artists to create, share, and sell their artwork.",
+    img: Kidezz,
+    techStack: ["React", "Node.js", "MongoDB", "Stripe", "WebSockets"],
     features: [
-      "Threat Detection",
-      "Encryption",
-      "Access Control",
-      "Incident Response",
-      "Compliance Management",
-      "Security Monitoring",
+      "Digital art creation tools",
+      "Marketplace for artwork",
+      "Live collaboration",
+      "NFT integration",
+      "Artist portfolios"
     ],
+    overview: [
+      "Digital Canvas provides artists with powerful tools to create and monetize their digital artwork.",
+      "The platform supports various digital art formats and offers features like layers, brushes, and effects.",
+      "Artists can sell their work directly to collectors or create limited edition NFTs with blockchain verification."
+    ],
+    completionDate: "2023-11-15",
+    client: "ArtTech Innovations",
+    duration: "8 months"
   },
+  {
+    id: "learning-platform",
+    slug: "learning-platform",
+    title: "SkillOrbit",
+    description: "An online learning platform with courses on various professional skills.",
+    img: skillorbit,
+    techStack: ["Angular", "NestJS", "PostgreSQL", "AWS S3", "Docker"],
+    features: [
+      "Interactive course content",
+      "Progress tracking",
+      "Certification upon completion",
+      "Instructor dashboards",
+      "Discussion forums"
+    ],
+    overview: [
+      "SkillOrbit offers high-quality online courses designed to help professionals upskill and advance their careers.",
+      "The platform features interactive content, hands-on projects, and personalized learning paths.",
+      "Instructors can create and manage their courses with comprehensive analytics on student engagement and performance."
+    ],
+    completionDate: "2023-10-20",
+    client: "EduTech Solutions",
+    duration: "9 months"
+  },
+  {
+    id: "arabic-platform",
+    slug: "arabic-platform",
+    title: "Thobban",
+    description: "A platform for Arabic language learning and cultural exchange.",
+    img: ذهويّن,
+    techStack: ["React Native", "Node.js", "MongoDB", "Google Cloud", "Docker"],
+    features: [
+      "Interactive Arabic lessons",
+      "Speech recognition",
+      "Cultural insights",
+      "Progress tracking",
+      "Community features"
+    ],
+    overview: [
+      "Thobban makes learning Arabic engaging and effective through immersive lessons and cultural context.",
+      "The platform uses speech recognition to help learners perfect their pronunciation and conversational skills.",
+      "With a focus on real-world usage, students learn both Modern Standard Arabic and regional dialects."
+    ],
+    completionDate: "2023-09-25",
+    client: "Language Bridge",
+    duration: "10 months"
+  },
+  {
+    id: "ecommerce-shoes",
+    slug: "ecommerce-shoes",
+    title: "Shoeto",
+    description: "An e-commerce platform specializing in premium and limited-edition footwear.",
+    img: shoeto,
+    techStack: ["Next.js", "Node.js", "MongoDB", "Stripe", "Redux"],
+    features: [
+      "Product customization",
+      "Augmented reality try-on",
+      "Size recommendation engine",
+      "Secure checkout",
+      "Order tracking"
+    ],
+    overview: [
+      "Shoeto offers a premium shopping experience for footwear enthusiasts, featuring the latest styles and exclusive releases.",
+      "The platform includes innovative features like AR try-on and a size recommendation system to reduce returns.",
+      "With a focus on mobile-first design, customers can browse and shop seamlessly across all devices."
+    ],
+    completionDate: "2023-08-30",
+    client: "Urban Steps",
+    duration: "6 months"
+  }
 ];
 
 export default projectsData;

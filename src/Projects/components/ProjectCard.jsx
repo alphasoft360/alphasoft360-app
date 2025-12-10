@@ -21,14 +21,14 @@ const ProjectCard = ({ project }) => {
           }}
         >
           <div className="tech-stack d-flex flex-wrap gap-2">
-            {project.techStack.slice(0, 3).map((tech, index) => (
-              <Badge key={index} bg="light" text="dark">
+            {project.techStack?.slice(0, 3).map((tech, index) => (
+              <Badge key={index} bg="light" text="dark" className="tech-tag">
                 {tech}
               </Badge>
             ))}
 
-            {project.techStack.length > 3 && (
-              <Badge bg="light" text="dark">
+            {project.techStack?.length > 3 && (
+              <Badge bg="light" text="dark" className="tech-tag">
                 +{project.techStack.length - 3}
               </Badge>
             )}

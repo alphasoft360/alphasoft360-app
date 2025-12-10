@@ -1,52 +1,60 @@
+// Import project images
+import auracart from '../../assets/img/projects/AuraCart.png';
+import pop from '../../assets/img/projects/POP.png';
+import findhere from '../../assets/img/projects/findhere.png';
+import isStartup from '../../assets/img/projects/isStartup.png';
+import Kidezz from '../../assets/img/projects/Kidezz.png';
+import skillorbit from '../../assets/img/projects/skillorbit.png';
+import dhahween from '../../assets/img/projects/ذهويّن.png';
+import Shoeto from "../../assets/img/projects/Shoeto.png"
+
 const projectsData = [
+  // project 1
   {
     id: "ecommerce-platform",
     slug: "ecommerce-platform",
-    title: "E-Commerce Platform",
-    category: "Web Development",
-    description: "A full-featured online shopping platform with payment integration and inventory management.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    title: "Aura Cart Store",
+    description: "Aura Cart Store is your ultimate destination for premium, high-quality products, offering a seamless online shopping experience. With fast shipping, easy returns, and an intuitive interface, we aim to deliver a hassle-free shopping journey.",
+    image: auracart,
     techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "TailwindCSS"],
     features: [
       "User authentication and authorization",
-      "Product catalog with search and filters",
-      "Shopping cart and wishlist",
-      "Secure payment processing",
-      "Order tracking and management",
-      "Admin dashboard",
+      "Product catalog with advanced search and filters",
+      "Shopping cart and wishlist functionality",
+      "Secure payment processing with Stripe",
+      "Real-time order tracking and management",
+      "Admin dashboard with full control over products and orders",
       "Real-time inventory updates",
-      "Email notifications"
+      "Automated email notifications for users"
     ],
     overview: [
-      "A comprehensive e-commerce solution built with modern web technologies, providing a seamless shopping experience for customers and robust management tools for administrators.",
-      "The platform features a responsive design that works across all devices, with optimized performance and security measures to protect user data and transactions.",
-      "Built with scalability in mind, the system can handle thousands of concurrent users and process orders efficiently with real-time inventory management."
+      "Aura Cart Store is a cutting-edge e-commerce platform built with modern web technologies. The platform provides a seamless and secure shopping experience for customers, while offering powerful tools for administrators to manage products, orders, and customers efficiently.",
+      "Responsive Design: The platform is designed to provide a flawless shopping experience across all devices",
+      "Performance & Security: Optimized for fast load times and built with robust security measures to protect user data and transactions.",
+      "Scalable Architecture: The system is built to handle thousands of concurrent users, with efficient order processing and real-time inventory updates."
     ],
     challenges: [
-      "Implementing real-time inventory synchronization across multiple devices",
-      "Optimizing database queries for fast product searches",
-      "Ensuring PCI compliance for payment processing",
-      "Creating a responsive UI that works on all screen sizes"
+      "Ensuring real-time inventory synchronization across multiple devices",
+      "Optimizing database queries for fast, efficient product searches",
+      "Maintaining PCI compliance for secure payment processing",
+      "Designing a responsive and mobile-friendly user interface for all screen sizes"
     ],
     solutions: [
-      "Used WebSocket connections for real-time updates",
-      "Implemented database indexing and caching strategies",
-      "Integrated Stripe as a PCI-compliant payment processor",
-      "Adopted mobile-first design principles with TailwindCSS"
+      "Real-time updates: Utilized WebSocket connections to keep inventory and order data synchronized across devices.",
+      "Database Optimization: Implemented indexing and caching strategies to optimize search speed and system performance.",
+      "PCI Compliance: Integrated Stripe as the payment processor, ensuring secure and compliant transactions.",
+      "Responsive Design: Applied mobile-first design principles using TailwindCSS to ensure a seamless experience on all screen sizes."
     ],
-    github: "https://github.com/example/ecommerce-platform",
-    liveDemo: "https://example-ecommerce.com",
-    completionDate: "2024-03-15",
-    client: "TechMart Solutions",
-    duration: "4 months"
+    duration: "4 months",
+    category: "E-Commerce"
   },
+  // project 2
   {
     id: "task-management-app",
     slug: "task-management-app",
-    title: "Task Management App",
-    category: "Productivity Tools",
-    description: "Collaborative task management application with real-time updates and team collaboration features.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    title: "Shop 'N Hop App",
+    description: "Shop 'N Hop App: Discover amazing deals, track your purchases, and shop effortlessly on-the-go. Your personalized shopping experience, anytime, anywhere!",
+    image: pop,
     techStack: ["Vue.js", "Express", "PostgreSQL", "Socket.io", "JWT", "Vuex"],
     features: [
       "Real-time collaboration",
@@ -59,9 +67,9 @@ const projectsData = [
       "Calendar integration"
     ],
     overview: [
-      "A powerful task management tool designed for teams to collaborate efficiently on projects with real-time updates and comprehensive project tracking.",
-      "The application provides an intuitive interface with Kanban-style boards, Gantt charts, and detailed analytics to monitor project progress.",
-      "Built with team productivity in mind, the app includes features like automated workflows, custom fields, and integration with popular tools."
+      "A powerful task management tool designed for teams to collaborate seamlessly on projects with real-time updates and detailed tracking.",
+      "The app features an intuitive interface with Kanban boards, Gantt charts, and comprehensive analytics to monitor project progress.",
+      "Optimized for team productivity, the app includes automated workflows, custom fields, and integration with popular tools."
     ],
     challenges: [
       "Implementing real-time synchronization across multiple users",
@@ -70,24 +78,21 @@ const projectsData = [
       "Creating an intuitive drag-and-drop interface"
     ],
     solutions: [
-      "Implemented WebSocket connections with Socket.io",
-      "Created role-based access control system",
-      "Used virtual scrolling and lazy loading",
-      "Utilized HTML5 drag-and-drop API with custom enhancements"
+      "Implemented WebSocket connections with Socket.io for real-time synchronization",
+      "Created a role-based access control (RBAC) system to manage user permissions",
+      "Used virtual scrolling and lazy loading to optimize performance for large datasets",
+      "Utilized HTML5 drag-and-drop API with custom enhancements for a smooth user interface"
     ],
-    github: "https://github.com/example/task-manager",
-    liveDemo: "https://example-tasks.com",
-    completionDate: "2024-02-28",
-    client: "ProductiveCo",
-    duration: "3 months"
+    duration: "3 months",
+    category: "Mobile App"
   },
+  // project 3
   {
-    id: "social-media-dashboard",
-    slug: "social-media-dashboard",
-    title: "Social Media Dashboard",
-    category: "Analytics",
-    description: "Analytics dashboard for managing multiple social media accounts with comprehensive reporting.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    id: "home-accessories",
+    slug: "home-accessories",
+    title: "Find-Here App",
+    description: "Find-Here App is your ultimate tool for locating businesses, services, and places near you. Fast, reliable, and user-friendly location search to meet all your needs.",
+    image: findhere,
     techStack: ["React", "D3.js", "Node.js", "MySQL", "Chart.js", "Material-UI"],
     features: [
       "Multi-platform integration",
@@ -100,9 +105,9 @@ const projectsData = [
       "API integrations"
     ],
     overview: [
-      "A comprehensive social media management platform that aggregates data from multiple social networks into a unified dashboard.",
-      "The system provides detailed analytics, content scheduling, and team collaboration features to help businesses optimize their social media presence.",
-      "With advanced reporting capabilities and AI-powered insights, users can make data-driven decisions to improve their social media strategy."
+      "Find-Here App consolidates data from various platforms into a unified dashboard, helping users to easily locate businesses and services near them.",
+      "With detailed analytics, content scheduling, and engagement tracking, users can enhance their social media presence effectively.",
+      "AI-driven insights and customizable reports allow businesses to make data-driven decisions, improving their overall strategy."
     ],
     challenges: [
       "Integrating multiple social media APIs",
@@ -120,15 +125,16 @@ const projectsData = [
     liveDemo: "https://example-social.com",
     completionDate: "2024-01-20",
     client: "MediaBoost Agency",
-    duration: "5 months"
+    duration: "5 months",
+    category: "Web Application"
   },
+  // project 4
   {
     id: "learning-management-system",
     slug: "learning-management-system",
-    title: "Learning Management System",
-    category: "Education",
-    description: "Online learning platform with video streaming, quizzes, and progress tracking for educational institutions.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    title: "Skill Orbit",
+    description: "Skill Orbit: Unlock your potential with personalized learning paths. Enhance your skills and grow professionally with expert-led courses and resources!",
+    image: skillorbit,
     techStack: ["Angular", "Spring Boot", "AWS", "MySQL", "WebRTC", "Bootstrap"],
     features: [
       "Video streaming platform",
@@ -141,35 +147,32 @@ const projectsData = [
       "Payment integration"
     ],
     overview: [
-      "A comprehensive learning management system designed for educational institutions to deliver online courses efficiently.",
-      "The platform supports various content types including video lectures, interactive quizzes, and live streaming sessions.",
-      "Built with scalability and accessibility in mind, the system serves thousands of students with reliable performance."
+      "Skill Orbit is a robust learning management system designed for educational institutions to effectively deliver online courses.",
+      "The platform supports various content types, including video lectures, interactive quizzes, and live streaming sessions to engage learners.",
+      "Built with scalability in mind, Skill Orbit ensures reliable performance and accessibility for thousands of students across devices."
     ],
     challenges: [
       "Implementing smooth video streaming",
-      "Handling concurrent users in live sessions",
-      "Creating accessible UI for all users",
-      "Ensuring data security and privacy compliance"
+      "Handling concurrent users during live sessions",
+      "Designing an accessible and user-friendly interface",
+      "Ensuring data security and compliance with privacy regulations"
     ],
     solutions: [
-      "Used adaptive bitrate streaming with AWS",
-      "Implemented WebRTC for low-latency video",
-      "Followed WCAG 2.1 accessibility guidelines",
-      "Implemented GDPR and FERPA compliance measures"
+      "Utilized adaptive bitrate streaming via AWS to ensure smooth video playback",
+      "Leveraged WebRTC technology to enable low-latency, real-time video sessions",
+      "Adhered to WCAG 2.1 accessibility guidelines to provide a seamless experience for all users",
+      "Implemented GDPR and FERPA compliance to ensure user data privacy and security"
     ],
-    github: "https://github.com/example/lms-platform",
-    liveDemo: "https://example-learning.com",
-    completionDate: "2023-12-10",
-    client: "EduTech Institute",
-    duration: "6 months"
+    duration: "6 months",
+    category: "Education"
   },
+  // project 5 
   {
-    id: "fitness-tracker-app",
-    slug: "fitness-tracker-app",
-    title: "Fitness Tracker App",
-    category: "Health & Fitness",
-    description: "Mobile fitness application with workout planning, nutrition tracking, and progress analytics.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    id: "IsStartup-app",
+    slug: "IsStartup-app",
+    title: "Is Startup",
+    description: "Is Startup: Discover, track, and connect with innovative startups. Stay updated on trends, funding, and opportunities in the startup ecosystem!",
+    image: isStartup,
     techStack: ["React Native", "Firebase", "Node.js", "MongoDB", "Redux", "Expo"],
     features: [
       "Workout planning",
@@ -182,9 +185,9 @@ const projectsData = [
       "Achievement system"
     ],
     overview: [
-      "A comprehensive fitness tracking application that helps users achieve their health goals through personalized workout plans and nutrition guidance.",
-      "The app integrates with wearable devices to track activity levels and provides detailed analytics to monitor progress over time.",
-      "With social features and gamification elements, users stay motivated and engaged in their fitness journey."
+      "Is Startup is a comprehensive fitness tracking app that helps users achieve their health goals with personalized workout plans and nutrition guidance.",
+      "Integrated with wearable devices, the app tracks activity levels and provides detailed analytics to monitor progress.",
+      "Featuring social tools and gamification, the app ensures users stay motivated and engaged throughout their fitness journey."
     ],
     challenges: [
       "Integrating with various wearable devices",
@@ -193,24 +196,21 @@ const projectsData = [
       "Ensuring data privacy and security"
     ],
     solutions: [
-      "Built universal device integration layer",
-      "Collaborated with nutritionists for algorithms",
-      "Implemented local data storage with sync",
-      "Used end-to-end encryption for sensitive data"
+      "Developed a universal device integration layer to support various wearable technologies",
+      "Collaborated with nutritionists to create accurate and reliable calorie calculation algorithms",
+      "Implemented local data storage with sync capabilities for offline functionality",
+      "Used end-to-end encryption to ensure data privacy and security for user information"
     ],
-    github: "https://github.com/example/fitness-tracker",
-    liveDemo: "https://example-fitness.com",
-    completionDate: "2023-11-15",
-    client: "FitLife Studios",
-    duration: "4 months"
+    duration: "4 months",
+    category: "Startup Platform"
   },
+  // project 6 
   {
-    id: "real-estate-platform",
-    slug: "real-estate-platform",
-    title: "Real Estate Platform",
-    category: "Real Estate",
-    description: "Property listing platform with virtual tours, mortgage calculator, and agent matching system.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    id: "Kids-Items-platform",
+    slug: "Kids-item-platform",
+    title: "Kidezz",
+    description: "Kidezz: A fun, safe platform for kids to learn, play, and grow. Engaging activities, educational games, and interactive content for young minds!",
+    image: Kidezz,
     techStack: ["Next.js", "Prisma", "PostgreSQL", "Mapbox", "Stripe", "TypeScript"],
     features: [
       "Property listings with advanced search",
@@ -223,35 +223,32 @@ const projectsData = [
       "Market analytics"
     ],
     overview: [
-      "A comprehensive real estate platform that connects buyers, sellers, and agents through an intuitive and feature-rich interface.",
-      "The platform includes innovative features like virtual tours, AI-powered property recommendations, and detailed market analytics.",
-      "Built with modern web technologies, the system provides fast performance and excellent user experience across all devices."
+      "Kidezz is an all-in-one footwear shopping platform that seamlessly connects customers to a vast range of stylish, comfortable shoes.",
+      "With advanced features like virtual try-ons, personalized shoe recommendations, and detailed product insights, Kidezz offers an unparalleled shopping experience.",
+      "Built with modern web technologies for fast performance, a responsive interface, and a seamless experience across all devices."
     ],
     challenges: [
-      "Implementing high-quality virtual tours",
-      "Creating accurate property valuation models",
-      "Handling large image and video files",
-      "Integrating with multiple listing services"
+      "Creating a smooth virtual try-on experience",
+      "Handling high-resolution image and video product displays",
+      "Integrating payment processing securely",
+      "Building a scalable system to manage large product catalogs"
     ],
     solutions: [
-      "Used 3D virtual tour technology",
-      "Implemented machine learning models",
-      "Optimized media delivery with CDN",
-      "Built custom MLS integration APIs"
+      "Implemented augmented reality (AR) for virtual try-ons",
+      "Optimized image delivery with a content delivery network (CDN) for faster load times",
+      "Integrated Stripe for secure payment processing",
+      "Designed a scalable database with Prisma and PostgreSQL to handle extensive product catalogs"
     ],
-    github: "https://github.com/example/real-estate",
-    liveDemo: "https://example-realestate.com",
-    completionDate: "2023-10-20",
-    client: "PropertyHub Inc.",
-    duration: "7 months"
+    duration: "7 months",
+    category: "E-Commerce"
   },
+  // project 7
   {
-    id: "food-delivery-system",
-    slug: "food-delivery-system",
-    title: "Food Delivery System",
-    category: "Food & Beverage",
-    description: "Multi-restaurant food delivery platform with real-time order tracking and driver management.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
+    id: "Jewelry-store",
+    slug: "Jewelry-store",
+    title: "Dhahween",
+    description: "Dhahween: An innovative platform connecting talents and opportunities. Discover, learn, and engage with a community that values creativity and innovation!",
+    image: dhahween,
     techStack: ["React", "Node.js", "MongoDB", "Socket.io", "Google Maps", "Stripe"],
     features: [
       "Multi-restaurant support",
@@ -264,150 +261,62 @@ const projectsData = [
       "Analytics dashboard"
     ],
     overview: [
-      "A comprehensive food delivery platform that connects restaurants, drivers, and customers through an efficient and user-friendly system.",
-      "The platform features real-time order tracking, intelligent route optimization, and a seamless ordering experience for customers.",
-      "Built with scalability in mind, the system can handle thousands of concurrent orders and provides detailed analytics for business insights."
+      "Dhahween is a comprehensive food delivery platform that seamlessly connects restaurants, drivers, and customers in an efficient system.",
+      "It features real-time order tracking, smart route optimization, and a streamlined ordering experience for customers.",
+      "Built for scalability, Dhahween can manage thousands of orders simultaneously and offers powerful analytics to drive business growth."
     ],
     challenges: [
       "Implementing real-time order tracking",
-      "Optimizing delivery routes",
-      "Handling peak hour traffic",
-      "Ensuring food quality during delivery"
+      "Optimizing delivery routes for efficiency",
+      "Managing high traffic during peak hours",
+      "Ensuring food quality is maintained during delivery"
     ],
     solutions: [
-      "Used WebSocket for real-time updates",
-      "Implemented Google Maps optimization API",
-      "Built auto-scaling infrastructure",
-      "Created temperature tracking system"
+      "Used WebSocket technology for real-time updates on order status",
+      "Integrated Google Maps API for dynamic route optimization",
+      "Built auto-scaling infrastructure to handle peak loads",
+      "Developed a temperature tracking system to monitor food quality during transit"
     ],
-    github: "https://github.com/example/food-delivery",
-    liveDemo: "https://example-food.com",
-    completionDate: "2023-09-15",
-    client: "QuickEats Delivery",
-    duration: "5 months"
+    duration: "5 months",
+    category: "Food Delivery"
   },
+  // project 8
   {
-    id: "booking-management-system",
-    slug: "booking-management-system",
-    title: "Booking Management System",
-    category: "Hospitality",
-    description: "Hotel and accommodation booking platform with channel management and revenue optimization.",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    techStack: ["Vue.js", "Laravel", "MySQL", "Redis", "Stripe", "TailwindCSS"],
+    id: "Shoe-Store",
+    slug: "shoe-store",
+    title: "Shoeto",
+    description: "Shoeto: Your ultimate shoe shopping destination. Explore a wide range of stylish, comfortable, and trendy footwear for every occasion!",
+    image: Shoeto,
+    techStack: ["Next.js", "Prisma", "PostgreSQL", "Mapbox", "Stripe", "TypeScript"],
     features: [
-      "Room availability management",
-      "Channel management",
-      "Dynamic pricing",
-      "Guest communication",
-      "Housekeeping scheduling",
-      "Revenue analytics",
-      "Multi-language support",
-      "Mobile check-in"
-    ],
-    overview: [
-      "A comprehensive booking management system designed for hotels and accommodation providers to streamline operations and maximize revenue.",
-      "The platform includes channel management to sync availability across multiple booking sites and dynamic pricing algorithms for revenue optimization.",
-      "With features like automated guest communication and housekeeping management, the system helps improve operational efficiency."
-    ],
-    challenges: [
-      "Syncing with multiple booking channels",
-      "Implementing dynamic pricing algorithms",
-      "Handling high concurrency during peak seasons",
-      "Ensuring data consistency across systems"
-    ],
-    solutions: [
-      "Built robust channel management API",
-      "Implemented machine learning pricing models",
-      "Used Redis for caching and queue management",
-      "Created distributed transaction system"
-    ],
-    github: "https://github.com/example/booking-system",
-    liveDemo: "https://example-booking.com",
-    completionDate: "2023-08-10",
-    client: "HospitalityPro",
-    duration: "6 months"
-  },
-  {
-    id: "inventory-management",
-    slug: "inventory-management",
-    title: "Inventory Management System",
-    category: "Business Solutions",
-    description: "Warehouse and inventory management solution with barcode scanning and supply chain optimization.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    techStack: ["Angular", "Django", "PostgreSQL", "Docker", "TensorFlow", "Material Design"],
-    features: [
-      "Barcode scanning",
-      "Real-time inventory tracking",
-      "Supply chain optimization",
-      "Automated reordering",
-      "Warehouse analytics",
-      "Multi-location support",
-      "Mobile app",
-      "API integrations"
-    ],
-    overview: [
-      "A sophisticated inventory management system that helps businesses optimize their supply chain and warehouse operations.",
-      "The platform includes AI-powered demand forecasting, automated reordering, and real-time tracking across multiple locations.",
-      "With barcode scanning and mobile support, warehouse operations become more efficient and error-free."
-    ],
-    challenges: [
-      "Implementing accurate demand forecasting",
-      "Integrating barcode scanning hardware",
-      "Handling large inventory datasets",
-      "Ensuring real-time data synchronization"
-    ],
-    solutions: [
-      "Used TensorFlow for forecasting models",
-      "Built universal barcode scanning API",
-      "Implemented efficient database indexing",
-      "Created real-time sync with WebSocket"
-    ],
-    github: "https://github.com/example/inventory-system",
-    liveDemo: "https://example-inventory.com",
-    completionDate: "2023-07-20",
-    client: "Logistics Solutions Ltd.",
-    duration: "8 months"
-  },
-  {
-    id: "healthcare-portal",
-    slug: "healthcare-portal",
-    title: "Healthcare Portal",
-    category: "Healthcare",
-    description: "Patient management system with telemedicine capabilities and electronic health records.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80",
-    techStack: ["React", "Python", "Django", "PostgreSQL", "WebRTC", "HIPAA Compliant"],
-    features: [
-      "Electronic health records",
-      "Telemedicine consultations",
+      "Property listings with advanced search",
+      "Virtual property tours",
+      "Mortgage calculator",
+      "Agent matching system",
+      "Document management",
       "Appointment scheduling",
-      "Prescription management",
-      "Billing system",
-      "Patient portal",
-      "Doctor dashboard",
-      "Lab results integration"
+      "Neighborhood insights",
+      "Market analytics"
     ],
     overview: [
-      "A comprehensive healthcare portal that facilitates patient care through telemedicine, electronic health records, and practice management.",
-      "The system ensures HIPAA compliance while providing easy access to health information for both patients and healthcare providers.",
-      "With features like video consultations and automated appointment reminders, the platform improves healthcare accessibility."
+      "Shoeto is an all-in-one footwear shopping platform that seamlessly connects customers to a vast range of stylish, comfortable shoes.",
+      "With advanced features like virtual try-ons, personalized shoe recommendations, and detailed product insights, Shoeto offers an unparalleled shopping experience.",
+      "Built with modern web technologies for fast performance, a responsive interface, and a seamless experience across all devices."
     ],
     challenges: [
-      "Ensuring HIPAA compliance",
-      "Implementing secure video consultations",
-      "Integrating with existing medical systems",
-      "Handling sensitive patient data"
+      "Creating a smooth virtual try-on experience",
+      "Handling high-resolution image and video product displays",
+      "Integrating payment processing securely",
+      "Building a scalable system to manage large product catalogs"
     ],
     solutions: [
-      "Implemented end-to-end encryption",
-      "Used secure WebRTC connections",
-      "Built HL7 integration interfaces",
-      "Created comprehensive audit trails"
+      "Implemented augmented reality (AR) for virtual try-ons",
+      "Optimized image delivery with a content delivery network (CDN) for faster load times",
+      "Integrated Stripe for secure payment processing",
+      "Designed a scalable database with Prisma and PostgreSQL to handle extensive product catalogs"
     ],
-    github: "https://github.com/example/healthcare-portal",
-    liveDemo: "https://example-healthcare.com",
-    completionDate: "2023-06-15",
-    client: "MediCare Plus",
-    duration: "9 months"
+    duration: "7 months",
+    category: "E-Commerce"
   }
 ];
 
