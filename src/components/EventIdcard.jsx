@@ -72,7 +72,18 @@ const EventIdcard = ({ member }) => {
         }}
         onMouseDown={handleMouseDown}
       >
-        <Card className="border-0 idcard-container">
+        <Card 
+          className="border-0 idcard-container"
+          style={{ userSelect: 'none', cursor: 'default' }}
+          onMouseDown={(e) => {
+            // Prevent text selection when clicking on card background
+            e.preventDefault();
+            handleMouseDown(e);
+          }}
+          onSelectStart={(e) => {
+            e.preventDefault();
+          }}
+        >
           <Card.Body className="p-4">
             <div className="text-center mb-3">
               <div className="logo-container">
@@ -113,7 +124,23 @@ const EventIdcard = ({ member }) => {
                   Email:
                 </Col>
                 <Col className="text-break">
-                  {member?.contact?.email || "email@example.com"}
+                  {member?.contact?.email ? (
+                    <a
+                      href={`mailto:${member.contact.email}`}
+                      className="text-primary text-decoration-none"
+                      style={{ userSelect: 'text', cursor: 'pointer' }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
+                      onMouseDown={(e) => {
+                        e.stopPropagation();
+                      }}
+                    >
+                      {member.contact.email}
+                    </a>
+                  ) : (
+                    "email@example.com"
+                  )}
                 </Col>
               </Row>
 
@@ -128,6 +155,13 @@ const EventIdcard = ({ member }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-success text-decoration-none"
+                      style={{ userSelect: 'text', cursor: 'pointer' }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
+                      onMouseDown={(e) => {
+                        e.stopPropagation();
+                      }}
                     >
                       {member.contact.phone}
                     </a>
