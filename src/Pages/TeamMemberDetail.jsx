@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import teamMembers from "../Team/teamData";
 import "../Team/Team.css";
+import IdCard3D from "../components/IdCard3D";
 
 const TeamMemberDetail = () => {
   const { id } = useParams();
@@ -48,8 +49,8 @@ const TeamMemberDetail = () => {
             />
           </div>
 
-          {/* Right: Info */}
-          <div className="col-lg-9">
+          {/* Middle: Info */}
+          <div className="col-lg-4">
             <h6 className="text-uppercase fw-semibold mb-1">{member.role}</h6>
             <h2 className="fw-bold mb-3">{member.name}</h2>
             <p className="text-muted mb-3" style={{ maxWidth: "600px" }}>
@@ -95,6 +96,11 @@ const TeamMemberDetail = () => {
                 </a>
               </p>
             </div>
+          </div>
+
+          {/* Right: 3D ID Card */}
+          <div className="col-lg-5">
+            <IdCard3D member={member} />
           </div>
         </div>
       </section>
