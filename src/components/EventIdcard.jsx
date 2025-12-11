@@ -200,7 +200,7 @@ const EventIdcard = ({ member }) => {
           padding: 10px;
           border: 1px solid rgba(0, 123, 255, 0.1);
         }
-        .team-card-footer {
+        .team-card-footer, .team-card-logo {
           background: linear-gradient(90deg, #007bff, #0056b3);
           color: white !important;
           border: none;
