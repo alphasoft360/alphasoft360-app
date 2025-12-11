@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Card, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../assets/img/AlphaSoft_logo1.png";
+import logo from "../assets/img/AlphaSoft_logo.png";
+import { createBusinessWhatsAppLink } from "../utils/whatsappUtils";
 
 const EventIdcard = ({ member }) => {
   const [isDragging, setIsDragging] = useState(false);
@@ -39,9 +40,9 @@ const EventIdcard = ({ member }) => {
     if (!isDragging) return;
     const newRotationY = e.clientX - startPos.x;
     const newRotationX = e.clientY - startPos.y;
-    setRotation({ 
-      x: newRotationX * 0.5, 
-      y: newRotationY * 0.5 
+    setRotation({
+      x: newRotationX * 0.5,
+      y: newRotationY * 0.5,
     });
   };
 
@@ -55,30 +56,35 @@ const EventIdcard = ({ member }) => {
   }, []);
 
   return (
-    <div 
+    <div
       className="d-flex justify-content-center align-items-center py-5"
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseLeave}
     >
-      <div 
+      <div
         ref={cardRef}
         className="idcard-3d-container"
         style={{
           transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
-          transition: isDragging ? 'none' : 'transform 0.3s ease-out',
-          cursor: isDragging ? 'grabbing' : 'grab'
+          transition: isDragging ? "none" : "transform 0.3s ease-out",
+          cursor: isDragging ? "grabbing" : "grab",
         }}
         onMouseDown={handleMouseDown}
       >
-        <Card className="shadow-lg border-0 idcard-container">
+        <Card className="border-0 idcard-container">
           <Card.Body className="p-4">
-
             <div className="text-center mb-3">
               <div className="logo-container">
-                <Image src={logo} width={60} />
-                <h6 className="mt-2 fw-bold text-primary">ALPHASOFT360</h6>
-                <p className="text-muted small">Innovative Digital Solutions</p>
+                <div className="team-card-logo">
+                  <Image src={logo} width={60} />
+                </div>
+                <div>
+                  <h6 className="mt-2 fw-bold text-primary">ALPHASOFT360</h6>
+                  <p className="text-muted small">
+                    Innovative Digital Solutions
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -96,23 +102,50 @@ const EventIdcard = ({ member }) => {
             </div>
 
             <div className="details-section">
-              <Row className="small mb-2">
-                <Col xs={5} className="fw-semibold">ID No:</Col>
+             <Row className="align-items-center mb-2">
+                <Col xs={4} className="fw-semibold">
+                  ID No:
+                </Col>
                 <Col>{member?.id || "00000000"}</Col>
               </Row>
-              <Row className="small mb-2">
-                <Col xs={5} className="fw-semibold">Email:</Col>
-                <Col className="text-truncate">{member?.contact?.email || "email@example.com"}</Col>
+              <Row className="align-items-center mb-2">
+                <Col xs={4} className="fw-semibold">
+                  Email:
+                </Col>
+                <Col className="text-break">
+                  {member?.contact?.email || "email@example.com"}
+                </Col>
               </Row>
-              <Row className="small mb-2">
-                <Col xs={5} className="fw-semibold">Phone:</Col>
-                <Col>{member?.contact?.phone || "000-000-00"}</Col>
+
+              <Row className="align-items-center mb-2">
+                <Col xs={4} className="fw-semibold">
+                  Phone:
+                </Col>
+                <Col>
+                  {member?.contact?.phone ? (
+                    <a
+                      href={createBusinessWhatsAppLink(member.contact.phone)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-success text-decoration-none"
+                    >
+                      {member.contact.phone}
+                    </a>
+                  ) : (
+                    "000-000-00"
+                  )}
+                </Col>
               </Row>
             </div>
           </Card.Body>
 
           <Card.Footer className="text-center text-primary small team-card-footer">
-            <a href="https://www.alphasoft360.org/" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">
+            <a
+              href="https://www.alphasoft360.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-decoration-none"
+            >
               WWW.ALPHASOFT360.ORG
             </a>
           </Card.Footer>
@@ -136,7 +169,7 @@ const EventIdcard = ({ member }) => {
         .idcard-container {
           background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
           border-radius: 16px;
-          box-shadow: 
+          box-shadow:
             0 20px 40px rgba(0, 0, 0, 0.15),
             0 0 0 1px rgba(255, 255, 255, 0.1);
           transform-style: preserve-3d;
@@ -144,11 +177,15 @@ const EventIdcard = ({ member }) => {
         }
 
         .idcard-container:hover {
-          box-shadow: 
+          box-shadow:
             0 25px 50px rgba(0, 0, 0, 0.2),
             0 0 0 1px rgba(255, 255, 255, 0.2);
         }
 
+        
+        .team-card-logo img {
+          width: 100px;
+        }
         .logo-container h6 {
           background: linear-gradient(45deg, #007bff, #0056b3);
           -webkit-background-clip: text;
@@ -157,15 +194,16 @@ const EventIdcard = ({ member }) => {
         }
 
         .profile-image {
-          box-shadow: 
+          box-shadow:
             0 8px 16px rgba(0, 123, 255, 0.3),
             0 0 0 4px rgba(255, 255, 255, 0.1);
           transition: all 0.3s ease;
+          width:  130px;
         }
 
         .profile-image:hover {
           transform: scale(1.05);
-          box-shadow: 
+          box-shadow:
             0 12px 24px rgba(0, 123, 255, 0.4),
             0 0 0 4px rgba(255, 255, 255, 0.2);
         }
@@ -173,22 +211,10 @@ const EventIdcard = ({ member }) => {
         .details-section {
           background: rgba(248, 249, 250, 0.5);
           border-radius: 8px;
-          padding: 12px;
-          margin: 8px 0;
+          padding: 10px;
           border: 1px solid rgba(0, 123, 255, 0.1);
         }
-
-        .qr-placeholder {
-          background: linear-gradient(45deg, #f8f9fa, #e9ecef);
-          border-radius: 8px;
-          padding: 8px;
-          display: inline-block;
-          box-shadow: 
-            0 4px 8px rgba(0, 0, 0, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.5);
-        }
-
-        .footer-section {
+        .team-card-footer, .team-card-logo {
           background: linear-gradient(90deg, #007bff, #0056b3);
           color: white !important;
           border: none;
@@ -209,7 +235,7 @@ const EventIdcard = ({ member }) => {
           height: 20px;
           background: linear-gradient(180deg, #c0c0c0, #808080, #c0c0c0);
           border-radius: 4px 4px 0 0;
-          box-shadow: 
+          box-shadow:
             0 -2px 4px rgba(0, 0, 0, 0.3),
             inset 0 1px 0 rgba(255, 255, 255, 0.5);
         }
@@ -220,7 +246,7 @@ const EventIdcard = ({ member }) => {
           background: linear-gradient(180deg, #d4d4d4, #a0a0a0);
           border-radius: 2px;
           margin: -5px auto 0;
-          box-shadow: 
+          box-shadow:
             0 1px 2px rgba(0, 0, 0, 0.2),
             inset 0 1px 0 rgba(255, 255, 255, 0.6);
         }
@@ -230,8 +256,13 @@ const EventIdcard = ({ member }) => {
         }
 
         @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-5px); }
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
         }
 
         .idcard-3-reverse {

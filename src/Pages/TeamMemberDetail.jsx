@@ -7,10 +7,12 @@ import {
   FaArrowLeft,
   FaGithub,
   FaStackOverflow,
+  FaWhatsapp,
 } from "react-icons/fa";
 import teamMembers from "../Team/teamData";
 import "../Team/Team.css";
 import IdCard3D from "../components/IdCard3D";
+import { createBusinessWhatsAppLink } from "../utils/whatsappUtils";
 
 const TeamMemberDetail = () => {
   const { id } = useParams();
@@ -67,7 +69,12 @@ const TeamMemberDetail = () => {
               {member.contact.phone && (
                 <p className="mb-2">
                   <FaPhoneAlt className="me-2" />
-                  <a href={`tel:${member.contact.phone}`}>
+                  <a 
+                    href={createBusinessWhatsAppLink(member.contact.phone)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-success text-decoration-none"
+                  >
                     {member.contact.phone}
                   </a>
                 </p>
