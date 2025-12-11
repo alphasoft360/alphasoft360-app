@@ -69,7 +69,16 @@ const ContactSection = () => {
               </a>
             </div>
             <p className="call-us-text">CHAT WITH US 24/7</p>
-            <p className="phone-number">{contactData.phone}</p>
+            <p className="phone-number">
+              <a
+                href={`https://wa.me/${contactData.whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-decoration-none"
+              >
+                {contactData.phone}
+              </a>
+            </p>
             <p className="contact-description">
               Have any idea or project in your mind? Chat with us on WhatsApp or schedule an
               appointment. Our representative will reply to you shortly.

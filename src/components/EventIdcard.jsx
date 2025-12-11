@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Card, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/AlphaSoft_logo.png";
+import { createBusinessWhatsAppLink } from "../utils/whatsappUtils";
 
 const EventIdcard = ({ member }) => {
   const [isDragging, setIsDragging] = useState(false);
@@ -120,7 +121,20 @@ const EventIdcard = ({ member }) => {
                 <Col xs={4} className="fw-semibold">
                   Phone:
                 </Col>
-                <Col>{member?.contact?.phone || "000-000-00"}</Col>
+                <Col>
+                  {member?.contact?.phone ? (
+                    <a
+                      href={createBusinessWhatsAppLink(member.contact.phone)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-success text-decoration-none"
+                    >
+                      {member.contact.phone}
+                    </a>
+                  ) : (
+                    "000-000-00"
+                  )}
+                </Col>
               </Row>
             </div>
           </Card.Body>
