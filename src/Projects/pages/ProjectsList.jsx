@@ -36,31 +36,13 @@ const ProjectsList = () => {
   return (
     <div className="projects-list-container">
       {/* Header Section */}
-      <div className="projects-header">
+      <div className="projects-header pt-5 mb-5">
         <Container>
           <div className="header-content text-center">
             <h1 className="display-3 fw-bold mb-4">Our Projects</h1>
             <p className="lead header-description">
               Explore our portfolio of innovative solutions and successful projects across various industries.
             </p>
-          </div>
-          
-          {/* Search and Filter Section */}
-          <div className="filters-section">
-            <div className="search-container mb-4">
-              <Form className="position-relative">
-                <Form.Control
-                  type="text"
-                  placeholder="Search projects..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="search-input ps-5 pe-5"
-                />
-                <div className="search-icon position-absolute top-50 start-0 translate-middle-y ms-3">
-                  <i className="bi bi-search text-muted"></i>
-                </div>
-              </Form>
-            </div>
           </div>
         </Container>
       </div>

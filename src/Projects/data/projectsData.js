@@ -121,10 +121,6 @@ const projectsData = [
       "Used D3.js for custom visualizations",
       "Created OAuth 2.0 authentication flow"
     ],
-    github: "https://github.com/example/social-dashboard",
-    liveDemo: "https://example-social.com",
-    completionDate: "2024-01-20",
-    client: "MediaBoost Agency",
     duration: "5 months",
     category: "Web Application"
   },

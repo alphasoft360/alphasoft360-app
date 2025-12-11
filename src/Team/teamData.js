@@ -135,7 +135,7 @@ const teamMembers = [
     id: "muazam-mughal",
     image: muazam_mughal,
     name: "Muazam Mughal",
-    role: "Full-Stack Next.js & Laravel+Vue.js Developer",
+    role: "Software Engineer",
     bio: "Dynamic Full-stack Software Engineer with expertise in modern web technologies, generative AI, and cloud solutions, dedicated to crafting scalable and innovative applications.",
     contact: {
       email: "eng.muazam@gmail.com",

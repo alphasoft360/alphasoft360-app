@@ -4,7 +4,7 @@ import EventIdcard from "./EventIdcard";
 
 const IdCard3D = ({ member }) => {
   return (
-    <Card className="shadow-lg border-0 p-3">
+    <Card className="border-0">
       <div style={{ height: "550px" }}>
         <EventIdcard member={member} />
       </div>
