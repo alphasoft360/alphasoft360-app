@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("ngbng.png");
+  background-image: url("../assets/img/ngbng.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

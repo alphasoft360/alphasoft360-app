@@ -125,7 +125,7 @@ const EventIdcard = ({ member }) => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style jsx="true">{`
         .idcard-3d-container {
           position: relative;
           transform-style: preserve-3d;
