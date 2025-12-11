@@ -31,6 +31,8 @@ const servicesData = [
       { name: "App Store Optimization", percentage: 90 },
     ],
   },
+
+  
   {
     id: "web-development",
     img: icon2,
