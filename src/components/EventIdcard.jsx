@@ -104,9 +104,9 @@ const EventIdcard = ({ member }) => {
             <div className="details-section">
              <Row className="align-items-center mb-2">
                 <Col xs={4} className="fw-semibold">
-                  ID No:
+                  Name:
                 </Col>
-                <Col>{member?.id || "00000000"}</Col>
+                <Col>{member?.name || "NAME"}</Col>
               </Row>
               <Row className="align-items-center mb-2">
                 <Col xs={4} className="fw-semibold">

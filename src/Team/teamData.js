@@ -15,10 +15,10 @@ const teamMembers = [
     id: "awais-ali",
     image: awais_ali,
     name: "M Awais",
-    role: "Full Stack Developer",
+    role: "Founder | CEO Alphasoft360",
     bio: "Expert in agile methodologies with a track record of delivering enterprise projects on time and within scope.",
     contact: {
-      email: "alphasoft@gmail.com",
+      email: "alphasoft360@gmail.com",
       phone: "+92 370 6510421",
     },
     biography: [
