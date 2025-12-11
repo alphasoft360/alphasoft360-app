@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import teamMembers from "../Team/teamData";
 import "../Team/Team.css";
-import IdCard3D from "../Components/IdCard3D";
+import IdCard3D from "../components/IdCard3D";
 
 const TeamMemberDetail = () => {
   const { id } = useParams();
