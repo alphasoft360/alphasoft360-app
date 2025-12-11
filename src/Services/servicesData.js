@@ -32,7 +32,7 @@ const servicesData = [
     ],
   },
 
-  
+  // Web Development
   {
     id: "web-development",
     img: icon2,
@@ -52,6 +52,7 @@ const servicesData = [
       { name: "SEO Best Practices", percentage: 88 },
     ],
   },
+
   {
     id: "ecommerce-solutions",
     img: icon3,
@@ -71,6 +72,8 @@ const servicesData = [
       { name: "Conversion Optimization", percentage: 88 },
     ],
   },
+
+  // Cloud & DevOps
   {
     id: "cloud-devops",
     img: icon4,
@@ -90,7 +93,8 @@ const servicesData = [
       { name: "Cloud Security", percentage: 92 },
     ],
   },
-  {
+
+      {
     id: "real-estate-management-solutions",
     img: icon5,
     title: "Real Estate Management Solutions",
@@ -109,6 +113,8 @@ const servicesData = [
       { name: "Document Management", percentage: 88 },
     ],
   },
+
+  // LMS & Education Solutions
   {
     id: "lms-education-solutions",
     img: icon6,
@@ -128,6 +134,8 @@ const servicesData = [
       { name: "Analytics & Reporting", percentage: 90 },
     ],
   },
+
+  // Healthcare Management Systems
   {
     id: "healthcare-management-systems",
     img: icon7,
@@ -147,6 +155,8 @@ const servicesData = [
       { name: "Regulatory Compliance", percentage: 92 },
     ],
   },
+
+  // AI-Powered Automation
   {
     id: "ai-powered-automation",
     img: icon8,
@@ -166,7 +176,8 @@ const servicesData = [
       { name: "AI Integration", percentage: 90 },
     ],
   },
-  {
+
+    {
     id: "iot-apps",
     img: icon9,
     title: "IOT Apps",
@@ -185,7 +196,8 @@ const servicesData = [
       { name: "Security & Privacy", percentage: 90 },
     ],
   },
-  {
+
+    {
     id: "product-design",
     img: icon10,
     title: "Product & Design",
@@ -206,7 +218,8 @@ const servicesData = [
       { name: "Usability Testing", percentage: 90 },
     ],
   },
-  {
+
+    {
     id: "data-center",
     img: icon11,
     title: "Data Center",
@@ -226,7 +239,8 @@ const servicesData = [
       { name: "Compliance Management", percentage: 90 },
     ],
   },
- {
+
+    {
   id: "erp-crm-solutions",
   img: icon12,
   title: "ERP & CRM Solutions",
@@ -245,7 +259,7 @@ const servicesData = [
     { name: "Data Analytics & Reporting", percentage: 93 },
     { name: "User Training & Support", percentage: 90 },
   ],
-}
+},
 
 ];
 
