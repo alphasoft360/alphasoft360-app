@@ -99,7 +99,7 @@ const teamMembers = [
     id: "muhammad-shahbaz",
     image: muhammad_shahbaz,
     name: "Muhammad Shahbaz",
-    role: "Full Stack Developer",
+    role: "Software Engineer",
     bio: "Skilled in modern web technologies with a proven ability to deliver robust, scalable, and efficient software solutions.",
     contact: {
       email: "shahbaz.dev012@gmail.com",
