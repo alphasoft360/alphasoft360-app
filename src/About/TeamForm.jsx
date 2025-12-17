@@ -96,11 +96,11 @@ const ServicesSection = () => {
               {/* Overlay */}
               <div className="overlay position-absolute w-100 h-100 top-0 start-0 bg-dark bg-opacity-50"></div>
               {/* Play Button */}
-              <div className="position-absolute top-50 start-50 translate-middle">
+              {/* <div className="position-absolute top-50 start-50 translate-middle">
                 <button className="play-btn rounded-circle d-flex align-items-center justify-content-center">
                   <FaPlay size={20} />
                 </button>
-              </div>
+              </div> */}
             </div>
           </Col>
 

@@ -55,7 +55,7 @@ const MainNavbar = () => {
                 </a>
                
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/alphasoft360/?viewAsMember=true"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
