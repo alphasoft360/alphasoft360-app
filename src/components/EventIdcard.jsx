@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Card, Row, Col, Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import logo from "../assets/img/AlphaSoft_logo.png";
 import { createBusinessWhatsAppLink } from "../utils/whatsappUtils";
+import { QRCodeSVG } from "qrcode.react";
 
 const EventIdcard = ({ member }) => {
   const [isDragging, setIsDragging] = useState(false);
@@ -72,11 +72,16 @@ const EventIdcard = ({ member }) => {
         }}
         onMouseDown={handleMouseDown}
       >
+        {/* Front Side */}
         <Card 
-          className="border-0 idcard-container"
-          style={{ userSelect: 'none', cursor: 'default' }}
+          className="border-0 idcard-container idcard-front"
+          style={{ 
+            userSelect: 'none', 
+            cursor: 'default',
+            position: 'absolute',
+            backfaceVisibility: 'hidden'
+          }}
           onMouseDown={(e) => {
-            // Prevent text selection when clicking on card background
             e.preventDefault();
             handleMouseDown(e);
           }}
@@ -170,6 +175,75 @@ const EventIdcard = ({ member }) => {
                   )}
                 </Col>
               </Row>
+            </div>
+          </Card.Body>
+
+          <Card.Footer className="text-center text-primary small team-card-footer">
+            <a
+              href="https://www.alphasoft360.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-decoration-none"
+            >
+              WWW.ALPHASOFT360.ORG
+            </a>
+          </Card.Footer>
+        </Card>
+
+        {/* Back Side - Full White */}
+        <Card 
+          className="border-0 idcard-container idcard-back"
+          style={{ 
+            userSelect: 'none', 
+            cursor: 'default',
+            position: 'absolute',
+            backfaceVisibility: 'hidden',
+            transform: 'rotateY(180deg)',
+            background: '#ffffff'
+          }}
+        >
+          <Card.Body className="p-4">
+            <div className="text-center h-100 d-flex flex-column justify-content-center">
+              <div className="logo-container mb-4">
+                <div className="team-card-logo">
+                  <Image src={logo} width={80} />
+                </div>
+                <div>
+                  <h4 className="mt-3 fw-bold text-primary">ALPHASOFT360</h4>
+                  <p className="text-muted">
+                    Innovative Digital Solutions
+                  </p>
+                </div>
+              </div>
+              
+              {/* QR Code Section */}
+              <div className="mb-4">
+                <h6 className="fw-bold mb-3">Scan for Verification</h6>
+                <div className="d-flex justify-content-center mb-3">
+                  <div className="qr-code-container p-2 bg-white border rounded">
+                    <QRCodeSVG 
+                      value={`https://www.alphasoft360.org/verify/${member?.name?.replace(/\s/g, '').toLowerCase() || 'demo'}-${member?.id || '001'}`}
+                      size={120}
+                      level="H"
+                      includeMargin={true}
+                    />
+                  </div>
+                </div>
+                <p className="text-muted small mb-0">
+                  Scan to verify authenticity
+                </p>
+              </div>
+              
+              <div className="mt-auto">
+                <h5 className="fw-bold mb-3">Professional ID Card</h5>
+                <p className="text-muted small mb-4">
+                  This card verifies the identity and affiliation of the cardholder with AlphaSoft360.
+                </p>
+                <div className="border-top pt-3">
+                  <p className="small text-muted mb-1">Valid Until: 12/2025</p>
+                  <p className="small text-muted mb-0">Card ID: AS360-{member?.name?.replace(/\s/g, '').toUpperCase() || 'DEMO'}-001</p>
+                </div>
+              </div>
             </div>
           </Card.Body>
 

@@ -21,7 +21,7 @@ const services = [
     img: icon1,
     title: "App Development",
     description:
-      "Secure and scalable data center services offering advanced infrastructure management, ensuring peak performance and maximum uptime."
+      "Comprehensive mobile application development services creating native, hybrid, and cross-platform apps for iOS and Android with modern technologies and best practices."
   },
   {
     id: "web-development",
@@ -35,7 +35,7 @@ const services = [
     img: icon3,
     title: "E-Commerce Solutions",
     description:
-      "Advanced data analytics and business intelligence solutions to transform raw data into actionable insights for informed decision-making.",
+      "Complete e-commerce platform development with secure payment gateways, inventory management, and user-friendly shopping experiences to drive online sales.",
   },
   {
     id: "cloud-devops",
@@ -49,56 +49,56 @@ const services = [
     img: icon5,
     title: "Real Estate Management Solutions",
     description:
-      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+      "Comprehensive property management solutions to streamline real estate operations and enhance tenant experiences."
   },
    {
 id: "lms-education-solutions",
 img: icon6,
 title: "LMS & Education Solutions",
 description:
-"User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+"Comprehensive learning management systems and educational technology solutions for modern education."
    },
    {
     id: "healthcare-management-systems",
     img: icon7,
     title: "Healthcare Management Systems",
     description:
-      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+      "Integrated healthcare solutions to improve patient care and streamline medical practice operations."
    },
    {
     id: "ai-powered-automation",
     img: icon8,
     title: "AI-Powered Automation",
     description:
-      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+      "Leverage artificial intelligence to automate processes, enhance decision-making, and drive business growth."
    },
    {
     id: "iot-apps",
     img: icon9,
     title: "IOT Apps",
     description:
-      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+      "Innovative Internet of Things solutions to connect devices, collect data, and enable smart automation."
    },
   {
     id: "product-design",
     img: icon10,
     title: "Product & Design",
     description:
-      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+      "Comprehensive product design services including UI/UX design, user research, prototyping, and brand identity to create intuitive and engaging digital products."
   },
   {
     id: "data-center",
     img: icon11,
-     title: "Software Development",
+    title: "Data Center",
     description:
-      "Full-cycle software development services including custom applications, enterprise solutions, and system integrations tailored to your business needs.",
+      "Enterprise-grade data center solutions providing secure hosting, colocation, disaster recovery, and 24/7 monitoring for critical business infrastructure."
   },
   {
     id: "erp-crm-solutions",
     img: icon12,
     title: "ERP & CRM Solutions",
     description:
-      "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+      "Comprehensive ERP and CRM solutions to streamline business operations, enhance customer relationships, and improve decision-making through integrated systems."
   }
 ];
 
@@ -114,10 +114,10 @@ const Services = () => {
           <p className="mb-3 mt-2">{description}</p>
         </div>
 
-        {/* Back (title + description + button) */}
+        {/* Back (different content + button) */}
         <div className="feature-card-back shadow-sm rounded text-center p-4">
           <h5 className="fw-bold">{title}</h5>
-          <p className="mb-3 mt-2">{description}</p>
+          <p className="mb-3 mt-2">Discover how our {title.toLowerCase()} services can transform your business with cutting-edge solutions and expert support.</p>
           <Link to={`/services/${id}`} className="btn btn-light fw-bold">Learn More</Link>
         </div>
       </div>

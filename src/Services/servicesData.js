@@ -16,7 +16,7 @@ const servicesData = [
     id: "software-development",
     img: icon1,
     title: "App Development",
-    description: "Secure and scalable data center services offering advanced infrastructure management, ensuring peak performance and maximum uptime.",
+    description: "Comprehensive mobile application development services creating native, hybrid, and cross-platform apps for iOS and Android with modern technologies and best practices.",
     biography: [
       "Our App Development service provides comprehensive solutions to build robust, scalable, and efficient mobile applications tailored to your business needs. We specialize in custom mobile app development using modern technologies and methodologies.",
       "From initial concept to deployment and maintenance, our team ensures high-quality code, seamless integration, and optimal performance. We focus on agile development practices to deliver projects on time and within budget.",
@@ -57,7 +57,7 @@ const servicesData = [
     id: "ecommerce-solutions",
     img: icon3,
     title: "E-Commerce Solutions",
-    description: "Advanced data analytics and business intelligence solutions to transform raw data into actionable insights for informed decision-making.",
+    description: "Complete e-commerce platform development with secure payment gateways, inventory management, and user-friendly shopping experiences to drive online sales.",
     biography: [
       "Our E-Commerce Solutions service helps businesses establish and optimize their online stores with cutting-edge technologies and best practices.",
       "We create seamless shopping experiences with secure payment gateways, inventory management, and customer relationship management systems.",
@@ -201,9 +201,7 @@ const servicesData = [
     id: "product-design",
     img: icon10,
     title: "Product & Design",
-    description: "Scalable cloud infrastructure and migration strategies to support digital transformation and growth.",
-    description:
-      "Scalable cloud infrastructure and migration strategies to support digital transformation and growth.",
+    description: "Comprehensive product design services including UI/UX design, user research, prototyping, and brand identity to create intuitive and engaging digital products.",
     biography: [
       "Our Product & Design service focuses on creating intuitive, user-centered designs that enhance product usability and appeal. We combine creativity with functionality to deliver exceptional design solutions.",
       "From user research and wireframing to prototyping and final design, our team ensures that every product meets user needs and business goals.",
@@ -223,8 +221,7 @@ const servicesData = [
     id: "data-center",
     img: icon11,
     title: "Data Center",
-    description:
-      "Dedicated assistance around the clock to resolve issues quickly and maintain smooth operations.",
+    description: "Enterprise-grade data center solutions providing secure hosting, colocation, disaster recovery, and 24/7 monitoring for critical business infrastructure.",
     biography: [
       "Our Data Center service provides robust, secure, and high-performance data center solutions to support your critical business operations. We offer managed hosting, colocation, and disaster recovery services.",
       "With state-of-the-art facilities and 24/7 monitoring, we ensure maximum uptime, data security, and compliance with industry standards.",
@@ -244,8 +241,7 @@ const servicesData = [
   id: "erp-crm-solutions",
   img: icon12,
   title: "ERP & CRM Solutions",
-  description:
-    "User-centered product design and UX/UI development services to create intuitive, engaging digital products that delight your customers.",
+  description: "Comprehensive ERP and CRM solutions to streamline business operations, enhance customer relationships, and improve decision-making through integrated systems.",
   biography: [
     "Our ERP & CRM Solutions empower businesses to streamline operations, improve customer relationships, and enhance decision-making through centralized, intelligent systems.",
     "We provide fully customizable ERP and CRM platforms tailored to your workflows, enabling seamless integration across finance, sales, inventory, HR, and customer engagement processes.",
