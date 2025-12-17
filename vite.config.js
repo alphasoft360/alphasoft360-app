@@ -24,6 +24,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ['jquery']
   },
+  esbuild: {
+    logOverride: { 'css-syntax-error': 'silent' }
+  },
   build: {
     rollupOptions: {
       output: {
