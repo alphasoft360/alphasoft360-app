@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// React Icons
+// Dev Icons
 import {
   DiHtml5,
   DiCss3,
@@ -13,6 +14,8 @@ import {
   DiNodejs,
   DiPhp,
 } from "react-icons/di";
+
+// Simple Icons
 import {
   SiTailwindcss,
   SiGithub,
@@ -25,8 +28,8 @@ import {
   SiDocker,
   SiMongodb,
   SiExpress,
+  SiShopify,
 } from "react-icons/si";
-
 
 const partners = [
   { id: 1, Icon: DiHtml5, name: "HTML5", link: "https://developer.mozilla.org/en-US/docs/Web/HTML", hoverColor: "#E34F26" },
@@ -36,41 +39,42 @@ const partners = [
   { id: 5, Icon: DiBootstrap, name: "Bootstrap", link: "https://getbootstrap.com/", hoverColor: "#7952B3" },
   { id: 6, Icon: SiTailwindcss, name: "TailwindCSS", link: "https://tailwindcss.com/", hoverColor: "#06B6D4" },
   { id: 7, Icon: DiNodejs, name: "Node.js", link: "https://nodejs.org/", hoverColor: "#339933" },
-  { id: 8, Icon: SiGithub, name: "GitHub", link: "https://github.com/", hoverColor: "#181717" },
-  { id: 9, Icon: SiWordpress, name: "WordPress", link: "https://wordpress.org/", hoverColor: "#21759B" },
-  { id: 10, Icon: DiPhp, name: "PHP", link: "https://www.php.net/", hoverColor: "#777BB4" },
-  { id: 11, Icon: SiLaravel, name: "Laravel", link: "https://laravel.com/", hoverColor: "#FF2D20" },
-  { id: 12, Icon: SiSymfony, name: "Symfony", link: "https://symfony.com/", hoverColor: "#000000" },
-  { id: 13, Icon: SiNextdotjs, name: "Next.js", link: "https://nextjs.org/", hoverColor: "#000000" },
-  { id: 14, Icon: SiAngular, name: "Angular", link: "https://angular.io/", hoverColor: "#DD0031" },
-  { id: 15, Icon: SiVuedotjs, name: "Vue.js", link: "https://vuejs.org/", hoverColor: "#4FC08D" },
-  { id: 16, Icon: SiDocker, name: "Docker", link: "https://www.docker.com/", hoverColor: "#2496ED" },
-  { id: 17, Icon: SiMongodb, name: "MongoDB", link: "https://www.mongodb.com/", hoverColor: "#47A248" },
-  { id: 18, Icon: SiExpress, name: "Express.js", link: "https://expressjs.com/", hoverColor: "#000000" },
+  { id: 8, Icon: SiExpress, name: "Express.js", link: "https://expressjs.com/", hoverColor: "#000000" },
+  { id: 9, Icon: SiMongodb, name: "MongoDB", link: "https://www.mongodb.com/", hoverColor: "#47A248" },
+  { id: 10, Icon: SiGithub, name: "GitHub", link: "https://github.com/", hoverColor: "#181717" },
+  { id: 11, Icon: SiWordpress, name: "WordPress", link: "https://wordpress.org/", hoverColor: "#21759B" },
+  { id: 12, Icon: SiShopify, name: "Shopify", link: "https://www.shopify.com/", hoverColor: "#96BF48" },
+  { id: 13, Icon: DiPhp, name: "PHP", link: "https://www.php.net/", hoverColor: "#777BB4" },
+  { id: 14, Icon: SiLaravel, name: "Laravel", link: "https://laravel.com/", hoverColor: "#FF2D20" },
+  { id: 15, Icon: SiSymfony, name: "Symfony", link: "https://symfony.com/", hoverColor: "#000000" },
+  { id: 16, Icon: SiNextdotjs, name: "Next.js", link: "https://nextjs.org/", hoverColor: "#000000" },
+  { id: 17, Icon: SiAngular, name: "Angular", link: "https://angular.io/", hoverColor: "#DD0031" },
+  { id: 18, Icon: SiVuedotjs, name: "Vue.js", link: "https://vuejs.org/", hoverColor: "#4FC08D" },
+  { id: 19, Icon: SiDocker, name: "Docker", link: "https://www.docker.com/", hoverColor: "#2496ED" },
 ];
+
 const PartnerSlider = () => {
   const [slidesToShow, setSlidesToShow] = useState(5);
 
-  // Use media queries to control slides (instead of static breakpoints)
   useEffect(() => {
-    const handleResize = () => {
+    const resizeHandler = () => {
       if (window.innerWidth <= 576) setSlidesToShow(1);
       else if (window.innerWidth <= 768) setSlidesToShow(2);
       else if (window.innerWidth <= 992) setSlidesToShow(3);
       else setSlidesToShow(5);
     };
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    resizeHandler();
+    window.addEventListener("resize", resizeHandler);
+    return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
   const settings = {
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 0, // continuous scroll
-    speed: 4000, // controls marquee speed
-    cssEase: "linear", // smooth motion
+    autoplaySpeed: 0,
+    speed: 4000,
+    cssEase: "linear",
     slidesToShow,
     slidesToScroll: 1,
     arrows: false,
@@ -89,29 +93,36 @@ const PartnerSlider = () => {
         </h2>
 
         <Slider {...settings}>
-          {[...partners, ...partners].map(({ id, Icon, name, link, hoverColor }, index) => (
-            <div key={index} className="px-3">
-              <a
-                href={link}
-                target="_blank"
-                rel="noreferrer"
-                className="partner-icon d-flex flex-column align-items-center justify-content-center text-decoration-none"
-              >
-                <Icon
-                  size={70}
-                  className="tech-icon"
-                  style={{ color: "#ffffffcc", transition: "all 0.3s ease" }}
-                  onMouseEnter={(e) => (e.target.style.color = hoverColor)}
-                  onMouseLeave={(e) => (e.target.style.color = "#ffffffcc")}
-                />
-                <p className="text-light mt-3 mb-0 small fw-semibold">{name}</p>
-              </a>
-            </div>
-          ))}
+          {[...partners, ...partners].map(
+            ({ Icon, name, link, hoverColor }, index) => (
+              <div key={index} className="px-3">
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="d-flex flex-column align-items-center text-decoration-none"
+                >
+                  <Icon
+                    size={70}
+                    className="tech-icon"
+                    style={{ color: "#ffffffcc" }}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.color = hoverColor)
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.color = "#ffffffcc")
+                    }
+                  />
+                  <p className="text-light mt-3 mb-0 small fw-semibold">
+                    {name}
+                  </p>
+                </a>
+              </div>
+            )
+          )}
         </Slider>
       </div>
-
-      <style jsx="true">{`
+ <style jsx="true">{`
         .partner-section {
           background: linear-gradient(180deg, #061b6b 0%, #000a33 100%);
           overflow: hidden;
@@ -163,8 +174,7 @@ const PartnerSlider = () => {
             height: 55px;
           }
         }
-      `}</style>
-    </section>
+      `}</style>    </section>
   );
 };
 

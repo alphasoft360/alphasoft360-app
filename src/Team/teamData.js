@@ -8,6 +8,7 @@ import ahmed_hassan from "../assets/img/ahmed_hassan.jpg";
 import sameer_akhtar from "../assets/img/sameer_akhtar.jpg";
 import ubaidullah from "../assets/img/ubaidullah.jpg";
 import ali_hassan from "../assets/img/ali_hassan.jpg";
+import bu_ali from "../assets/img/bu-ali-Ahmed.png";
 
 const teamMembers = [
   // Awais Ali,
@@ -423,6 +424,39 @@ const teamMembers = [
       status: "1st Semester",
     },
   },
+  {
+id: "bu-ali",
+image: bu_ali,
+name: "Bu Ali Ahmed",
+role: "Front-End Web Developer",
+bio: "A motivated and detail-oriented Front-End Developer currently pursuing . Passionate about building modern, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and Bootstrap. Actively learning and improving skills to create clean, efficient code and deliver professional-quality digital experiences.",
+contact: {
+email: "buali.developer@gmail.com",
+phone: "none",
+},
+biography: [
+"Bu-Ali Ahmed is an aspiring Front-End Web Developer currently pursuing a BS in Artificial Intelligence. He enjoys creating visually appealing, responsive, and functional web interfaces using HTML, CSS, and Bootstrap 5.",
+"His focus lies in building modern web designs that are user-friendly, optimized, and accessible across all devices. Ali is dedicated to writing clean and efficient code that ensures smooth performance and great user experiences.",
+"He also leverages tools like Git, GitHub, VS Code, and Figma for version control, design collaboration, and efficient development workflows.",
+"With a growing interest in AI and front-end technologies, Ali aims to merge creativity with technical expertise to craft innovative digital solutions.",
+],
+skills: [
+{ name: "HTML5", percentage: 90 },
+{ name: "CSS3", percentage: 92 },
+{ name: "Tailwind CSS", percentage: 92 },
+{ name: "Bootstrap 5", percentage: 88 },
+{ name: "Responsive Design", percentage: 93 },
+{ name: "Git & GitHub", percentage: 88 },
+{ name: "Figma (UI Collaboration)", percentage: 82 },
+],
+socials: {
+linkedin:
+"https://www.linkedin.com/in/bu-ali-ahmad-815a5a391/",
+github: "https://github.com/bualiahmed",
+stackoverflow: "https://stackoverflow.com/",
+},
+},
+
 ];
 
 export default teamMembers;
