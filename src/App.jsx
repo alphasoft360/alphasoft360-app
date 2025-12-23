@@ -15,6 +15,7 @@ import BlogDetail from "./Pages/BlogDetail";
 import Contact from "./Pages/Contact";
 import FAQ from "./Pages/FAQ";
 import Messages from "./Pages/Messages";
+import CertificateDisplay from "./Pages/CertificateDisplay";
 import ScrollToTop from "./components/ScrollToTop";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -46,6 +47,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/messages" element={<Messages />} />
+            <Route path="/certificate/:id" element={<CertificateDisplay />} />
           </Routes>
         </main>
         <Footer />

@@ -73,13 +73,13 @@ const EventIdcard = ({ member }) => {
         onMouseDown={handleMouseDown}
       >
         {/* Front Side */}
-        <Card 
+        <Card
           className="border-0 idcard-container idcard-front"
-          style={{ 
-            userSelect: 'none', 
-            cursor: 'default',
-            position: 'absolute',
-            backfaceVisibility: 'hidden'
+          style={{
+            userSelect: "none",
+            cursor: "default",
+            position: "absolute",
+            backfaceVisibility: "hidden",
           }}
           onMouseDown={(e) => {
             e.preventDefault();
@@ -118,7 +118,7 @@ const EventIdcard = ({ member }) => {
             </div>
 
             <div className="details-section">
-             <Row className="align-items-center mb-2">
+              <Row className="align-items-center mb-2">
                 <Col xs={4} className="fw-semibold">
                   Name:
                 </Col>
@@ -133,7 +133,7 @@ const EventIdcard = ({ member }) => {
                     <a
                       href={`mailto:${member.contact.email}`}
                       className="text-primary text-decoration-none"
-                      style={{ userSelect: 'text', cursor: 'pointer' }}
+                      style={{ userSelect: "text", cursor: "pointer" }}
                       onClick={(e) => {
                         e.stopPropagation();
                       }}
@@ -160,7 +160,7 @@ const EventIdcard = ({ member }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-success text-decoration-none"
-                      style={{ userSelect: 'text', cursor: 'pointer' }}
+                      style={{ userSelect: "text", cursor: "pointer" }}
                       onClick={(e) => {
                         e.stopPropagation();
                       }}
@@ -191,15 +191,15 @@ const EventIdcard = ({ member }) => {
         </Card>
 
         {/* Back Side - Full White */}
-        <Card 
+        <Card
           className="border-0 idcard-container idcard-back"
-          style={{ 
-            userSelect: 'none', 
-            cursor: 'default',
-            position: 'absolute',
-            backfaceVisibility: 'hidden',
-            transform: 'rotateY(180deg)',
-            background: '#ffffff'
+          style={{
+            userSelect: "none",
+            cursor: "default",
+            position: "absolute",
+            backfaceVisibility: "hidden",
+            transform: "rotateY(180deg)",
+            background: "#ffffff",
           }}
         >
           <Card.Body className="p-4">
@@ -210,22 +210,20 @@ const EventIdcard = ({ member }) => {
                 </div>
                 <div>
                   <h4 className="mt-3 fw-bold text-primary">ALPHASOFT360</h4>
-                  <p className="text-muted">
-                    Innovative Digital Solutions
-                  </p>
+                  <p className="text-muted">Innovative Digital Solutions</p>
                 </div>
               </div>
-              
+
               {/* QR Code Section */}
               <div className="mb-4">
                 <h6 className="fw-bold mb-3">Scan for Verification</h6>
                 <div className="d-flex justify-content-center mb-3">
                   <div className="qr-code-container p-2 bg-white border rounded">
-                    <QRCodeSVG 
-                      value={`https://www.alphasoft360.org/verify/${member?.name?.replace(/\s/g, '').toLowerCase() || 'demo'}-${member?.id || '001'}`}
+                    <QRCodeSVG
+                      value={`${window.location.origin}/certificate/${member?.id}`}
                       size={120}
                       level="H"
-                      includeMargin={true}
+                      marginSize={1}
                     />
                   </div>
                 </div>
@@ -233,15 +231,20 @@ const EventIdcard = ({ member }) => {
                   Scan to verify authenticity
                 </p>
               </div>
-              
+
               <div className="mt-auto">
                 <h5 className="fw-bold mb-3">Professional ID Card</h5>
                 <p className="text-muted small mb-4">
-                  This card verifies the identity and affiliation of the cardholder with AlphaSoft360.
+                  This card verifies the identity and affiliation of the
+                  cardholder with AlphaSoft360.
                 </p>
                 <div className="border-top pt-3">
-                  <p className="small text-muted mb-1">Valid Until: 12/2025</p>
-                  <p className="small text-muted mb-0">Card ID: AS360-{member?.name?.replace(/\s/g, '').toUpperCase() || 'DEMO'}-001</p>
+                  <p className="small text-muted mb-1">Valid Until: 12/2026</p>
+                  <p className="small text-muted mb-0">
+                    Card ID: AS360-
+                    {member?.name?.replace(/\s/g, "").toUpperCase() || "DEMO"}
+                    -001
+                  </p>
                 </div>
               </div>
             </div>
@@ -277,20 +280,17 @@ const EventIdcard = ({ member }) => {
         .idcard-container {
           background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
           border-radius: 16px;
-          box-shadow:
-            0 20px 40px rgba(0, 0, 0, 0.15),
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
             0 0 0 1px rgba(255, 255, 255, 0.1);
           transform-style: preserve-3d;
           transition: all 0.3s ease;
         }
 
         .idcard-container:hover {
-          box-shadow:
-            0 25px 50px rgba(0, 0, 0, 0.2),
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2),
             0 0 0 1px rgba(255, 255, 255, 0.2);
         }
 
-        
         .team-card-logo img {
           width: 100px;
         }
@@ -302,17 +302,15 @@ const EventIdcard = ({ member }) => {
         }
 
         .profile-image {
-          box-shadow:
-            0 8px 16px rgba(0, 123, 255, 0.3),
+          box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3),
             0 0 0 4px rgba(255, 255, 255, 0.1);
           transition: all 0.3s ease;
-          width:  130px;
+          width: 130px;
         }
 
         .profile-image:hover {
           transform: scale(1.05);
-          box-shadow:
-            0 12px 24px rgba(0, 123, 255, 0.4),
+          box-shadow: 0 12px 24px rgba(0, 123, 255, 0.4),
             0 0 0 4px rgba(255, 255, 255, 0.2);
         }
 
@@ -322,7 +320,8 @@ const EventIdcard = ({ member }) => {
           padding: 10px;
           border: 1px solid rgba(0, 123, 255, 0.1);
         }
-        .team-card-footer, .team-card-logo {
+        .team-card-footer,
+        .team-card-logo {
           background: linear-gradient(90deg, #007bff, #0056b3);
           color: white !important;
           border: none;
@@ -343,8 +342,7 @@ const EventIdcard = ({ member }) => {
           height: 20px;
           background: linear-gradient(180deg, #c0c0c0, #808080, #c0c0c0);
           border-radius: 4px 4px 0 0;
-          box-shadow:
-            0 -2px 4px rgba(0, 0, 0, 0.3),
+          box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3),
             inset 0 1px 0 rgba(255, 255, 255, 0.5);
         }
 
@@ -354,8 +352,7 @@ const EventIdcard = ({ member }) => {
           background: linear-gradient(180deg, #d4d4d4, #a0a0a0);
           border-radius: 2px;
           margin: -5px auto 0;
-          box-shadow:
-            0 1px 2px rgba(0, 0, 0, 0.2),
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2),
             inset 0 1px 0 rgba(255, 255, 255, 0.6);
         }
 
