@@ -36,8 +36,8 @@ const CertificateDisplay = () => {
     certificationTitle: member.role,
     issuingOrganization: "AlphaSoft360",
     certificateId: `AS360-CERT-${new Date().getFullYear()}-${member.id.toUpperCase().replace('-', '')}`,
-    issueDate: "December 15, 2024",
-    expiryDate: "December 15, 2026",
+    issueDate: "December 15, 2025",
+    expiryDate: "December 15, 2027",
     status: "Certified",
     organizationLogo: "/assets/AlphaSoft_logo-COnJdYXH.png"
   };
