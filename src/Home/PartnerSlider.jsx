@@ -29,6 +29,15 @@ import {
   SiMongodb,
   SiExpress,
   SiShopify,
+  SiPostman,
+  SiSwagger,
+  SiJsonwebtokens,
+  SiGraphql,
+  SiApachekafka,
+  SiRedis,
+  SiFirebase,
+  SiGooglecloud,
+  SiAmazonwebservices,
 } from "react-icons/si";
 
 const partners = [
@@ -51,6 +60,15 @@ const partners = [
   { id: 17, Icon: SiAngular, name: "Angular", link: "https://angular.io/", hoverColor: "#DD0031" },
   { id: 18, Icon: SiVuedotjs, name: "Vue.js", link: "https://vuejs.org/", hoverColor: "#4FC08D" },
   { id: 19, Icon: SiDocker, name: "Docker", link: "https://www.docker.com/", hoverColor: "#2496ED" },
+  { id: 20, Icon: SiPostman, name: "Postman", link: "https://www.postman.com/", hoverColor: "#FF6C37" },
+  { id: 21, Icon: SiSwagger, name: "Swagger", link: "https://swagger.io/", hoverColor: "#85EA2D" },
+  { id: 22, Icon: SiJsonwebtokens, name: "JWT", link: "https://jwt.io/", hoverColor: "#000000" },
+  { id: 23, Icon: SiGraphql, name: "GraphQL", link: "https://graphql.org/", hoverColor: "#E10098" },
+  { id: 24, Icon: SiApachekafka, name: "Apache Kafka", link: "https://kafka.apache.org/", hoverColor: "#231F20" },
+  { id: 25, Icon: SiRedis, name: "Redis", link: "https://redis.io/", hoverColor: "#DC382D" },
+  { id: 26, Icon: SiFirebase, name: "Firebase", link: "https://firebase.google.com/", hoverColor: "#FFCA28" },
+  { id: 27, Icon: SiGooglecloud, name: "Google Cloud", link: "https://cloud.google.com/", hoverColor: "#4285F4" },
+  { id: 28, Icon: SiAmazonwebservices, name: "AWS", link: "https://aws.amazon.com/", hoverColor: "#FF9900" },
 ];
 
 const PartnerSlider = () => {

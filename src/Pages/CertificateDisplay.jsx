@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import teamMembers from '../Team/teamData.js';
 import './CertificateDisplay.css';
 import OfficalSeal from '../assets/img/Offical-seal.png';
+import logo from '../assets/img/AlphaSoft_logo1.png';
 
 const CertificateDisplay = () => {
   const { id } = useParams();
@@ -36,10 +37,9 @@ const CertificateDisplay = () => {
     certificationTitle: member.role,
     issuingOrganization: "AlphaSoft360",
     certificateId: `AS360-CERT-${new Date().getFullYear()}-${member.id.toUpperCase().replace('-', '')}`,
-    issueDate: "December 15, 2024",
-    expiryDate: "December 15, 2026",
+    issueDate: "December 15, 2025",
     status: "Certified",
-    organizationLogo: "/assets/AlphaSoft_logo-COnJdYXH.png"
+    organizationLogo: logo,
   };
 
   return (
@@ -55,9 +55,9 @@ const CertificateDisplay = () => {
                     src={certificateData.organizationLogo} 
                     alt="AlphaSoft360 Logo" 
                     className="organization-logo"
-                    onError={(e) => {
-                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' fill='%23061b6b'/%3E%3Ctext x='100' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EAlphaSoft360%3C/text%3E%3C/svg%3E";
-                    }}
+                    // onError={(e) => {
+                    //   e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Ctext x='100' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='%23061b6b' text-anchor='middle'%3EAlphaSoft360%3C/text%3E%3C/svg%3E";
+                    // }}
                   />
                 </div>
                 <h1 className="certificate-title">Certificate of Achievement</h1>
@@ -94,18 +94,18 @@ const CertificateDisplay = () => {
                         <p className="detail-value">{certificateData.certificateId}</p>
                       </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-md-12 mb-3 d-flex justify-content-center">
                       <div className="detail-item">
                         <label className="detail-label">Date of Issue</label>
                         <p className="detail-value">{certificateData.issueDate}</p>
                       </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    {/* <div className="col-md-6 mb-3">
                       <div className="detail-item">
                         <label className="detail-label">Valid Until</label>
                         <p className="detail-value">{certificateData.expiryDate}</p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
