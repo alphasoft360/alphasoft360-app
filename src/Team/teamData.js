@@ -66,7 +66,7 @@ const teamMembers = [
       phone: "+92 304 7527264",
     },
     biography: [
-      "I am the Chief Operations Officer at Alphasoft360 with over 5+ years of professional experience in full-stack software development, operations management, and enterprise solution delivery. I specialize in aligning technical execution with business goals to deliver scalable and high-impact digital solutions.",
+      "I am the Chief Operations Officer at Alphasoft360 with over 9+ years of professional experience in full-stack software development, operations management, and enterprise solution delivery. I specialize in aligning technical execution with business goals to deliver scalable and high-impact digital solutions.",
       "Throughout my career, I have led cross-functional teams, optimized development workflows, and ensured high-quality delivery across in-house and freelance projects, maintaining a strong focus on performance, scalability, and maintainability.",
       "Freelance Project – Maker’s Row: I contributed to the development and optimization of Maker’s Row, a leading online platform that connects brands with vetted manufacturers to streamline production and bring product ideas to life. My role involved backend enhancements, performance optimization, and ensuring reliable integrations across the platform.",
       "Freelance Project – Round Here: I worked on Round Here, a platform designed to empower Michigan founders by aggregating essential resources, funding opportunities, networking events, and business tools. I helped deliver scalable features, improve system performance, and support a smooth user experience.",
