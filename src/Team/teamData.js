@@ -67,7 +67,7 @@ const teamMembers = [
   bio: "Chief Operations Officer with extensive experience in software development, operational leadership, and enterprise solution delivery, leading teams and freelance projects across global platforms.",
   contact: {
     email: "Saggar.farid@gmail.com",
-    phone: "+92-304-7527264",
+    phone: "+92 304 7527264",
   },
   biography: [
     "I am the Chief Operations Officer at Alphasoft360 with over 5+ years of professional experience in full-stack software development, operations management, and enterprise solution delivery. I specialize in aligning technical execution with business goals to deliver scalable and high-impact digital solutions.",
