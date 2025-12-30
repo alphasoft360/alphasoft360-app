@@ -1,4 +1,4 @@
-import awais_ali from "../assets/img/awais_ali.png";
+import awais_ali from "../assets/img/awais_ali.jpeg";
 import maroof_sultan from "../assets/img/maroof_sultan.jpg";
 import muhammad_shahbaz from "../assets/img/muhammad_shahbaz.jpg";
 import muazam_mughal from "../assets/img/muazam_mughal.jpg";
@@ -168,73 +168,73 @@ const teamMembers = [
     },
   },
   // Arham Ali
- {
-  id: "arham-ali",
-  image: arham_ali,
-  name: "Arham Ali",
-  role: "Frontend Developer (React • Next.js • Tailwind)",
-  bio: "Frontend Developer at AlphaSoft360 specializing in clean, responsive, and modern web interfaces.",
-  contact: {
-    email: "arham.ali1323@gmail.com",
-    phone: "+92 321 1051323",
-  },
-  biography: [
-    "Arham Ali is a Front-End Developer specializing in React, Next.js, JavaScript, and Tailwind CSS. He builds fast, scalable, and pixel-perfect user interfaces with a strong focus on modern UI/UX standards.",
-    "Currently working at AlphaSoft360, Arham contributes to the company's official portfolio website by implementing responsive layouts, reusable components, and smooth user experiences.",
-    "His experience includes transforming Figma/PSD designs into clean, production-ready interfaces, API integration, component-based architecture, and performance optimization.",
-    "Arham is passionate about continuous learning, collaboration, and building innovative frontend solutions that merge functionality with creativity."
-  ],
-  skills: [
-    { name: "Component-Based Architecture", percentage: 95 },
-    { name: "Responsive UI Frameworks", percentage: 93 },
-    { name: "API Integration", percentage: 90 },
-    { name: "React.js & Next.js", percentage: 92 },
-    { name: "TypeScript", percentage: 85 },
-    { name: "Tailwind CSS & Bootstrap", percentage: 94 },
-    { name: "HTML5 & CSS3", percentage: 96 },
-    { name: "JavaScript (ES6+)", percentage: 91 },
-    { name: "Performance Optimization", percentage: 88 },
-       { name: "Responsive Design", percentage: 94 },
+  {
+    id: "arham-ali",
+    image: arham_ali,
+    name: "Arham Ali",
+    role: "Frontend Developer (React • Next.js • Tailwind)",
+    bio: "Frontend Developer at AlphaSoft360 specializing in clean, responsive, and modern web interfaces.",
+    contact: {
+      email: "arham.ali1323@gmail.com",
+      phone: "+92 321 1051323",
+    },
+    biography: [
+      "Arham Ali is a Front-End Developer specializing in React, Next.js, JavaScript, and Tailwind CSS. He builds fast, scalable, and pixel-perfect user interfaces with a strong focus on modern UI/UX standards.",
+      "Currently working at AlphaSoft360, Arham contributes to the company's official portfolio website by implementing responsive layouts, reusable components, and smooth user experiences.",
+      "His experience includes transforming Figma/PSD designs into clean, production-ready interfaces, API integration, component-based architecture, and performance optimization.",
+      "Arham is passionate about continuous learning, collaboration, and building innovative frontend solutions that merge functionality with creativity."
+    ],
+    skills: [
+      { name: "Component-Based Architecture", percentage: 95 },
+      { name: "Responsive UI Frameworks", percentage: 93 },
+      { name: "API Integration", percentage: 90 },
+      { name: "React.js & Next.js", percentage: 92 },
+      { name: "TypeScript", percentage: 85 },
+      { name: "Tailwind CSS & Bootstrap", percentage: 94 },
+      { name: "HTML5 & CSS3", percentage: 96 },
+      { name: "JavaScript (ES6+)", percentage: 91 },
+      { name: "Performance Optimization", percentage: 88 },
+      { name: "Responsive Design", percentage: 94 },
       { name: "Cross-Browser Compatibility", percentage: 89 },
       { name: "UI/UX Principles", percentage: 87 },
 
-  ],
-  socials: {
-    stackoverflow: "https://stackoverflow.com/users/31519431/arham-ali",
-    linkedin: "https://www.linkedin.com/in/arham-ali-973359289/",
-    github: "https://github.com/arham-ali1323",
-    portfolio: "https://personal-portfoilio-five.vercel.app/",
-  },
-  education: {
-    degree: "Bachelor of Science in Economics",
-    institution: "University of Sahiwal, Sahiwal (2020 - 2024)",
-  },
-  experience: [
-    {
-      company: "AlphaSoft360",
-      role: "Frontend Developer",
-      duration: "March 2025 – Present",
-      details: [
-        "Developed and maintained the company’s official portfolio website using React.js and Tailwind CSS.",
-        "Built responsive layouts and reusable UI components.",
-        "Improved workflow through cleaner state management and structured component architecture.",
-        "Collaborated with backend teams for API integration and seamless user experiences."
-      ]
+    ],
+    socials: {
+      stackoverflow: "https://stackoverflow.com/users/31519431/arham-ali",
+      linkedin: "https://www.linkedin.com/in/arham-ali-973359289/",
+      github: "https://github.com/arham-ali1323",
+      portfolio: "https://personal-portfoilio-five.vercel.app/",
     },
-    {
-      company: "Optimization Oasis",
-      role: "Frontend Developer",
-      duration: "March 2021 – October 2022",
-      details: [
-        "Built responsive websites using HTML, CSS, JavaScript, Bootstrap, Tailwind, and React.js.",
-        "Converted Figma/PSD designs into pixel-perfect modern interfaces.",
-        "Optimized page performance and ensured full cross-browser compatibility.",
-        "Worked directly with clients to gather requirements and deliver updates.",
-        "Improved front-end loading speed and wrote clean, maintainable code."
-      ]
-    }
-  ]
-},
+    education: {
+      degree: "Bachelor of Science in Economics",
+      institution: "University of Sahiwal, Sahiwal (2020 - 2024)",
+    },
+    experience: [
+      {
+        company: "AlphaSoft360",
+        role: "Frontend Developer",
+        duration: "March 2025 – Present",
+        details: [
+          "Developed and maintained the company’s official portfolio website using React.js and Tailwind CSS.",
+          "Built responsive layouts and reusable UI components.",
+          "Improved workflow through cleaner state management and structured component architecture.",
+          "Collaborated with backend teams for API integration and seamless user experiences."
+        ]
+      },
+      {
+        company: "Optimization Oasis",
+        role: "Frontend Developer",
+        duration: "March 2021 – October 2022",
+        details: [
+          "Built responsive websites using HTML, CSS, JavaScript, Bootstrap, Tailwind, and React.js.",
+          "Converted Figma/PSD designs into pixel-perfect modern interfaces.",
+          "Optimized page performance and ensured full cross-browser compatibility.",
+          "Worked directly with clients to gather requirements and deliver updates.",
+          "Improved front-end loading speed and wrote clean, maintainable code."
+        ]
+      }
+    ]
+  },
   // fazain
   {
     id: "faizan-ali",
@@ -279,9 +279,9 @@ const teamMembers = [
   {
     id: "ahmed_hassan",
     image: ahmed_hassan,
-    name: "Ahmad Hassan Zafar",
+    name: "Ahmad Hassan",
     role: "Frontend Developer",
-    bio: "Turning data and insights into meaningful business strategies that drive performance.",
+    bio: "Passionate web developer creating modern, responsive websites with clean code and elegant design.",
     contact: {
       email: "ahassandevx@gmail.com",
       phone: "+92 327 1888082",
@@ -321,7 +321,7 @@ const teamMembers = [
     contact: {
       email: "sameerxdev@gmail.com",
       phone: "+92 321 6903462"
-     },
+    },
     biography: [
       "Sameer Akhtar is a dedicated Front-End Developer skilled in HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. He specializes in building clean, responsive, and modern interfaces that balance functionality with aesthetic appeal.",
       "He has a strong understanding of responsive web design, cross-browser compatibility, and UI/UX principles, ensuring that every project delivers an excellent user experience across all devices.",
@@ -359,14 +359,14 @@ const teamMembers = [
     contact: {
       email: "ubaidullah.web.dev@gmail.com",
       phone: "+92 328 7231804",
-     },
+    },
     biography: [
       "Ubaidullah is a passionate Front-End Web Developer dedicated to crafting elegant, responsive, and accessible web experiences using modern technologies such as HTML5, CSS,  JavaScript (ES6+), and Bootstrap.",
       "He excels at transforming design concepts into functional, pixel-perfect interfaces that deliver exceptional user experiences across all devices and browsers.",
       "Currently pursuing Intermediate at Aspire Group of Colleges (2025), Ubaidullah continues to learn and grow as a developer, exploring new frameworks and tools to enhance his front-end expertise.",
     ],
     skills: [
-           { name: "HTML5", percentage: 90 },
+      { name: "HTML5", percentage: 90 },
       { name: "CSS3", percentage: 92 },
       { name: "Tailwind CSS", percentage: 92 },
       { name: "React.js", percentage: 72 },
@@ -396,7 +396,7 @@ const teamMembers = [
     contact: {
       email: "ali.xdev77@gmail.com",
       phone: "+92 327 4686432",
-      },
+    },
     biography: [
       "Ali Hassan is an aspiring Front-End Web Developer currently pursuing a BS in Artificial Intelligence. He enjoys creating visually appealing, responsive, and functional web interfaces using HTML, CSS, JavaScript (ES6+), and Bootstrap 5.",
       "His focus lies in building modern web designs that are user-friendly, optimized, and accessible across all devices. Ali is dedicated to writing clean and efficient code that ensures smooth performance and great user experiences.",
@@ -404,7 +404,7 @@ const teamMembers = [
       "With a growing interest in AI and front-end technologies, Ali aims to merge creativity with technical expertise to craft innovative digital solutions.",
     ],
     skills: [
-           { name: "HTML5", percentage: 90 },
+      { name: "HTML5", percentage: 90 },
       { name: "CSS3", percentage: 92 },
       { name: "Tailwind CSS", percentage: 92 },
       { name: "JavaScript (ES6+)", percentage: 80 },
@@ -425,37 +425,37 @@ const teamMembers = [
     },
   },
   {
-id: "bu-ali",
-image: bu_ali,
-name: "Bu Ali Ahmed",
-role: "Front-End Web Developer",
-bio: "A motivated and detail-oriented Front-End Developer currently pursuing . Passionate about building modern, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and Bootstrap. Actively learning and improving skills to create clean, efficient code and deliver professional-quality digital experiences.",
-contact: {
-email: "buali.developer@gmail.com",
-phone: "none",
-},
-biography: [
-"Bu-Ali Ahmed is an aspiring Front-End Web Developer currently pursuing a BS in Artificial Intelligence. He enjoys creating visually appealing, responsive, and functional web interfaces using HTML, CSS, and Bootstrap 5.",
-"His focus lies in building modern web designs that are user-friendly, optimized, and accessible across all devices. Ali is dedicated to writing clean and efficient code that ensures smooth performance and great user experiences.",
-"He also leverages tools like Git, GitHub, VS Code, and Figma for version control, design collaboration, and efficient development workflows.",
-"With a growing interest in AI and front-end technologies, Ali aims to merge creativity with technical expertise to craft innovative digital solutions.",
-],
-skills: [
-{ name: "HTML5", percentage: 90 },
-{ name: "CSS3", percentage: 92 },
-{ name: "Tailwind CSS", percentage: 92 },
-{ name: "Bootstrap 5", percentage: 88 },
-{ name: "Responsive Design", percentage: 93 },
-{ name: "Git & GitHub", percentage: 88 },
-{ name: "Figma (UI Collaboration)", percentage: 82 },
-],
-socials: {
-linkedin:
-"https://www.linkedin.com/in/bu-ali-ahmad-815a5a391/",
-github: "https://github.com/bualiahmed",
-stackoverflow: "https://stackoverflow.com/",
-},
-},
+    id: "bu-ali",
+    image: bu_ali,
+    name: "Bu Ali Ahmed",
+    role: "Front-End Web Developer",
+    bio: "A motivated and detail-oriented Front-End Developer currently pursuing . Passionate about building modern, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and Bootstrap. Actively learning and improving skills to create clean, efficient code and deliver professional-quality digital experiences.",
+    contact: {
+      email: "buali.developer@gmail.com",
+      phone: "none",
+    },
+    biography: [
+      "Bu-Ali Ahmed is an aspiring Front-End Web Developer currently pursuing a BS in Artificial Intelligence. He enjoys creating visually appealing, responsive, and functional web interfaces using HTML, CSS, and Bootstrap 5.",
+      "His focus lies in building modern web designs that are user-friendly, optimized, and accessible across all devices. Ali is dedicated to writing clean and efficient code that ensures smooth performance and great user experiences.",
+      "He also leverages tools like Git, GitHub, VS Code, and Figma for version control, design collaboration, and efficient development workflows.",
+      "With a growing interest in AI and front-end technologies, Ali aims to merge creativity with technical expertise to craft innovative digital solutions.",
+    ],
+    skills: [
+      { name: "HTML5", percentage: 90 },
+      { name: "CSS3", percentage: 92 },
+      { name: "Tailwind CSS", percentage: 92 },
+      { name: "Bootstrap 5", percentage: 88 },
+      { name: "Responsive Design", percentage: 93 },
+      { name: "Git & GitHub", percentage: 88 },
+      { name: "Figma (UI Collaboration)", percentage: 82 },
+    ],
+    socials: {
+      linkedin:
+        "https://www.linkedin.com/in/bu-ali-ahmad-815a5a391/",
+      github: "https://github.com/bualiahmed",
+      stackoverflow: "https://stackoverflow.com/",
+    },
+  },
 
 ];
 
