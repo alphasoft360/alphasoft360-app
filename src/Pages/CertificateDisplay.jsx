@@ -143,7 +143,7 @@ const CertificateDisplay = () => {
                 </div>
                 <div className="footer-info text-center mt-3">
                   <p className="footer-text">
-                    © 2024 AlphaSoft360 | Professional Certification Services
+                    © 2025 AlphaSoft360 | Professional Certification Services
                   </p>
                 </div>
               </div>
