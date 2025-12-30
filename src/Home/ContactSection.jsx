@@ -115,6 +115,22 @@ const ContactSection = () => {
             <a
               className="btn btn-lg text-light lets-talk-button"
               href="#"
+              style={{
+                backgroundColor: '#0934d1ff',
+                border: '2px solid #0934d1ff',
+                borderRadius: '8px',
+                padding: '12px 30px',
+                fontWeight: '600',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseOver={(e) => {
+                e.target.style.backgroundColor = '#0934d1ff';
+                e.target.style.borderColor = '#0934d1ff';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.backgroundColor = '#0934d1ff';
+                e.target.style.borderColor = '#0934d1ff';
+              }}
               onClick={(e) => {
                 e.preventDefault();
                   window.open(`https://wa.me/${contactData.whatsappNumber}`, "_blank");
