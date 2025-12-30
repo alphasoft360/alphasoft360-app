@@ -6,38 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { Container } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
-import Person1 from "../assets/img/client1.png";
-import Person2 from "../assets/img/client2.png";
-import Person3 from "../assets/img/client3.png";
-import Person4 from "../assets/img/CEo.jpeg";
-
-const about_teamMembers = [
-  {
-    id: "isabella-croline",
-    image: Person1,
-    name: "Isabella Croline",
-    role: "Project Manager",
-  },
-  {
-    id: "jullia-siger",
-    image: Person2,
-    name: "Jullia Siger",
-    role: "Product Designer",
-  },
-  {
-    id: "corey-anderson",
-    image: Person3,
-    name: "Corey Anderson",
-    role: "President & CEO",
-  },
-  {
-    id: "jane-doe",
-    image: Person4,
-    name: "Jane Doe",
-    role: "Lead Developer",
-  },
-];
-
 const About_teamSliderSection = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
 

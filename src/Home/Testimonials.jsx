@@ -5,14 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { Container } from "react-bootstrap";
 import { FaQuoteRight } from "react-icons/fa";
 
-// Avatar images
-import avatar1 from "../assets/img/client1.png";
-import avatar2 from "../assets/img/client2.png";
-import faizan_ali from "../assets/img/faizan_ali.jpg";
-import maroof_sultan from "../assets/img/maroof_sultan.jpg";
-import muhammad_shahbaz from "../assets/img/muhammad_shahbaz.jpg";
-import avatar3 from "../assets/img/client3.png";
-import ahmed_hassan from "../assets/img/ahmed_hassan.jpg";
 
 const Testimonials = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -39,49 +31,41 @@ const Testimonials = () => {
       text: "AlphaSoft delivered our e-commerce platform on time and exceeded expectations. Their expertise in modern web technologies transformed our business operations.",
       name: "Ahmed Rahman",
       role: "CTO, TechStart Solutions",
-      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "Working with AlphaSoft was a game-changer for our mobile app development. Their attention to detail and commitment to quality resulted in a seamless user experience.",
       name: "Ali Raza",
       role: "Product Manager, InnovateCorp",
-      img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "The custom software solution AlphaSoft built for us significantly improved workflow efficiency. Their support team is always responsive and helpful.",
       name: "Fatima Khan",
       role: "Operations Director, DataFlow Inc",
-      img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "AlphaSoft's expertise in cloud migration helped us scale seamlessly. Their strategic approach saved us time and resources.",
       name: "Aisha Ahmed",
       role: "IT Manager, GlobalTech",
-      img: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "AlphaSoft's team provided exceptional UI/UX design and development services. Our client satisfaction increased dramatically since launching the new platform.",
       name: "Zara Malik",
       role: "Marketing Director, BrandBoost",
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "AlphaSoft's innovative approach to digital transformation helped us modernize our legacy systems. Their technical expertise is unmatched.",
       name: "Hassan Javed",
       role: "CIO, Enterprise Solutions",
-      img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "The cybersecurity solutions provided by AlphaSoft gave us peace of mind. Their proactive approach prevented potential threats.",
       name: "Omar Farooq",
       role: "Security Analyst, SecureTech",
-      img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
     },
     {
       text: "AlphaSoft's data analytics platform revolutionized our decision-making process. We now have real-time insights that drive our business forward.",
       name: "Latif Khan",
       role: "Data Scientist, InsightCorp",
-      img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop&crop=face",
     },
   ];
 
@@ -113,17 +97,6 @@ const Testimonials = () => {
               <div className="testimonial-card bg-white text-center p-4 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-between">
                 <FaQuoteRight className="text-primary fs-2 mb-3" />
                 <p className="text-muted mb-4">{t.text}</p>
-                <img
-                  src={t.img}
-                  alt={t.name}
-                  className="rounded-circle mb-3"
-                  style={{
-                    width: "80px",
-                    height: "80px",
-                    objectFit: "cover",
-                    border: "3px solid #0d6efd",
-                  }}
-                />
                 <h5 className="fw-bold mb-1">{t.name}</h5>
                 <p className="text-secondary small mb-0">{t.role}</p>
               </div>
