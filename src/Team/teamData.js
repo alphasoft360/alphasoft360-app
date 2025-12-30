@@ -1,4 +1,5 @@
 import awais_ali from "../assets/img/awais_ali.jpeg";
+import saggar_farid from "../assets/img/saggar_farid.png";
 import maroof_sultan from "../assets/img/maroof_sultan.jpg";
 import muhammad_shahbaz from "../assets/img/muhammad_shahbaz.jpg";
 import muazam_mughal from "../assets/img/muazam_mughal.jpg";
@@ -57,6 +58,45 @@ const teamMembers = [
       github: "https://github.com/",
     },
   },
+  // Saggar Farid
+  {
+  id: "saggar-farid",
+  image: saggar_farid, // replace with actual image import
+  name: "Saggar Farid",
+  role: "Chief Operations Officer - Alphasoft360",
+  bio: "Chief Operations Officer with extensive experience in software development, operational leadership, and enterprise solution delivery, leading teams and freelance projects across global platforms.",
+  contact: {
+    email: "Saggar.farid@gmail.com",
+    phone: "+92-304-7527264",
+  },
+  biography: [
+    "I am the Chief Operations Officer at Alphasoft360 with over 5+ years of professional experience in full-stack software development, operations management, and enterprise solution delivery. I specialize in aligning technical execution with business goals to deliver scalable and high-impact digital solutions.",
+    "Throughout my career, I have led cross-functional teams, optimized development workflows, and ensured high-quality delivery across in-house and freelance projects, maintaining a strong focus on performance, scalability, and maintainability.",
+    "Freelance Project – Maker’s Row: I contributed to the development and optimization of Maker’s Row, a leading online platform that connects brands with vetted manufacturers to streamline production and bring product ideas to life. My role involved backend enhancements, performance optimization, and ensuring reliable integrations across the platform.",
+    "Freelance Project – Round Here: I worked on Round Here, a platform designed to empower Michigan founders by aggregating essential resources, funding opportunities, networking events, and business tools. I helped deliver scalable features, improve system performance, and support a smooth user experience.",
+    "Technical Leadership (Laravel, Node.js): With strong expertise in Laravel and Node.js, I oversee backend architecture, RESTful API development, and system scalability, ensuring secure and efficient enterprise-grade applications.",
+    "Frontend Integration & DevOps: I have hands-on experience integrating modern frontend frameworks such as React and Vue.js with backend services, along with managing deployment workflows and database optimization using MySQL.",
+    "Team Collaboration & Agile Leadership: I follow Agile methodologies, mentor development teams, and collaborate closely with stakeholders to deliver high-quality solutions on time and within scope.",
+  ],
+  skills: [
+    { name: "Operational Leadership", percentage: 92 },
+    { name: "Laravel", percentage: 90 },
+    { name: "Node.js", percentage: 88 },
+    { name: "REST APIs", percentage: 85 },
+    { name: "JavaScript (ES6+)", percentage: 82 },
+    { name: "PHP", percentage: 87 },
+    { name: "MySQL", percentage: 80 },
+    { name: "Frontend Integration", percentage: 75 },
+    { name: "Git & GitHub", percentage: 90 },
+    { name: "Agile Development", percentage: 85 },
+    { name: "Docker & DevOps Basics", percentage: 70 },
+  ],
+  socials: {
+    linkedin: "https://www.linkedin.com/in/saggar-farid-6811b3111/",
+    github: "https://github.com/gaftaaus",
+    stackoverflow: "https://stackoverflow.com/users/8819538/saggar-farid",
+  },
+},
   // Maroof Sultan
   {
     id: "maroof-sultan",
