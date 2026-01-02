@@ -26,7 +26,7 @@ const BlogCard = ({ image, date, author, title, excerpt, category, id }) => {
             </span>
           </div>
           <Card.Title as="h5" className="fw-bold mb-3">{title}</Card.Title>
-          <Card.Text className="text-secondary">{excerpt}</Card.Text>
+          <Card.Text className="text-dark">{excerpt}</Card.Text>
         </Card.Body>
       </Card>
     </Link>
@@ -40,7 +40,7 @@ const BlogSection = () => {
         <div className="text-center mb-5">
           <span className="text-primary fw-semibold text-uppercase mb-2 d-block">Latest Articles</span>
           <h2 className="fw-bold mb-4">Insights & Technology Updates</h2>
-          <p className="text-muted">Stay updated with the latest trends in technology and software development</p>
+          <p className="text-dark">Stay updated with the latest trends in technology and software development</p>
         </div>
         <Row className="g-4">
           {blogData.map((post, index) => (

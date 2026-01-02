@@ -4,6 +4,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import personImage from "../assets/img/contact-us.jpg";
 import contactData from "../data/contactData";
+import "../Contact/Contact.css";
 
 
 // Stat Card with CountUp
@@ -35,20 +36,6 @@ const ContactSection = () => {
 
   return (
     <>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          .throbbing-heartbeat {
-            animation: throb 1s infinite;
-            color: red;
-          }
-          @keyframes throb {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-          }
-        `,
-        }}
-      />
       <div className="contact-section-container ">
         {/* Main Content */}
         <div className="contact-main-content">
@@ -86,12 +73,15 @@ const ContactSection = () => {
 
             {/* Additional Contact Methods */}
             <div className="additional-contact-methods">
+              
               <div
-                className="contact-method"
+                className="contact-method "
                 onClick={() => window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${contactData.email}`, "_blank")}
                 style={{ cursor: "pointer" }}
               >
-                <FaEnvelope size={30} className="me-2" />
+              <div className="pin-icon-circle">
+                  <FaEnvelope className="throbbing-heartbeat" />
+                </div>
                 <div>
                   <p className="contact-method-title">Email Us</p>
                   <p className="contact-method-detail">{contactData.email}</p>
@@ -102,7 +92,9 @@ const ContactSection = () => {
                 onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Main%20Pakavenue%20Road%2C%20Sahiwal%2C%2057000%2C%20Pakistan", "_blank")}
                 style={{ cursor: "pointer" }}
               >
-                <FaMapMarkerAlt size={30}  className="me-3" />
+                <div className="pin-icon-circle">
+                  <FaMapMarkerAlt className="throbbing-heartbeat" />
+                </div>
                 <div>
                   <p className="contact-method-title">Our Location</p>
                   <p className="contact-method-detail">
@@ -152,9 +144,9 @@ const ContactSection = () => {
         {/* Stats Bar */}
         <div className="stats-bar-wrapper mb-5" ref={ref}>
           <div className="stats-bar text-primary">
-            <StatCard value="60k" label="Happy Clients" isVisible={inView} />
-            <StatCard value="40+" label="Companies" isVisible={inView} />
-            <StatCard value="250+" label="Projects Done" isVisible={inView} />
+            <StatCard value="1k+" label="Happy Clients" isVisible={inView} />
+            <StatCard value="20+" label="Companies" isVisible={inView} />
+            <StatCard value="30+" label="Projects Done" isVisible={inView} />
           </div>
         </div>
       </div>

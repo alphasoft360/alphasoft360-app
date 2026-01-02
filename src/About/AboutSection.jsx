@@ -23,7 +23,7 @@ const AboutSection = () => {
               Empowering Business Growth Through Innovative Technology
             </h2>
             <p className="lead mt-4">
-             With over 7 years of proven expertise in software development, our team excels in delivering high-performance web applications, IoT solutions, and seamless API integrations for clients across the globe. At our core, we prioritize innovation, scalability, and user-focused design — ensuring every digital product we create drives measurable results and long-term success for our partners.
+             With extensive proven expertise in software development, our team excels in delivering high-performance web applications, IoT solutions, and seamless API integrations for clients across the globe. At our core, we prioritize innovation, scalability, and user-focused design — ensuring every digital product we create drives measurable results and long-term success for our partners.
             </p>
             <p className="mt-3">
              We stand firmly against complacency and compromise, driven by the belief that true progress emerges from clarity, integrity, and purpose. In a world often distracted by short-term gains, we remain focused on creating lasting impact through dedication, innovation, and thoughtful execution. Our vision isn’t built on convenience — it’s built on commitment: a commitment to excellence, continuous growth, and doing what’s right, even when it’s not easy.

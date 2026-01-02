@@ -73,15 +73,17 @@
   color: #0d6efd;
 }
 .Faq-Form{
-      background: linear-gradient(135deg, #003973, #005bb5);
+      background: linear-gradient(135deg, #05175E, #05175E);
   color: #fff;
-  padding: 50px 50px !important;background-color: #0d6efd;
+  padding: 50px 50px !important;
 }
-/* .Faq-Form h6{
-    color: #fff !important;
-color: #0d6efd;
+.Faq-Form h5{
+    color: #0D6EF3 !important;
     border-radius: 50px;
-} */
+    font-weight: 800 !important;
+    text-align: center;
+    letter-spacing: 1px;
+}
 
 
 
