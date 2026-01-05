@@ -77,17 +77,22 @@ const FaQForm = () => {
   };
 
   return (
-    <section className=" py-5 bg-light">
+    <section 
+      className="py-5"
+      style={{
+        background: "linear-gradient(135deg, #005bea 0%, #00c6fb 100%)"
+      }}
+    >
       <Container>
         <Row className=" Faq-Form justify-content-center">
           <Col lg={10} md={12}>
             <div className="text-center mb-4">
-              <h6
-                className="text-primary text-center text-uppercase fw-semibold mx-auto mb-3"
+              <h5
+                className="text-center text-uppercase fw-semibold mx-auto mb-3"
                 style={{ width: "fit-content" }}
               >
                 Contact
-              </h6>
+              </h5>
 
               <h2 className="fw-bold">Request A Free Consultation</h2>
             </div>
@@ -165,7 +170,7 @@ const FaQForm = () => {
               <div className="text-center">
                 <Button
                   type="submit"
-                  className="btn btn-primary btn-lg px-5 rounded-3 submit-btn"
+                  className="btn btn-primary btn-lg px-5 rounded-3 fw-semibold"
                 >
                   Submit Now
                 </Button>

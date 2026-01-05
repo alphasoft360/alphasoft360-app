@@ -7,7 +7,7 @@ const ContactImage = () => {
       className="image-text-section"
       style={{
         background: `url("https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop") center/cover no-repeat`, // Live Unsplash image link for IT software houses
-        minHeight: "60vh",
+        minHeight: "70vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

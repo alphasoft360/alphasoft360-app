@@ -43,8 +43,9 @@ const AboutSection = () => {
               We Are Increasing Business Success With Technology
             </h2>
             <p className="text-muted mb-4">
-              Over 25 years working in IT services developing software
-              applications and mobile apps for clients all over the world.
+              With extensive experience in IT services, we specialize in developing
+              innovative software applications and mobile solutions for clients
+              worldwide, delivering excellence and driving digital transformation.
             </p>
 
             <div className="mb-3">

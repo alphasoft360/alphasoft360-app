@@ -96,9 +96,9 @@ const Testimonials = () => {
             <div key={i} className="px-3">
               <div className="testimonial-card bg-white text-center p-4 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-between">
                 <FaQuoteRight className="text-primary fs-2 mb-3" />
-                <p className="text-muted mb-4">{t.text}</p>
+                <p className="text-dark mb-4">{t.text}</p>
                 <h5 className="fw-bold mb-1">{t.name}</h5>
-                <p className="text-secondary small mb-0">{t.role}</p>
+                <p className="text-dark small mb-0">{t.role}</p>
               </div>
             </div>
           ))}

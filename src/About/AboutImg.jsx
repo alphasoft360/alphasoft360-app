@@ -9,7 +9,7 @@ const ServicesImage = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "300px",
+        height: "70vh",
         position: "relative",
         color: "#fff",
       }}
