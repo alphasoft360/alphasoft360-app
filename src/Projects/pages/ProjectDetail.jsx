@@ -184,7 +184,7 @@ const ProjectDetail = () => {
                 </Card>
 
                 {/* Links */}
-                <Card className="links-card">
+                {/* <Card className="links-card">
                   <Card.Body className="p-4">
                     <h3 className="h5 fw-bold mb-3">Project Links</h3>
                     <div className="project-links d-flex flex-column gap-2">
@@ -212,7 +212,7 @@ const ProjectDetail = () => {
                       )}
                     </div>
                   </Card.Body>
-                </Card>
+                </Card> */}
 
                 {/* Quick Stats */}
                 <Card className="stats-card">
