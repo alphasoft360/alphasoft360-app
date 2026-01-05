@@ -144,9 +144,9 @@ const ContactSection = () => {
         {/* Stats Bar */}
         <div className="stats-bar-wrapper mb-5" ref={ref}>
           <div className="stats-bar text-primary">
-            <StatCard value="1k+" label="Happy Clients" isVisible={inView} />
-            <StatCard value="20+" label="Companies" isVisible={inView} />
-            <StatCard value="30+" label="Projects Done" isVisible={inView} />
+            <StatCard value="30+" label="Happy Clients" isVisible={inView} />
+            <StatCard value="10+" label="Companies" isVisible={inView} />
+            <StatCard value="20+" label="Projects Done" isVisible={inView} />
           </div>
         </div>
       </div>
