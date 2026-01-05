@@ -59,7 +59,7 @@ const teamMembers = [
     id: "saggar-farid",
     image: saggar_farid, // replace with actual image import
     name: "Saggar Farid",
-    role: "Chief Operations Officer - Alphasoft360",
+    role: "Chief Operations Officer(COO) - Alphasoft360",
     bio: "Chief Operations Officer with extensive experience in software development, operational leadership, and enterprise solution delivery, leading teams and freelance projects across global platforms.",
     contact: {
       email: "Saggar.farid@gmail.com",

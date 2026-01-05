@@ -11,6 +11,9 @@ const EventIdcard = ({ member }) => {
   const cardRef = useRef(null);
   const autoReturnTimeout = useRef(null);
 
+  // Check if member is CEO or COO
+  const isExecutive = member?.role?.toLowerCase().includes('ceo') || member?.role?.toLowerCase().includes('coo');
+
   const handleMouseUp = () => {
     setIsDragging(false);
     // Auto return to natural position after 1 second
@@ -214,23 +217,25 @@ const EventIdcard = ({ member }) => {
                 </div>
               </div>
 
-              {/* QR Code Section */}
-              <div className="mb-4">
-                <h6 className="fw-bold mb-3">Scan for Verification</h6>
-                <div className="d-flex justify-content-center mb-3">
-                  <div className="qr-code-container p-2 bg-white border rounded">
-                    <QRCodeSVG
-                      value={`${window.location.origin}/certificate/${member?.id}`}
-                      size={120}
-                      level="H"
-                      marginSize={1}
-                    />
+              {/* QR Code Section - Only show for non-executives */}
+              {!isExecutive && (
+                <div className="mb-4">
+                  <h6 className="fw-bold mb-3">Scan for Verification</h6>
+                  <div className="d-flex justify-content-center mb-3">
+                    <div className="qr-code-container p-2 bg-white border rounded">
+                      <QRCodeSVG
+                        value={`${window.location.origin}/certificate/${member?.id}`}
+                        size={120}
+                        level="H"
+                        marginSize={1}
+                      />
+                    </div>
                   </div>
+                  <p className="text-muted small mb-0">
+                    Scan to verify authenticity
+                  </p>
                 </div>
-                <p className="text-muted small mb-0">
-                  Scan to verify authenticity
-                </p>
-              </div>
+              )}
 
               <div className="mt-auto">
                 <h5 className="fw-bold mb-3">Professional ID Card</h5>
@@ -239,7 +244,9 @@ const EventIdcard = ({ member }) => {
                   cardholder with AlphaSoft360.
                 </p>
                 <div className="border-top pt-3">
-                  <p className="small text-muted mb-1">Valid Until: 12/2026</p>
+                  {!isExecutive && (
+                    <p className="small text-muted mb-1">Valid Until: 12/2026</p>
+                  )}
                   <p className="small text-muted mb-0">
                     Card ID: AS360-
                     {member?.name?.replace(/\s/g, "").toUpperCase() || "DEMO"}

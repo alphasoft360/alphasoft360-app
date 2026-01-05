@@ -11,6 +11,10 @@ const CertificateDisplay = () => {
   // Find team member by ID from teamData
   const member = teamMembers.find(member => member.id === id);
   
+  // Check if this is an employer certificate for specific team members
+  const isEmployerCertificate = ['maroof-sultan', 'muhammad-shahbaz', 'muazam-mughal'].includes(id);
+  const isInternCertificate = !isEmployerCertificate;
+  
   // If no member found, show error message
   if (!member) {
     return (
@@ -31,15 +35,18 @@ const CertificateDisplay = () => {
     );
   }
   
-  // Generate certificate data based on team member
+  // Generate certificate data based on team member and certificate type
   const certificateData = {
     fullName: member.name,
-    certificationTitle: member.role,
+    certificationTitle: isEmployerCertificate ? member.role : `Intern - ${member.role}`,
     issuingOrganization: "AlphaSoft360",
-    certificateId: `AS360-CERT-${new Date().getFullYear()}-${member.id.toUpperCase().replace('-', '')}`,
+    certificateId: isEmployerCertificate 
+      ? `AS360-EMP-${new Date().getFullYear()}-${member.id.toUpperCase().replace('-', '')}`
+      : `AS360-INT-${new Date().getFullYear()}-${member.id.toUpperCase().replace('-', '')}`,
     issueDate: "December 15, 2025",
-    status: "Certified",
+    status: isEmployerCertificate ? "Employed" : "Intern",
     organizationLogo: logo,
+    certificateType: isEmployerCertificate ? "Employment Certificate" : "Internship Certificate"
   };
 
   return (
@@ -60,7 +67,7 @@ const CertificateDisplay = () => {
                     // }}
                   />
                 </div>
-                <h1 className="certificate-title">Certificate of Achievement</h1>
+                <h1 className="certificate-title">{certificateData.certificateType}</h1>
                 <div className="status-badge">
                   <span className="status-label">{certificateData.status}</span>
                 </div>
@@ -70,11 +77,17 @@ const CertificateDisplay = () => {
               <div className="certificate-body">
                 <div className=" Sarkar-content text-center mb-4">
                   <p className="certificate-text">
-                    This is to certify that
+                    {isEmployerCertificate 
+                      ? "This is to verify that"
+                      : "This is to certify that"
+                    }
                   </p>
                   <h2 className="recipient-name">{certificateData.fullName}</h2>
                   <p className="certificate-text">
-                    has successfully completed the certification program
+                    {isEmployerCertificate 
+                      ? "is currently employed at AlphaSoft360 as"
+                      : "is doing internship at AlphaSoft360 as"
+                    }
                   </p>
                   <h3 className="certification-title">{certificateData.certificationTitle}</h3>
                 </div>
@@ -137,8 +150,10 @@ const CertificateDisplay = () => {
                 <div className="disclaimer">
                   <h6 className="disclaimer-title">Disclaimer</h6>
                   <p className="disclaimer-text">
-                    This certificate information is displayed as provided by AlphaSoft360 and does not involve external verification. 
-                    For authentication purposes, please contact the issuing organization directly using the certificate ID.
+                    {isEmployerCertificate 
+                      ? "This employment verification information is provided by AlphaSoft360 for employment verification purposes. For confirmation, please contact HR directly using the certificate ID."
+                      : "This internship certificate information is provided by AlphaSoft360 for internship verification purposes. For confirmation, please contact HR directly using the certificate ID."
+                    }
                   </p>
                 </div>
                 <div className="footer-info text-center mt-3">
