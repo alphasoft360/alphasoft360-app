@@ -8,7 +8,7 @@ import faizan_ali from "../assets/img/faizan_ali.jpg";
 import ahmed_hassan from "../assets/img/ahmed_hassan.jpg";
 import sameer_akhtar from "../assets/img/sameer_akhtar.jpg";
 import ubaidullah from "../assets/img/ubaidullah.jpg";
-import ali_hassan from "../assets/img/ali_hassan.jpg";
+import mohid_naeem from "../assets/img/mohid_naeem.png";
 import bu_ali from "../assets/img/bu-ali-Ahmed.png";
 
 const teamMembers = [
@@ -208,10 +208,10 @@ const teamMembers = [
     id: "arham-ali",
     image: arham_ali,
     name: "Arham Ali",
-    role: "Frontend Developer (React • Next.js • Tailwind)",
+    role: "Frontend Software Engineer",
     bio: "Frontend Developer at AlphaSoft360 specializing in clean, responsive, and modern web interfaces.",
     contact: {
-      email: "arham.ali1323@gmail.com",
+      email: "arhamali.dev@gmail.com",
       phone: "+92 321 1051323",
     },
     biography: [
@@ -221,20 +221,20 @@ const teamMembers = [
       "Arham is passionate about continuous learning, collaboration, and building innovative frontend solutions that merge functionality with creativity."
     ],
     skills: [
-      { name: "Component-Based Architecture", percentage: 95 },
-      { name: "Responsive UI Frameworks", percentage: 93 },
-      { name: "API Integration", percentage: 90 },
-      { name: "React.js & Next.js", percentage: 92 },
-      { name: "TypeScript", percentage: 85 },
-      { name: "Tailwind CSS & Bootstrap", percentage: 94 },
-      { name: "HTML5 & CSS3", percentage: 96 },
-      { name: "JavaScript (ES6+)", percentage: 91 },
-      { name: "Performance Optimization", percentage: 88 },
-      { name: "Responsive Design", percentage: 94 },
-      { name: "Cross-Browser Compatibility", percentage: 89 },
-      { name: "UI/UX Principles", percentage: 87 },
-
-    ],
+  { name: "Component-Based Architecture", percentage: 95 },
+  { name: "Responsive UI Frameworks", percentage: 93 },
+  { name: "API Integration", percentage: 90 },
+  { name: "React.js & Next.js", percentage: 92 },
+  { name: "Vue.js", percentage: 88 },
+  { name: "TypeScript", percentage: 85 },
+  { name: "Tailwind CSS & Bootstrap", percentage: 94 },
+  { name: "HTML5 & CSS3", percentage: 96 },
+  { name: "JavaScript (ES6+)", percentage: 91 },
+  { name: "Performance Optimization", percentage: 88 },
+  { name: "Responsive Design", percentage: 94 },
+  { name: "Cross-Browser Compatibility", percentage: 89 },
+  { name: "UI/UX Principles", percentage: 87 },
+],
     socials: {
       stackoverflow: "https://stackoverflow.com/users/31519431/arham-ali",
       linkedin: "https://www.linkedin.com/in/arham-ali-973359289/",
@@ -249,7 +249,7 @@ const teamMembers = [
       {
         company: "AlphaSoft360",
         role: "Frontend Developer",
-        duration: "March 2025 – Present",
+        duration: "September 2025 – Present",
         details: [
           "Developed and maintained the company’s official portfolio website using React.js and Tailwind CSS.",
           "Built responsive layouts and reusable UI components.",
@@ -344,7 +344,7 @@ const teamMembers = [
     },
     education: {
       degree: "BS Information Technology",
-      status: "7th Semester",
+      status: "8th Semester",
     },
   },
   // sameer
@@ -369,6 +369,7 @@ const teamMembers = [
       { name: "CSS3", percentage: 92 },
       { name: "Tailwind CSS", percentage: 92 },
       { name: "React.js", percentage: 72 },
+      { name: "Vue.js", percentage: 90 },
       { name: "JavaScript (ES6+)", percentage: 80 },
       { name: "Bootstrap 5", percentage: 88 },
       { name: "Responsive Design", percentage: 93 },
@@ -406,6 +407,7 @@ const teamMembers = [
       { name: "CSS3", percentage: 92 },
       { name: "Tailwind CSS", percentage: 92 },
       { name: "React.js", percentage: 72 },
+      { name: "Vue.js", percentage: 88 },
       { name: "JavaScript (ES6+)", percentage: 80 },
       { name: "Bootstrap 5", percentage: 88 },
       { name: "Responsive Design", percentage: 93 },
@@ -423,43 +425,43 @@ const teamMembers = [
       year: "2025",
     },
   },
-  {
-    id: "ali-hassan",
-    image: ali_hassan,
-    name: "Ali Hassan",
-    role: "Front-End Web Developer",
-    bio: "A motivated and detail-oriented Front-End Developer currently pursuing a BS in Artificial Intelligence. Passionate about building modern, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and Bootstrap. Actively learning and improving skills to create clean, efficient code and deliver professional-quality digital experiences.",
-    contact: {
-      email: "ali.xdev77@gmail.com",
-      phone: "+92 327 4686432",
-    },
-    biography: [
-      "Ali Hassan is an aspiring Front-End Web Developer currently pursuing a BS in Artificial Intelligence. He enjoys creating visually appealing, responsive, and functional web interfaces using HTML, CSS, JavaScript (ES6+), and Bootstrap 5.",
-      "His focus lies in building modern web designs that are user-friendly, optimized, and accessible across all devices. Ali is dedicated to writing clean and efficient code that ensures smooth performance and great user experiences.",
-      "He also leverages tools like Git, GitHub, VS Code, and Figma for version control, design collaboration, and efficient development workflows.",
-      "With a growing interest in AI and front-end technologies, Ali aims to merge creativity with technical expertise to craft innovative digital solutions.",
-    ],
+ {
+  id: "mohid-naeem",
+  image: mohid_naeem,
+  name: "Mohid Naeem",
+  role: "Data Scientist & Web Developer",
+  bio: "A dedicated and analytical professional with a strong academic background in Mathematics and Data Science. Passionate about data-driven problem solving, modern web technologies, and building efficient, scalable digital solutions. Experienced in combining analytical thinking with practical development skills.",
+  contact: {
+    email: "mohidnaeem.dev@gmail.com",
+    phone: "+92 303 7692559",
+  },
+  biography: [
+    "Mohid Naeem holds a BS in Mathematics and is currently pursuing an MS in Data Science. His academic journey has equipped him with strong analytical, statistical, and problem-solving skills.",
+    "He has a keen interest in applying data science techniques to real-world problems, along with developing clean and functional web applications.",
+    "Mohid is comfortable working with modern development tools and values writing structured, maintainable, and efficient code.",
+    "With a strong foundation in mathematics and data analysis, he aims to build intelligent, data-driven systems that deliver meaningful insights and practical solutions.",
+  ],
     skills: [
       { name: "HTML5", percentage: 90 },
       { name: "CSS3", percentage: 92 },
       { name: "Tailwind CSS", percentage: 92 },
-      { name: "JavaScript (ES6+)", percentage: 80 },
+      { name: "JavaScript (ES6+)", percentage: 70 },
       { name: "Bootstrap 5", percentage: 88 },
       { name: "Responsive Design", percentage: 93 },
       { name: "Git & GitHub", percentage: 88 },
       { name: "Figma (UI Collaboration)", percentage: 82 },
     ],
-    socials: {
-      linkedin:
-        "https://www.linkedin.com/in/ali-hasssan-857929383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      github: "https://github.com/Ali-xdev",
-      stackoverflow: "https://stackoverflow.com/",
-    },
-    education: {
-      degree: "BS Artificial Intelligence",
-      status: "1st Semester",
-    },
+   socials: {
+    linkedin:
+      "https://www.linkedin.com/in/mohid-naeem-9a48412b1",
+    github: "https://github.com/mohidnaeemdev",
+    stackoverflow: "https://stackoverflow.com/",
   },
+  education: {
+    degree: "BS Mathematics",
+    currentStudy: "MS Data Science",
+  },
+},
   {
     id: "bu-ali",
     image: bu_ali,

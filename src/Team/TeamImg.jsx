@@ -1,12 +1,12 @@
 // src/components/ImageTextSection.jsx
 import React from "react";
-
+import backgroundImage from "../assets/img/Team-bg.jpeg";
 const TeamImg = () => {
   return (
     <section
       className="image-text-section"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1600')`, // Live Unsplash image link for IT software houses
+        backgroundImage: `url(${backgroundImage})`, // Live Unsplash image link for IT software houses
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

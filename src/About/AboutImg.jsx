@@ -1,11 +1,11 @@
 // src/components/ImageTextSection.jsx
-
-const ServicesImage = () => {
+import backgroundImage from "../assets/img/About-us-bg.jpeg";
+const AboutImage = () => {
   return (
     <section
       className="image-text-section"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=2000&h=300&fit=crop')`, // Live Unsplash image link for IT software houses
+        backgroundImage: `url(${backgroundImage})`, // Live Unsplash image link for IT software houses
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -32,4 +32,4 @@ const ServicesImage = () => {
   );
 };
 
-export default ServicesImage;
+export default AboutImage;

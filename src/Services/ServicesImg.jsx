@@ -1,12 +1,12 @@
 // src/components/ImageTextSection.jsx
 import React from "react";
-
+import backgroundImage from "../assets/img/Services-bg.jpeg";
 const ServicesImage = () => {
   return (
     <section
       className="image-text-section"
       style={{
-        backgroundImage: `url('/src/assets/img/Services.jpeg')`,
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
