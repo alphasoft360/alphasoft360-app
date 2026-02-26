@@ -429,7 +429,7 @@ const teamMembers = [
   id: "mohid-naeem",
   image: mohid_naeem,
   name: "Mohid Naeem",
-  role: "Data Scientist & Web Developer",
+  role: "Web Developer",
   bio: "A dedicated and analytical professional with a strong academic background in Mathematics and Data Science. Passionate about data-driven problem solving, modern web technologies, and building efficient, scalable digital solutions. Experienced in combining analytical thinking with practical development skills.",
   contact: {
     email: "mohidnaeem.dev@gmail.com",
