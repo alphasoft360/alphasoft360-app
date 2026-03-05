@@ -126,14 +126,24 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-6">
-              <div className="copyright">
-                <p>
-                  © {new Date().getFullYear()} All Rights Reserved. Developed by{" "}
-                  AlphaSoft360
-                </p>
-              </div>
-            </div>
+          <div className="col-lg-6">
+  <div className="copyright">
+<p className="text-gray-500 text-xs md:text-sm">
+  © {new Date().getFullYear()} All Rights Reserved by{" "}
+  <span className="font-bold text-gray-400 italic"><a href="https://alphasoft360.org" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 no-underline font-semibold">Alphasoft360</a></span>. Developed by{" "}
+  <a 
+    href="https://arham-pro-portfolio.vercel.app/" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-orange-500 hover:text-white transition-all duration-300 no-underline font-semibold"
+  >
+    Arham Ali
+  </a>
+</p>
+
+  </div>
+</div>
+
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import projectsData from "./projectsData";
+import projectsData from "../Projects/data/projectsData";
 
 const ProjectSection = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -52,11 +52,11 @@ const ProjectSection = () => {
         <Slider {...settings}>
           {projectsData.map((project, index) => (
             <div key={index} className="px-3">
-              <Link to={`/projects/${project.id}`} className="text-decoration-none">
+              <Link to={`/projects/${project.slug}`} className="text-decoration-none">
                 <div className="project-card bg-white rounded shadow-sm overflow-hidden">
                   <div className="project-img-wrapper">
                     <img
-                      src={project.img}
+                      src={project.image}
                       alt={project.title}
                       className="img-fluid w-100"
                       style={{

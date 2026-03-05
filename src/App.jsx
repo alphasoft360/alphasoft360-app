@@ -9,7 +9,7 @@ import Team from "./Pages/Team";
 import TeamMemberDetail from "./Pages/TeamMemberDetail";
 import ServiceDetail from "./Pages/ServiceDetail";
 import ProjectDetail from "./Pages/ProjectDetail";
-import NewProjectDetail from "./Projects/pages/ProjectDetail";
+import DetailedProjectDetail from "./Projects/pages/ProjectDetail";
 import ProjectsList from "./Projects/pages/ProjectsList";
 import BlogDetail from "./Pages/BlogDetail";
 import Contact from "./Pages/Contact";
@@ -39,7 +39,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/projects" element={<ProjectsList />} />
-            <Route path="/projects/:slug" element={<NewProjectDetail />} />
+            <Route path="/projects/:slug" element={<DetailedProjectDetail />} />
             <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/team" element={<Team />} />
