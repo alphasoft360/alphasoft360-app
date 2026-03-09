@@ -128,7 +128,7 @@ body {
 }
 
 .about_team-slider-section {
-  background: url("../assets/img/Services.jpeg") center/cover no-repeat;
+  background: url("../assets/img/Services-form.jpeg") center/cover no-repeat;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -142,7 +142,7 @@ body {
 }
 
 .about_team-member-card {
-  background: url("../assets/img/ngbng.png") no-repeat center center;
+  background: url("../assets/img/teamBg1.png") no-repeat center center;
   background-size: cover;
   border-radius: 15px;
   padding: 2rem 1rem;

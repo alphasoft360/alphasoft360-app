@@ -2,9 +2,9 @@
 import { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaPlay } from "react-icons/fa";
-import bgImage from "../assets/img/Services.jpeg";
-import { toast } from 'react-toastify';
-import { Resend } from 'resend';
+import bgImage from "../assets/img/Services-form.jpeg";
+import { toast } from "react-toastify";
+import { Resend } from "resend";
 // import ReCAPTCHA from 'react-google-recaptcha';
 
 const ServicesForm = () => {
@@ -25,7 +25,7 @@ const ServicesForm = () => {
 
     if (form.checkValidity() === false) {
       e.stopPropagation();
-      toast.error('Please fill all required fields correctly!');
+      toast.error("Please fill all required fields correctly!");
       setValidated(true);
       return;
     }
@@ -45,13 +45,13 @@ const ServicesForm = () => {
 
     console.log("Form data before sending:", formData);
 
-    toast.info('Submitting your request...');
+    toast.info("Submitting your request...");
 
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: formData.name,
@@ -59,18 +59,18 @@ const ServicesForm = () => {
           phone: formData.phone,
           website: formData.website,
           message: formData.message,
-          subject: 'New Service Request from AlphaSoft Website',
+          subject: "New Service Request from AlphaSoft Website",
           // token: captchaToken,
         }),
       });
 
       if (!response.ok) {
-        throw new Error('Failed to send email');
+        throw new Error("Failed to send email");
         console.log("Response not ok:", response);
       }
 
       console.log("SUCCESS!");
-      toast.success('Email sent successfully!');
+      toast.success("Email sent successfully!");
       setFormData({
         name: "",
         email: "",
@@ -81,7 +81,7 @@ const ServicesForm = () => {
       setValidated(false);
     } catch (error) {
       console.error("FAILED...", error);
-      toast.error('Failed to send email. Please try again later.');
+      toast.error("Failed to send email. Please try again later.");
     }
   };
 
@@ -108,9 +108,7 @@ const ServicesForm = () => {
                   minHeight: "380px",
                 }}
               >
-                {/* Overlay */}
-                <div className="overlay position-absolute w-100 h-100 top-0 start-0 bg-dark bg-opacity-50"></div>
-                              </div>
+              </div>
             </Col>
 
             {/* Right Side - Gradient Form */}
@@ -193,7 +191,10 @@ const ServicesForm = () => {
                       onChange={(token) => setCaptchaToken(token)}
                     />
                   </Form.Group> */}
-                  <Button type="submit" className="submit-btn px-4 py-2 fw-bold">
+                  <Button
+                    type="submit"
+                    className="submit-btn px-4 py-2 fw-bold"
+                  >
                     Submit Now
                   </Button>
                 </Form>
@@ -232,7 +233,7 @@ const ServicesForm = () => {
               md={4}
               className="d-flex justify-content-center justify-content-md-end"
             >
-              <a href="#" className="btn btn-primary btn-lg px-4 py-2">
+              <a href="/contact" className="btn btn-primary btn-lg px-4 py-2">
                 Get in touch
               </a>
             </Col>

@@ -5,15 +5,22 @@ import "react-toastify/dist/ReactToastify.css";
 import { Resend } from 'resend';
 // import ReCAPTCHA from 'react-google-recaptcha';
 
-// High-quality software company themed images from Unsplash
+// High-quality software company themed images from local gallery
+import background15 from '../assets/img/Home-banner/Home-banner-1.jpeg';
+import contactUsBg from '../assets/img/Home-banner/Home-banner-2.jpeg';
+import projectBg from '../assets/img/Home-banner/Home-banner-3.jpeg';
+import servicesBg from '../assets/img/Home-banner/Home-banner-4.jpeg';
+import aboutUsBg from '../assets/img/Home-banner/Home-banner-5.jpeg';
+import teamBg from '../assets/img/Home-banner/Home-banner-6.jpeg';
+
+// High-quality software company themed images from local gallery
 const allHeroImages = [
-  "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=2000&h=1200&fit=crop",
-  "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=2000&h=1200&fit=crop",
-  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=2000&h=1200&fit=crop",
-  "https://images.unsplash.com/photo-1581090700227-f7a447b9d577?w=2000&h=1200&fit=crop",
-  "https://images.unsplash.com/photo-1518770660439-4636190af475?w=2000&h=1200&fit=crop",
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=2000&h=1200&fit=crop",
-  "https://images.unsplash.com/photo-1551434678-e076c223a692?w=2000&h=1200&fit=crop",
+  background15,
+  contactUsBg,
+  projectBg,
+  servicesBg,
+  aboutUsBg,
+  teamBg,
 ];
 
 const Hero = () => {

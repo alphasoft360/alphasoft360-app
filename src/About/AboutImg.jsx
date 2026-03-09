@@ -3,13 +3,13 @@ import backgroundImage from "../assets/img/About-us-bg.jpeg";
 const AboutImage = () => {
   return (
     <section
-      className="image-text-section"
+      className="image-text-section image-fluid"
       style={{
         backgroundImage: `url(${backgroundImage})`, // Live Unsplash image link for IT software houses
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "70vh",
+        height: "40vh",
         position: "relative",
         color: "#fff",
       }}
@@ -17,8 +17,6 @@ const AboutImage = () => {
       <div
         className="overlay"
         style={{
-          // background: "rgba(0, 0, 0, 0.5)",
-          // height: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",

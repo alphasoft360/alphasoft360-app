@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card, Accordion } from "react-bootstrap";
+import FAQ_IMG from "../assets/img/Faq.image.jpeg";
 
 const FaqPage = () => {
   return (
@@ -12,8 +13,8 @@ const FaqPage = () => {
         >
           <div className="circular-image-container">
             <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-              alt="Software house team collaborating on a project"
+              src={FAQ_IMG}
+              alt="FAQ-IMAGE"
               className="img-fluid rounded-circle"
             />
           </div>
@@ -77,6 +78,65 @@ const FaqPage = () => {
                   Yes. After deployment we offer ongoing support, regular
                   updates, and maintenance plans to ensure your website or
                   application remains secure, fast, and fully functional.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="5">
+                <Accordion.Header>
+                  How do you ensure the security of our projects?
+                </Accordion.Header>
+                <Accordion.Body>
+                  Security is paramount. We implement best practices including
+                  secure coding standards, regular security audits, encryption,
+                  and compliance with industry standards like GDPR and HIPAA
+                  where applicable.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="6">
+                <Accordion.Header>
+                  Can you work with our existing systems or databases?
+                </Accordion.Header>
+                <Accordion.Body>
+                  Absolutely. We specialize in integrations and can seamlessly
+                  connect with your current infrastructure, APIs, databases, or
+                  third-party services to enhance functionality without disrupting
+                  existing operations.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="7">
+                <Accordion.Header>
+                  What is your pricing model?
+                </Accordion.Header>
+                <Accordion.Body>
+                  We offer flexible pricing based on project scope, including
+                  fixed-price for well-defined projects, hourly rates for
+                  ongoing development, and retainer models for long-term
+                  partnerships. Contact us for a customized quote.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="8">
+                <Accordion.Header>
+                  How do you handle project communication and updates?
+                </Accordion.Header>
+                <Accordion.Body>
+                  We maintain transparent communication through regular meetings,
+                  progress reports, and collaborative tools like Slack, Jira,
+                  and GitHub. You'll have direct access to the development team
+                  and receive weekly updates on project milestones.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="9">
+                <Accordion.Header>
+                  Do you provide training for our team on the new software?
+                </Accordion.Header>
+                <Accordion.Body>
+                  Yes, we offer comprehensive training sessions, documentation,
+                  and handover processes to ensure your team is fully equipped
+                  to manage and maintain the software post-delivery.
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>

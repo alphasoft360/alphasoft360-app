@@ -1,5 +1,4 @@
-import React from 'react';
-import About from '../assets/img/portrait-5.jpg'; // Ensure you have this image in the specified path
+import About from '../assets/img/team/awais_ali-bg.png'; // Ensure you have this image in the specified path
 
 const AboutSection = () => {
   return (
@@ -10,11 +9,11 @@ const AboutSection = () => {
             <div className="image-container">
               <img
                 src={About} // Replace with your image URL
-                alt="Smiling man and woman looking at a laptop"
-                className="img-fluid rounded-circle"
+                alt="About Alphasoft360"
+                className="img-fluid"
               />
-{/* '              <div className="bg-pattern-1"></div>
-              <div className="bg-pattern-2"></div>' */}
+              <div className="bg-pattern-1"></div>
+              <div className="bg-pattern-2"></div>
             </div>
           </div>
           <div className="col-lg-6">

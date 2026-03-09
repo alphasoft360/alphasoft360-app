@@ -1,18 +1,18 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // Import service icons
-import icon1 from "../assets/img/1.png";
-import icon2 from "../assets/img/2.png";
-import icon3 from "../assets/img/3.png";
-import icon4 from "../assets/img/4.png";
-import icon5 from "../assets/img/5.png";
-import icon6 from "../assets/img/6.png";
-import icon7 from "../assets/img/7.png";
-import icon8 from "../assets/img/8.png";
-import icon9 from "../assets/img/9.png";
-import icon10 from "../assets/img/10.png";
-import icon11 from "../assets/img/11.png";
-import icon12 from "../assets/img/12.png";
+import icon1 from "../assets/img/Services/1.png";
+import icon2 from "../assets/img/Services/2.png";
+import icon3 from "../assets/img/Services/3.png";
+import icon4 from "../assets/img/Services/4.png";
+import icon5 from "../assets/img/Services/5.png";
+import icon6 from "../assets/img/Services/6.png";
+import icon7 from "../assets/img/Services/7.png";
+import icon8 from "../assets/img/Services/8.png";
+import icon9 from "../assets/img/Services/9.png";
+import icon10 from "../assets/img/Services/10.png";
+import icon11 from "../assets/img/Services/11.png";
+import icon12 from "../assets/img/Services/12.png";
 
 // Data for services
 const services = [
@@ -21,7 +21,7 @@ const services = [
     img: icon1,
     title: "App Development",
     description:
-      "Comprehensive mobile application development services creating native, hybrid, and cross-platform apps for iOS and Android with modern technologies and best practices."
+      "Comprehensive mobile application development services creating native, hybrid, and cross-platform apps for iOS and Android with modern technologies and best practices.",
   },
   {
     id: "web-development",
@@ -49,57 +49,57 @@ const services = [
     img: icon5,
     title: "Real Estate Management Solutions",
     description:
-      "Comprehensive property management solutions to streamline real estate operations and enhance tenant experiences."
+      "Comprehensive property management solutions to streamline real estate operations and enhance tenant experiences.",
   },
-   {
-id: "lms-education-solutions",
-img: icon6,
-title: "LMS & Education Solutions",
-description:
-"Comprehensive learning management systems and educational technology solutions for modern education."
-   },
-   {
+  {
+    id: "lms-education-solutions",
+    img: icon6,
+    title: "LMS & Education Solutions",
+    description:
+      "Comprehensive learning management systems and educational technology solutions for modern education.",
+  },
+  {
     id: "healthcare-management-systems",
     img: icon7,
     title: "Healthcare Management Systems",
     description:
-      "Integrated healthcare solutions to improve patient care and streamline medical practice operations."
-   },
-   {
+      "Integrated healthcare solutions to improve patient care and streamline medical practice operations.",
+  },
+  {
     id: "ai-powered-automation",
     img: icon8,
     title: "AI-Powered Automation",
     description:
-      "Leverage artificial intelligence to automate processes, enhance decision-making, and drive business growth."
-   },
-   {
+      "Leverage artificial intelligence to automate processes, enhance decision-making, and drive business growth.",
+  },
+  {
     id: "iot-apps",
     img: icon9,
     title: "IOT Apps",
     description:
-      "Innovative Internet of Things solutions to connect devices, collect data, and enable smart automation."
-   },
+      "Innovative Internet of Things solutions to connect devices, collect data, and enable smart automation.",
+  },
   {
     id: "product-design",
     img: icon10,
     title: "Product & Design",
     description:
-      "Comprehensive product design services including UI/UX design, user research, prototyping, and brand identity to create intuitive and engaging digital products."
+      "Comprehensive product design services including UI/UX design, user research, prototyping, and brand identity to create intuitive and engaging digital products.",
   },
   {
     id: "data-center",
     img: icon11,
     title: "Data Center",
     description:
-      "Enterprise-grade data center solutions providing secure hosting, colocation, disaster recovery, and 24/7 monitoring for critical business infrastructure."
+      "Enterprise-grade data center solutions providing secure hosting, colocation, disaster recovery, and 24/7 monitoring for critical business infrastructure.",
   },
   {
     id: "erp-crm-solutions",
     img: icon12,
     title: "ERP & CRM Solutions",
     description:
-      "Comprehensive ERP and CRM solutions to streamline business operations, enhance customer relationships, and improve decision-making through integrated systems."
-  }
+      "Comprehensive ERP and CRM solutions to streamline business operations, enhance customer relationships, and improve decision-making through integrated systems.",
+  },
 ];
 
 const Services = () => {
@@ -117,8 +117,13 @@ const Services = () => {
         {/* Back (different content + button) */}
         <div className="feature-card-back shadow-sm rounded text-center p-4">
           <h5 className="fw-bold">{title}</h5>
-          <p className="mb-3 mt-2">Discover how our {title.toLowerCase()} services can transform your business with cutting-edge solutions and expert support.</p>
-          <Link to={`/services/${id}`} className="btn btn-light fw-bold">Learn More</Link>
+          <p className="mb-3 mt-2">
+            Discover how our {title.toLowerCase()} services can transform your
+            business with cutting-edge solutions and expert support.
+          </p>
+          <Link to={`/services/${id}`} className="btn btn-light fw-bold">
+            Learn More
+          </Link>
         </div>
       </div>
     </div>
@@ -132,7 +137,8 @@ const Services = () => {
           <Col xs={10} md={6}>
             <small className="text-primary fw-bold">SERVICES</small>
             <h3 className="fs-2 fs-lg-3">
-              AlphaSoft Offers Comprehensive IT Solutions and Software Development Services
+              AlphaSoft Offers Comprehensive IT Solutions and Software
+              Development Services
             </h3>
             <div className="line mx-auto"></div>
           </Col>

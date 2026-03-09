@@ -3,12 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 // Import service icons
-import icon1 from "../assets/img/1.png";
-import icon2 from "../assets/img/2.png";
-import icon3 from "../assets/img/3.png";
-import icon4 from "../assets/img/4.png";
-import icon5 from "../assets/img/5.png";
-import icon6 from "../assets/img/6.png";
+import icon1 from "../assets/img/Services/1.png";
+import icon2 from "../assets/img/Services/2.png";
+import icon3 from "../assets/img/Services/3.png";
+import icon4 from "../assets/img/Services/4.png";
+import icon5 from "../assets/img/Services/5.png";
+import icon6 from "../assets/img/Services/6.png";
 
 // Data for services
 const services = [

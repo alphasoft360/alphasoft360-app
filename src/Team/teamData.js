@@ -1,15 +1,15 @@
-import awais_ali from "../assets/img/awais_ali.jpeg";
-import saggar_farid from "../assets/img/saggar_farid.png";
-import maroof_sultan from "../assets/img/maroof_sultan.jpg";
-import muhammad_shahbaz from "../assets/img/muhammad_shahbaz.jpg";
-import muazam_mughal from "../assets/img/muazam_mughal.jpg";
-import arham_ali from "../assets/img/arham_ali.jpg";
-import faizan_ali from "../assets/img/faizan_ali.jpg";
-import ahmed_hassan from "../assets/img/ahmed_hassan.jpg";
-import sameer_akhtar from "../assets/img/sameer_akhtar.jpg";
-import ubaidullah from "../assets/img/ubaidullah.jpg";
-import mohid_naeem from "../assets/img/mohid_naeem.png";
-import bu_ali from "../assets/img/bu-ali-Ahmed.png";
+import awais_ali from "../assets/img/team/awais_ali.jpeg";
+import saggar_farid from "../assets/img/team/saggar_farid.png";
+import maroof_sultan from "../assets/img/team/maroof_sultan.jpg";
+import muhammad_shahbaz from "../assets/img/team/muhammad_shahbaz.jpg";
+import muazam_mughal from "../assets/img/team/muazam_mughal.jpg";
+import arham_ali from "../assets/img/team/arham_ali.jpg";
+import faizan_ali from "../assets/img/team/faizan_ali.jpg";
+import ahmed_hassan from "../assets/img/team/ahmed_hassan.jpg";
+import sameer_akhtar from "../assets/img/team/sameer_akhtar.jpg";
+import ubaidullah from "../assets/img/team/ubaidullah.jpg";
+import mohid_naeem from "../assets/img/team/mohid_naeem.png";
+import bu_ali from "../assets/img/team/bu-ali-Ahmed.png";
 
 const teamMembers = [
   // Awais Ali,
@@ -310,82 +310,6 @@ const teamMembers = [
       degree: "BS Software Engineering",
     },
   },
-
-  // Ahmed
-  {
-    id: "ahmed_hassan",
-    image: ahmed_hassan,
-    name: "Ahmad Hassan",
-    role: "Frontend Developer",
-    bio: "Passionate web developer creating modern, responsive websites with clean code and elegant design.",
-    contact: {
-      email: "ahassandevx@gmail.com",
-      phone: "+92 327 1888082",
-    },
-    biography: [
-      " Ahmad Hassan is a passionate Web Developer skilled in HTML, CSS, Bootstrap, and JavaScript, dedicated to creating modern, responsive, and user-friendly websites. He focuses on clean code and elegant design to deliver seamless digital experiences.",
-      "Currently pursuing a BS in Artificial Intelligence, Ahmad combines his technical skills with a strong foundation in problem-solving and analytical thinking.",
-      "He is committed to continuous learning and professional growth, actively exploring new technologies and best practices in web development.",
-      "Ahmad is eager to contribute his skills and enthusiasm to dynamic teams and projects, aiming to make a positive impact in the tech industry.",
-    ],
-    skills: [
-      { name: "JavaScript (ES6+)", percentage: 92 },
-      { name: "HTML5 & CSS3", percentage: 96 },
-      { name: "Bootstrap & Tailwind CSS", percentage: 94 },
-      { name: "Responsive Web Design", percentage: 93 },
-      { name: "UI/UX Implementation", percentage: 90 },
-      { name: "Web Performance Optimization", percentage: 88 },
-      { name: "Git & GitHub", percentage: 85 },
-    ],
-    socials: {
-      stackoverflow: "https://stackoverflow.com/",
-      linkedin: "https://www.linkedin.com/in/ahmad-hassan-41a28b26b/",
-      github: "https://github.com/ahassandev",
-    },
-    education: {
-      degree: "BS Information Technology",
-      status: "8th Semester",
-    },
-  },
-  // sameer
-  {
-    id: "sameer-akhtar",
-    image: sameer_akhtar,
-    name: "Sameer Akhtar",
-    role: "Front-End Web Developer",
-    bio: "A results-driven and creative Front-End Developer with a keen eye for design and a passion for crafting seamless, responsive, and engaging user experiences. Proficient in transforming ideas and UI concepts into high-performing, visually compelling websites using modern web technologies. Committed to clean, maintainable code and continuous learning to stay ahead in the ever-evolving world of web development.",
-    contact: {
-      email: "sameerxdev@gmail.com",
-      phone: "+92 321 6903462"
-    },
-    biography: [
-      "Sameer Akhtar is a dedicated Front-End Developer skilled in HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. He specializes in building clean, responsive, and modern interfaces that balance functionality with aesthetic appeal.",
-      "He has a strong understanding of responsive web design, cross-browser compatibility, and UI/UX principles, ensuring that every project delivers an excellent user experience across all devices.",
-      "Sameer enjoys converting design concepts into reality, optimizing performance, and continuously learning new technologies to refine his craft. His development process emphasizes precision, clarity, and collaboration.",
-      "He holds a Bachelor's degree in Computer Science from Government College University Faisalabad, Sahiwal Campus, where he developed both technical and analytical skills that contribute to his professional growth.",
-    ],
-    skills: [
-      { name: "HTML5", percentage: 90 },
-      { name: "CSS3", percentage: 92 },
-      { name: "Tailwind CSS", percentage: 92 },
-      { name: "React.js", percentage: 72 },
-      { name: "Vue.js", percentage: 90 },
-      { name: "JavaScript (ES6+)", percentage: 80 },
-      { name: "Bootstrap 5", percentage: 88 },
-      { name: "Responsive Design", percentage: 93 },
-      { name: "Git & GitHub", percentage: 88 },
-      { name: "Figma (UI Collaboration)", percentage: 82 },
-    ],
-    socials: {
-      linkedin: "https://www.linkedin.com/in/sameer-akhtar-601349381",
-      github: "https://github.com/Sameer-Builds",
-      stackoverflow: "https://stackoverflow.com/",
-    },
-    education: {
-      degree: "Bachelor’s in Computer Science",
-      institution: "Government College University Faisalabad, Sahiwal Campus",
-    },
-  },
   // ubadullah
   {
     id: "ubaidullah",
@@ -425,6 +349,83 @@ const teamMembers = [
       year: "2025",
     },
   },
+  
+  // sameer
+  {
+    id: "sameer-akhtar",
+    image: sameer_akhtar,
+    name: "Sameer Akhtar",
+    role: "Front-End Web Developer",
+    bio: "A results-driven and creative Front-End Developer with a keen eye for design and a passion for crafting seamless, responsive, and engaging user experiences. Proficient in transforming ideas and UI concepts into high-performing, visually compelling websites using modern web technologies. Committed to clean, maintainable code and continuous learning to stay ahead in the ever-evolving world of web development.",
+    contact: {
+      email: "sameerxdev@gmail.com",
+      phone: "+92 321 6903462"
+    },
+    biography: [
+      "Sameer Akhtar is a dedicated Front-End Developer skilled in HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. He specializes in building clean, responsive, and modern interfaces that balance functionality with aesthetic appeal.",
+      "He has a strong understanding of responsive web design, cross-browser compatibility, and UI/UX principles, ensuring that every project delivers an excellent user experience across all devices.",
+      "Sameer enjoys converting design concepts into reality, optimizing performance, and continuously learning new technologies to refine his craft. His development process emphasizes precision, clarity, and collaboration.",
+      "He holds a Bachelor's degree in Computer Science from Government College University Faisalabad, Sahiwal Campus, where he developed both technical and analytical skills that contribute to his professional growth.",
+    ],
+    skills: [
+      { name: "HTML5", percentage: 90 },
+      { name: "CSS3", percentage: 92 },
+      { name: "Tailwind CSS", percentage: 92 },
+      { name: "React.js", percentage: 72 },
+      { name: "Vue.js", percentage: 90 },
+      { name: "JavaScript (ES6+)", percentage: 80 },
+      { name: "Bootstrap 5", percentage: 88 },
+      { name: "Responsive Design", percentage: 93 },
+      { name: "Git & GitHub", percentage: 88 },
+      { name: "Figma (UI Collaboration)", percentage: 82 },
+    ],
+    socials: {
+      linkedin: "https://www.linkedin.com/in/sameer-akhtar-601349381",
+      github: "https://github.com/Sameer-Builds",
+      stackoverflow: "https://stackoverflow.com/",
+    },
+    education: {
+      degree: "Bachelor’s in Computer Science",
+      institution: "Government College University Faisalabad, Sahiwal Campus",
+    },
+  },
+// Ahmed
+  {
+    id: "ahmed_hassan",
+    image: ahmed_hassan,
+    name: "Ahmad Hassan",
+    role: "Frontend Developer",
+    bio: "Passionate web developer creating modern, responsive websites with clean code and elegant design.",
+    contact: {
+      email: "ahassandevx@gmail.com",
+      phone: "+92 327 1888082",
+    },
+    biography: [
+      " Ahmad Hassan is a passionate Web Developer skilled in HTML, CSS, Bootstrap, and JavaScript, dedicated to creating modern, responsive, and user-friendly websites. He focuses on clean code and elegant design to deliver seamless digital experiences.",
+      "Currently pursuing a BS in Artificial Intelligence, Ahmad combines his technical skills with a strong foundation in problem-solving and analytical thinking.",
+      "He is committed to continuous learning and professional growth, actively exploring new technologies and best practices in web development.",
+      "Ahmad is eager to contribute his skills and enthusiasm to dynamic teams and projects, aiming to make a positive impact in the tech industry.",
+    ],
+    skills: [
+      { name: "JavaScript (ES6+)", percentage: 92 },
+      { name: "HTML5 & CSS3", percentage: 96 },
+      { name: "Bootstrap & Tailwind CSS", percentage: 94 },
+      { name: "Responsive Web Design", percentage: 93 },
+      { name: "UI/UX Implementation", percentage: 90 },
+      { name: "Web Performance Optimization", percentage: 88 },
+      { name: "Git & GitHub", percentage: 85 },
+    ],
+    socials: {
+      stackoverflow: "https://stackoverflow.com/",
+      linkedin: "https://www.linkedin.com/in/ahmad-hassan-41a28b26b/",
+      github: "https://github.com/ahassandev",
+    },
+    education: {
+      degree: "BS Information Technology",
+      status: "8th Semester",
+    },
+  },
+
  {
   id: "mohid-naeem",
   image: mohid_naeem,

@@ -6,11 +6,11 @@ const ContactImage = () => {
     <section
       className="image-text-section"
       style={{
-        background: `url(${backgroundImage})`, // Live Unsplash image link for IT software houses
+        backgroundImage: `url(${backgroundImage})`, // Live Unsplash image link for IT software houses
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "70vh",
+        height: "40vh",
         position: "relative",
         color: "#fff",
       }}

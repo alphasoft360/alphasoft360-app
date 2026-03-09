@@ -4,7 +4,7 @@ import {
   FaGithub,
   FaStackOverflow,
 } from "react-icons/fa";
-import ngbng from "../assets/img/ngbng.png";
+import teamBg1 from "../assets/img/team1Bg.jpg";
 import teamMembers from "./teamData.js";
 
 
@@ -19,7 +19,7 @@ const TeamSection = () => {
                 <div className="team-card text-center">
                   <div
                     className="team-img-wrapper"
-                    style={{ backgroundImage: `url(${ngbng})` }}
+                    style={{ backgroundImage: `url(${teamBg1})` }}
                   >
                     <img
                       src={member.image}

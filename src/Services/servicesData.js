@@ -1,15 +1,15 @@
-import icon1 from "../assets/img/1.png";
-import icon2 from "../assets/img/2.png";
-import icon3 from "../assets/img/3.png";
-import icon4 from "../assets/img/4.png";
-import icon5 from "../assets/img/5.png";
-import icon6 from "../assets/img/6.png";
-import icon7 from "../assets/img/7.png";
-import icon8 from "../assets/img/8.png";
-import icon9 from "../assets/img/9.png";
-import icon10 from "../assets/img/10.png";
-import icon11 from "../assets/img/11.png";
-import icon12 from "../assets/img/12.png";
+import icon1 from "../assets/img/Services/1.png";
+import icon2 from "../assets/img/Services/2.png";
+import icon3 from "../assets/img/Services/3.png";
+import icon4 from "../assets/img/Services/4.png";
+import icon5 from "../assets/img/Services/5.png";
+import icon6 from "../assets/img/Services/6.png";
+import icon7 from "../assets/img/Services/7.png";
+import icon8 from "../assets/img/Services/8.png";
+import icon9 from "../assets/img/Services/9.png";
+import icon10 from "../assets/img/Services/10.png";
+import icon11 from "../assets/img/Services/11.png";
+import icon12 from "../assets/img/Services/12.png";
 
 const servicesData = [
   {
