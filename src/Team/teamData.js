@@ -203,74 +203,90 @@ const teamMembers = [
       github: "https://github.com/MuazamMughal",
     },
   },
-  // Arham Ali
+  // ubadullah
   {
-    id: "arham-ali",
-    image: arham_ali,
-    name: "Arham Ali",
-    role: "Frontend Software Engineer",
-    bio: "Frontend Developer at AlphaSoft360 specializing in clean, responsive, and modern web interfaces.",
+  id: "ubaidullah",
+  image: ubaidullah,
+  name: "Ubaidullah",
+  role: "Full Stack Web Developer",
+  bio: "Full Stack Web Developer focused on building responsive, scalable, and user-friendly web applications. Skilled in modern frontend technologies like HTML, CSS, JavaScript, React, and backend development using PHP to create complete and efficient web solutions.",
+
+  contact: {
+    email: "ubaidullah.web.dev@gmail.com",
+    phone: "+923287231804",
+  },
+
+  biography: [
+    "Ubaidullah is a passionate Full Stack Web Developer who enjoys building modern and responsive web applications using technologies such as HTML5, CSS3, JavaScript (ES6+), React, and PHP.",
+    "He specializes in transforming design concepts into functional and user-friendly interfaces while also developing reliable backend logic to support dynamic web applications.",
+    "Currently pursuing Intermediate at Aspire Group of Colleges (2025), he continues to improve his development skills by learning new frameworks, tools, and best practices in both frontend and backend development."
+  ],
+
+  skills: [
+    { name: "HTML5", percentage: 90 },
+    { name: "CSS3", percentage: 92 },
+    { name: "JavaScript (ES6+)", percentage: 80 },
+    { name: "React.js", percentage: 72 },
+    { name: "PHP", percentage: 80 },
+    { name: "Symfony", percentage: 70 },
+    { name: "Tailwind CSS", percentage: 90 },
+    { name: "Bootstrap", percentage: 88 },
+    { name: "Responsive Web Design", percentage: 90 },
+    { name: "Git & GitHub", percentage: 90 }
+  ],
+
+  socials: {
+    linkedin: "https://www.linkedin.com/in/ubaidullah-21792a383",
+    github: "https://github.com/Ubaidullah-Web-Dev",
+  },
+
+  education: {
+    degree: "Intermediate",
+    institution: "Aspire Group of Colleges",
+    year: "2025",
+  },
+},
+
+  // sameer
+  {
+    id: "sameer-akhtar",
+    image: sameer_akhtar,
+    name: "Sameer Akhtar",
+    role: "Front-End Web Developer",
+    bio: "A results-driven and creative Front-End Developer with a keen eye for design and a passion for crafting seamless, responsive, and engaging user experiences. Proficient in transforming ideas and UI concepts into high-performing, visually compelling websites using modern web technologies. Committed to clean, maintainable code and continuous learning to stay ahead in the ever-evolving world of web development.",
     contact: {
-      email: "arhamali.dev@gmail.com",
-      phone: "+92 321 1051323",
+      email: "sameerxdev@gmail.com",
+      phone: "+92 321 6903462",
     },
     biography: [
-      "Arham Ali is a Front-End Developer specializing in React, Next.js, JavaScript, and Tailwind CSS. He builds fast, scalable, and pixel-perfect user interfaces with a strong focus on modern UI/UX standards.",
-      "Currently working at AlphaSoft360, Arham contributes to the company's official portfolio website by implementing responsive layouts, reusable components, and smooth user experiences.",
-      "His experience includes transforming Figma/PSD designs into clean, production-ready interfaces, API integration, component-based architecture, and performance optimization.",
-      "Arham is passionate about continuous learning, collaboration, and building innovative frontend solutions that merge functionality with creativity."
+      "Sameer Akhtar is a dedicated Front-End Developer skilled in HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. He specializes in building clean, responsive, and modern interfaces that balance functionality with aesthetic appeal.",
+      "He has a strong understanding of responsive web design, cross-browser compatibility, and UI/UX principles, ensuring that every project delivers an excellent user experience across all devices.",
+      "Sameer enjoys converting design concepts into reality, optimizing performance, and continuously learning new technologies to refine his craft. His development process emphasizes precision, clarity, and collaboration.",
+      "He holds a Bachelor's degree in Computer Science from Government College University Faisalabad, Sahiwal Campus, where he developed both technical and analytical skills that contribute to his professional growth.",
     ],
     skills: [
-  { name: "Component-Based Architecture", percentage: 95 },
-  { name: "Responsive UI Frameworks", percentage: 93 },
-  { name: "API Integration", percentage: 90 },
-  { name: "React.js & Next.js", percentage: 92 },
-  { name: "Vue.js", percentage: 88 },
-  { name: "TypeScript", percentage: 85 },
-  { name: "Tailwind CSS & Bootstrap", percentage: 94 },
-  { name: "HTML5 & CSS3", percentage: 96 },
-  { name: "JavaScript (ES6+)", percentage: 91 },
-  { name: "Performance Optimization", percentage: 88 },
-  { name: "Responsive Design", percentage: 94 },
-  { name: "Cross-Browser Compatibility", percentage: 89 },
-  { name: "UI/UX Principles", percentage: 87 },
-],
+      { name: "HTML5", percentage: 90 },
+      { name: "CSS3", percentage: 92 },
+      { name: "Tailwind CSS", percentage: 92 },
+      { name: "React.js", percentage: 72 },
+      { name: "Vue.js", percentage: 90 },
+      { name: "JavaScript (ES6+)", percentage: 80 },
+      { name: "Bootstrap 5", percentage: 88 },
+      { name: "Responsive Design", percentage: 93 },
+      { name: "Git & GitHub", percentage: 88 },
+      { name: "Figma (UI Collaboration)", percentage: 82 },
+    ],
     socials: {
-      stackoverflow: "https://stackoverflow.com/users/31519431/arham-ali",
-      linkedin: "https://www.linkedin.com/in/arham-ali-973359289/",
-      github: "https://github.com/arham-ali1323",
-      portfolio: "https://personal-portfoilio-five.vercel.app/",
+      linkedin: "https://www.linkedin.com/in/sameer-akhtar-601349381",
+      github: "https://github.com/Sameer-Builds",
+      stackoverflow: "https://stackoverflow.com/",
     },
     education: {
-      degree: "Bachelor of Science in Economics",
-      institution: "University of Sahiwal, Sahiwal (2020 - 2024)",
+      degree: "Bachelor’s in Computer Science",
+      institution: "Government College University Faisalabad, Sahiwal Campus",
     },
-    experience: [
-      {
-        company: "AlphaSoft360",
-        role: "Frontend Developer",
-        duration: "September 2025 – Present",
-        details: [
-          "Developed and maintained the company’s official portfolio website using React.js and Tailwind CSS.",
-          "Built responsive layouts and reusable UI components.",
-          "Improved workflow through cleaner state management and structured component architecture.",
-          "Collaborated with backend teams for API integration and seamless user experiences."
-        ]
-      },
-      {
-        company: "Optimization Oasis",
-        role: "Frontend Developer",
-        duration: "March 2021 – October 2022",
-        details: [
-          "Built responsive websites using HTML, CSS, JavaScript, Bootstrap, Tailwind, and React.js.",
-          "Converted Figma/PSD designs into pixel-perfect modern interfaces.",
-          "Optimized page performance and ensured full cross-browser compatibility.",
-          "Worked directly with clients to gather requirements and deliver updates.",
-          "Improved front-end loading speed and wrote clean, maintainable code."
-        ]
-      }
-    ]
   },
+  
   // fazain
   {
     id: "faizan-ali",
@@ -310,86 +326,79 @@ const teamMembers = [
       degree: "BS Software Engineering",
     },
   },
-  // ubadullah
+
+  // Arham Ali
   {
-    id: "ubaidullah",
-    image: ubaidullah,
-    name: "Ubaidullah",
-    role: "Front-End Web Developer",
-    bio: "A passionate and detail-oriented Front-End Developer with a strong focus on creating responsive, user-friendly, and visually appealing web interfaces. Skilled in transforming ideas into functional designs and ensuring seamless user experiences through clean, efficient, and accessible code. Always eager to learn new technologies and improve development workflows.",
+    id: "arham-ali",
+    image: arham_ali,
+    name: "Arham Ali",
+    role: "Frontend Software Engineer",
+    bio: "Frontend Developer at AlphaSoft360 specializing in clean, responsive, and modern web interfaces.",
     contact: {
-      email: "ubaidullah.web.dev@gmail.com",
-      phone: "+92 328 7231804",
+      email: "arhamali.dev@gmail.com",
+      phone: "+92 321 1051323",
     },
     biography: [
-      "Ubaidullah is a passionate Front-End Web Developer dedicated to crafting elegant, responsive, and accessible web experiences using modern technologies such as HTML5, CSS,  JavaScript (ES6+), and Bootstrap.",
-      "He excels at transforming design concepts into functional, pixel-perfect interfaces that deliver exceptional user experiences across all devices and browsers.",
-      "Currently pursuing Intermediate at Aspire Group of Colleges (2025), Ubaidullah continues to learn and grow as a developer, exploring new frameworks and tools to enhance his front-end expertise.",
+      "Arham Ali is a Front-End Developer specializing in React, Next.js, JavaScript, and Tailwind CSS. He builds fast, scalable, and pixel-perfect user interfaces with a strong focus on modern UI/UX standards.",
+      "Currently working at AlphaSoft360, Arham contributes to the company's official portfolio website by implementing responsive layouts, reusable components, and smooth user experiences.",
+      "His experience includes transforming Figma/PSD designs into clean, production-ready interfaces, API integration, component-based architecture, and performance optimization.",
+      "Arham is passionate about continuous learning, collaboration, and building innovative frontend solutions that merge functionality with creativity.",
     ],
     skills: [
-      { name: "HTML5", percentage: 90 },
-      { name: "CSS3", percentage: 92 },
-      { name: "Tailwind CSS", percentage: 92 },
-      { name: "React.js", percentage: 72 },
+      { name: "React.js", percentage: 92 },
+      { name: "Next.js", percentage: 92 },
       { name: "Vue.js", percentage: 88 },
-      { name: "JavaScript (ES6+)", percentage: 80 },
-      { name: "Bootstrap 5", percentage: 88 },
-      { name: "Responsive Design", percentage: 93 },
-      { name: "Git & GitHub", percentage: 88 },
-      { name: "Figma (UI Collaboration)", percentage: 82 },
+      { name: "Component-Based Architecture", percentage: 95 },
+      { name: "API Integration", percentage: 90 },
+      { name: "TypeScript", percentage: 85 },
+      { name: "Tailwind CSS & Bootstrap", percentage: 94 },
+      { name: "HTML5 & CSS3", percentage: 96 },
+      { name: "JavaScript (ES6+)", percentage: 91 },
+      { name: "Performance Optimization", percentage: 88 },
+      { name: "Responsive UI Frameworks", percentage: 93 },
+      { name: "Cross-Browser Compatibility", percentage: 89 },
+      { name: "UI/UX Principles", percentage: 87 },
+      { name: "Git & GitHub", percentage: 95 },
     ],
     socials: {
-      linkedin: "https://www.linkedin.com/in/ubaidullah-sajid-21792a383",
-      github: "https://github.com/Ubaidullah-Web-Dev",
-      stackoverflow: "https://stackoverflow.com/",
+      stackoverflow: "https://stackoverflow.com/users/31519431/arham-ali",
+      linkedin: "https://www.linkedin.com/in/arham-ali-973359289/",
+      github: "https://github.com/arham-ali1323",
+      portfolio: "https://personal-portfoilio-five.vercel.app/",
     },
     education: {
-      degree: "Intermediate",
-      institution: "Aspire Group Of Colleges",
-      year: "2025",
+      degree: "Bachelor of Science in Economics",
+      institution: "University of Sahiwal, Sahiwal (2020 - 2024)",
     },
+    experience: [
+      {
+        company: "AlphaSoft360",
+        role: "Frontend Software Engineer",
+        duration: "September 2025 – Present",
+        details: [
+          "Developed and maintained the company's official portfolio website using React.js and Tailwind CSS.",
+          "Designed and implemented responsive, mobile-first layouts and reusable UI components.",
+          "Improved code quality and project scalability through better state management and modular component architecture.",
+          "Integrated REST APIs and collaborated with backend developers to deliver seamless user experiences.",
+          "Optimized website performance and ensured cross-browser compatibility.",
+        ],
+      },
+      {
+        company: "Optimization Oasis",
+        role: "Frontend Software Engineer",
+        duration: "October 2021 – October 2022",
+        details: [
+          "Built responsive websites using HTML, CSS, JavaScript, Bootstrap, Tailwind, and React.js.",
+          "Converted Figma/PSD designs into pixel-perfect modern interfaces.",
+          "Optimized page performance and ensured full cross-browser compatibility.",
+          "Worked directly with clients to gather requirements and deliver updates.",
+          "Improved front-end loading speed and wrote clean, maintainable code.",
+        ],
+      },
+    ],
   },
   
-  // sameer
-  {
-    id: "sameer-akhtar",
-    image: sameer_akhtar,
-    name: "Sameer Akhtar",
-    role: "Front-End Web Developer",
-    bio: "A results-driven and creative Front-End Developer with a keen eye for design and a passion for crafting seamless, responsive, and engaging user experiences. Proficient in transforming ideas and UI concepts into high-performing, visually compelling websites using modern web technologies. Committed to clean, maintainable code and continuous learning to stay ahead in the ever-evolving world of web development.",
-    contact: {
-      email: "sameerxdev@gmail.com",
-      phone: "+92 321 6903462"
-    },
-    biography: [
-      "Sameer Akhtar is a dedicated Front-End Developer skilled in HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. He specializes in building clean, responsive, and modern interfaces that balance functionality with aesthetic appeal.",
-      "He has a strong understanding of responsive web design, cross-browser compatibility, and UI/UX principles, ensuring that every project delivers an excellent user experience across all devices.",
-      "Sameer enjoys converting design concepts into reality, optimizing performance, and continuously learning new technologies to refine his craft. His development process emphasizes precision, clarity, and collaboration.",
-      "He holds a Bachelor's degree in Computer Science from Government College University Faisalabad, Sahiwal Campus, where he developed both technical and analytical skills that contribute to his professional growth.",
-    ],
-    skills: [
-      { name: "HTML5", percentage: 90 },
-      { name: "CSS3", percentage: 92 },
-      { name: "Tailwind CSS", percentage: 92 },
-      { name: "React.js", percentage: 72 },
-      { name: "Vue.js", percentage: 90 },
-      { name: "JavaScript (ES6+)", percentage: 80 },
-      { name: "Bootstrap 5", percentage: 88 },
-      { name: "Responsive Design", percentage: 93 },
-      { name: "Git & GitHub", percentage: 88 },
-      { name: "Figma (UI Collaboration)", percentage: 82 },
-    ],
-    socials: {
-      linkedin: "https://www.linkedin.com/in/sameer-akhtar-601349381",
-      github: "https://github.com/Sameer-Builds",
-      stackoverflow: "https://stackoverflow.com/",
-    },
-    education: {
-      degree: "Bachelor’s in Computer Science",
-      institution: "Government College University Faisalabad, Sahiwal Campus",
-    },
-  },
-// Ahmed
+  // Ahmed
   {
     id: "ahmed_hassan",
     image: ahmed_hassan,
@@ -426,22 +435,22 @@ const teamMembers = [
     },
   },
 
- {
-  id: "mohid-naeem",
-  image: mohid_naeem,
-  name: "Mohid Naeem",
-  role: "Web Developer",
-  bio: "A dedicated and analytical professional with a strong academic background in Mathematics and Data Science. Passionate about data-driven problem solving, modern web technologies, and building efficient, scalable digital solutions. Experienced in combining analytical thinking with practical development skills.",
-  contact: {
-    email: "mohidnaeem.dev@gmail.com",
-    phone: "+92 303 7692559",
-  },
-  biography: [
-    "Mohid Naeem holds a BS in Mathematics and is currently pursuing an MS in Data Science. His academic journey has equipped him with strong analytical, statistical, and problem-solving skills.",
-    "He has a keen interest in applying data science techniques to real-world problems, along with developing clean and functional web applications.",
-    "Mohid is comfortable working with modern development tools and values writing structured, maintainable, and efficient code.",
-    "With a strong foundation in mathematics and data analysis, he aims to build intelligent, data-driven systems that deliver meaningful insights and practical solutions.",
-  ],
+  {
+    id: "mohid-naeem",
+    image: mohid_naeem,
+    name: "Mohid Naeem",
+    role: "Web Developer",
+    bio: "A dedicated and analytical professional with a strong academic background in Mathematics and Data Science. Passionate about data-driven problem solving, modern web technologies, and building efficient, scalable digital solutions. Experienced in combining analytical thinking with practical development skills.",
+    contact: {
+      email: "mohidnaeem.dev@gmail.com",
+      phone: "+92 303 7692559",
+    },
+    biography: [
+      "Mohid Naeem holds a BS in Mathematics and is currently pursuing an MS in Data Science. His academic journey has equipped him with strong analytical, statistical, and problem-solving skills.",
+      "He has a keen interest in applying data science techniques to real-world problems, along with developing clean and functional web applications.",
+      "Mohid is comfortable working with modern development tools and values writing structured, maintainable, and efficient code.",
+      "With a strong foundation in mathematics and data analysis, he aims to build intelligent, data-driven systems that deliver meaningful insights and practical solutions.",
+    ],
     skills: [
       { name: "HTML5", percentage: 90 },
       { name: "CSS3", percentage: 92 },
@@ -452,17 +461,16 @@ const teamMembers = [
       { name: "Git & GitHub", percentage: 88 },
       { name: "Figma (UI Collaboration)", percentage: 82 },
     ],
-   socials: {
-    linkedin:
-      "https://www.linkedin.com/in/mohid-naeem-9a48412b1",
-    github: "https://github.com/mohidnaeemdev",
-    stackoverflow: "https://stackoverflow.com/",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/mohid-naeem-9a48412b1",
+      github: "https://github.com/mohidnaeemdev",
+      stackoverflow: "https://stackoverflow.com/",
+    },
+    education: {
+      degree: "BS Mathematics",
+      currentStudy: "MS Data Science",
+    },
   },
-  education: {
-    degree: "BS Mathematics",
-    currentStudy: "MS Data Science",
-  },
-},
   {
     id: "bu-ali",
     image: bu_ali,
@@ -489,13 +497,11 @@ const teamMembers = [
       { name: "Figma (UI Collaboration)", percentage: 82 },
     ],
     socials: {
-      linkedin:
-        "https://www.linkedin.com/in/bu-ali-ahmad-815a5a391/",
+      linkedin: "https://www.linkedin.com/in/bu-ali-ahmad-815a5a391/",
       github: "https://github.com/bualiahmed",
       stackoverflow: "https://stackoverflow.com/",
     },
   },
-
 ];
 
 export default teamMembers;
